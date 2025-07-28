@@ -93,3 +93,50 @@ Port scanners test **all 65,535 network ports** on a server to determine which a
   - **Detailed vulnerability descriptions**
   - **Remediation guidance** to help secure the system
 
+###Chapter 13
+
+## 🏢 Key Takeaways from the "Data Center Protection" Video
+
+---
+
+### 🌡️ Temperature Control
+- Data centers must maintain a temperature between **64.4°F and 80.6°F**.
+- Overheating can reduce the **lifespan of electronic equipment**.
+- Requires **robust cooling systems**, often a major investment.
+
+---
+
+### 💧 Humidity Control
+- Humidity must be balanced to avoid:
+  - **Condensation** (too much moisture)
+  - **Static electricity** (too dry)
+- Recommended **dew point range**: **41.9°F to 50°F**
+
+---
+
+### 🔥 Fire Suppression Systems
+
+- **Water-Based Systems**  
+  - 🔹 *Wet pipe*: water is always in the pipes.  
+  - 🔹 *Dry pipe*: water is held back until a fire is detected.  
+  - ⚠️ Can damage electronic equipment.
+
+- **Chemical Suppressants**  
+  - Starve fires of oxygen.  
+  - ✅ Safer for electronics.  
+  - ⚠️ Use cautiously when people are present.
+
+---
+
+### ⚠️ Additional Risks
+- **Flooding** – Requires proper site selection and drainage.  
+- **Electromagnetic Interference** – Use shielding and cable management to reduce impact.
+
+---
+
+### 📄 Agreements and Standards
+- If using third-party data centers:
+  - Include **environmental controls** in your **SLA** (Service Level Agreement) or **MOU** (Memorandum of Understanding).
+
+
+
