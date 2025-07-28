@@ -17,3 +17,25 @@
   - **False Negatives:** Failing to detect actual malicious activity.
 
 > ⚠️ It's crucial to balance detection sensitivity to minimize false alerts while ensuring strong protection.
+
+
+
+## 🛡️ Key Takeaways from the "Malware Prevention" Video
+
+- **Antimalware Software**  
+  Modern antimalware software protects against a wide range of threats including viruses, worms, Trojan horses, and spyware.
+
+- **Signature Detection**  
+  Relies on databases of known malware signatures to scan and identify malicious files.  
+  🔄 **Frequent updates** to virus definition files are essential to remain effective.
+
+- **Heuristic / Behavior Detection**  
+  Uses models of normal system behavior to detect anomalies.  
+  📌 Common in advanced tools like **Endpoint Detection and Response (EDR)** solutions, providing real-time threat protection.
+
+- **Sandboxing**  
+  Suspicious files are executed in a **controlled, isolated environment** (sandbox) to detect harmful behavior **before** they affect the actual system.
+
+- **Windows Defender**  
+  Built-in antimalware solution in Windows that offers real-time protection, scanning, threat history, and automatic updates.
+
