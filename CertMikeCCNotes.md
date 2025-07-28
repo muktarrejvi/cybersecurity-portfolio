@@ -69,3 +69,27 @@ Port scanners test **all 65,535 network ports** on a server to determine which a
   ```bash
   nmap [IP address]
 
+## 🛡️ Key Takeaways from the "Vulnerability Scanners" Video
+
+- **Functionality**  
+  Vulnerability scanners do more than just identify open ports. They **analyze the services running on those ports** and **check for known vulnerabilities** in configurations, software, and protocols.
+
+---
+
+### 🛠️ Popular Tool: **Nessus**
+
+- Demonstrated in the video as a **web-based vulnerability scanning tool**.
+- Designed to scan systems like **Windows servers** for a wide range of known issues.
+
+---
+
+### 📋 Scan Results
+
+- Nessus identifies vulnerabilities such as:
+  - **SSL certificate problems**
+  - Use of **medium-strength cipher suites**
+  - Additional misconfigurations and outdated software
+- It also provides:
+  - **Detailed vulnerability descriptions**
+  - **Remediation guidance** to help secure the system
+
