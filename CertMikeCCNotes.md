@@ -39,3 +39,33 @@
 - **Windows Defender**  
   Built-in antimalware solution in Windows that offers real-time protection, scanning, threat history, and automatic updates.
 
+
+## 🌐 Key Takeaways from the "Port Scanners" Video
+
+- **Port Scanners**  
+  Tools that probe a system for **open network ports**, helping identify potentially vulnerable points of entry.
+
+---
+
+### 🔧 Types of Vulnerability Assessment Tools
+
+- **Port Scanners** – Probe systems for open network ports.  
+- **Vulnerability Scanners** – Check open ports for known vulnerabilities.  
+- **Application Scanners** – Test web applications for flaws and misconfigurations.
+
+---
+
+### ⚙️ Functionality of Port Scanners
+
+Port scanners test **all 65,535 network ports** on a server to determine which are open —  
+💡 *This is similar to rattling all the doorknobs on a house to find unlocked doors.*
+
+---
+
+### 🛠️ Popular Tool: `nmap`
+
+- Demonstrated tool: **nmap**, a widely-used port scanner.
+- Basic Command:  
+  ```bash
+  nmap [IP address]
+
