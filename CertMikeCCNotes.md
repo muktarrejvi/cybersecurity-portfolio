@@ -83,6 +83,12 @@
 - If needed, **retain third-party incident response providers** ahead of time.
 - Establish **contracts and agreements** before an incident occurs to avoid delays during an emergency.
 
+Here are more details from the "Incident communications plan" video:
+
+Internal Communications: Ensure that appropriate people within your organization are informed about an incident at the right time with the right information. This helps in managing stakeholders effectively.
+External Communications: Be cautious when communicating with individuals and groups outside your organization. Limit the communication of sensitive information to trusted parties to prevent leaks that could alert attackers or result in unwanted media attention.
+Legal Obligations: You may not always be legally required to report incidents to law enforcement, but your legal team should guide you on any specific laws or regulations that apply. For example, privacy laws may require notifying individuals if their personal information is compromised.
+Secure Communication Channels: Establish secure communication methods before an incident occurs to ensure confidential information is shared safely with trusted employees and third parties. This prevents inadvertent release of information to the public or adversaries.
 
 
 ###Chapter 12 
