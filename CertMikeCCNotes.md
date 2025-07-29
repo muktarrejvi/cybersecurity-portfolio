@@ -57,6 +57,32 @@
   - Increased damage
 - A **structured plan** ensures better outcomes even under high pressure.
 
+## 👥 Key Takeaways from the "Create an Incident Response Team" Video
+
+---
+
+### 🔄 Build a Diverse Team
+- Assemble members from multiple departments to cover all necessary aspects of incident response:
+  - **Management**
+  - **Information Security**
+  - **Technical Experts**
+  - **Legal Counsel**
+  - **Public Affairs**
+  - **Human Resources**
+  - **Physical Security**
+
+---
+
+### 🧠 Regular Training and Testing
+- Ensure all team members are familiar with the **incident response plan**.
+- Conduct **regular training sessions** and **tabletop exercises** to keep skills sharp and the team prepared for real incidents.
+
+---
+
+### 📅 Plan Ahead
+- If needed, **retain third-party incident response providers** ahead of time.
+- Establish **contracts and agreements** before an incident occurs to avoid delays during an emergency.
+
 
 
 ###Chapter 12 
