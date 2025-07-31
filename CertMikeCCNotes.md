@@ -1,5 +1,6 @@
 ### Chapter 6
 
+##Details Note
 
 ## 🛡️ Key Takeaways from the "Build an Incident Response Program" Video
 
