@@ -1,3 +1,48 @@
+###Chapter 3
+## 🔐 Key Takeaways from the "Selecting Security Controls" Video
+
+---
+
+### 🎯 Purpose of Security Controls
+
+- **Preventive Controls**  
+  Aim to **stop threats** before they occur.  
+  📌 *Example:* Firewalls blocking unwanted traffic.
+
+- **Detective Controls**  
+  **Identify and alert** on potential threats for further investigation.  
+  📌 *Example:* Intrusion Detection Systems (IDS).
+
+- **Recovery Controls**  
+  **Respond to and remediate** incidents after they happen.  
+  📌 *Example:* Restoring data from backups post-ransomware attack.
+
+---
+
+### ⚙️ Mechanisms of Security Controls
+
+- **Technical Controls**  
+  Utilize technology to enforce protection.  
+  🔹 *Examples:* Firewalls, encryption, antivirus.
+
+- **Administrative Controls**  
+  Define **policies, processes, and procedures** to manage security.  
+  🔹 *Examples:* User access reviews, log monitoring, security training.
+
+- **Physical Controls**  
+  Involve **tangible protections** in the real world.  
+  🔹 *Examples:* Locks, CCTV cameras, security personnel.
+
+---
+
+### 🛡️ Defense in Depth
+
+- A layered security approach where **multiple overlapping controls** are used.  
+- Ensures that if one control fails, others remain in place.  
+  📌 *Example:* Burglar alarm **+** security cameras for intruder detection.
+
+
+
 ### Chapter 6
 
 ##Details Note
