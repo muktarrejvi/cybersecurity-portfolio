@@ -41,6 +41,47 @@
 - Ensures that if one control fails, others remain in place.  
   📌 *Example:* Burglar alarm **+** security cameras for intruder detection.
 
+## 🛠️ Key Takeaways from the "Configuration Management" Video
+
+---
+
+### 🔧 Configuration Management
+- Involves **tracking device settings** and installed software.
+- Ensures that any **system changes** are controlled, documented, and auditable.
+- Helps maintain **system consistency** and **security posture**.
+
+---
+
+### 🧾 Baselining
+- A **baseline** is a snapshot of system or application settings at a specific point in time.
+- Used to compare with the current state to detect **unauthorized or unexpected changes**.
+- Helps ensure **system integrity**.
+
+---
+
+### 🔢 Versioning and Version Control
+- Assigns **incrementing version numbers** to software releases.
+- Example:  
+  `iOS 14.1.2`  
+  - `14`: Major version  
+  - `14.1`: Major update  
+  - `14.1.2`: Minor patch
+- Helps track updates, manage rollbacks, and ensure compatibility.
+
+---
+
+### 🗂️ Standardization
+- Use **consistent naming conventions** for devices, hosts, and IP schemas.
+- Simplifies network management and helps technicians quickly **identify roles and locations** of devices.
+
+---
+
+### 📊 Artifacts
+- Create **diagrams, maps, and documentation** to visualize system design and configuration.
+- Useful for:
+  - **Troubleshooting**
+  - **Security audits**
+  - **Incident response**
 
 
 ### Chapter 6
