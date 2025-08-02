@@ -1,4 +1,4 @@
-###Chapter 3
+## Chapter 3
 ## 🔐 Key Takeaways from the "Selecting Security Controls" Video
 
 ---
