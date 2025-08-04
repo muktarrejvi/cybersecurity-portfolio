@@ -214,7 +214,7 @@ External Communications: Be cautious when communicating with individuals and gro
 Legal Obligations: You may not always be legally required to report incidents to law enforcement, but your legal team should guide you on any specific laws or regulations that apply. For example, privacy laws may require notifying individuals if their personal information is compromised.
 Secure Communication Channels: Establish secure communication methods before an incident occurs to ensure confidential information is shared safely with trusted employees and third parties. This prevents inadvertent release of information to the public or adversaries.
 
-##Chapter 8
+## Chapter 8
 
 ## 🛂 Key Takeaways from the "Visitor Management" Video
 
