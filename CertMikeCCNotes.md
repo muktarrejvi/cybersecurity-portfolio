@@ -214,6 +214,42 @@ External Communications: Be cautious when communicating with individuals and gro
 Legal Obligations: You may not always be legally required to report incidents to law enforcement, but your legal team should guide you on any specific laws or regulations that apply. For example, privacy laws may require notifying individuals if their personal information is compromised.
 Secure Communication Channels: Establish secure communication methods before an incident occurs to ensure confidential information is shared safely with trusted employees and third parties. This prevents inadvertent release of information to the public or adversaries.
 
+##Chapter 8
+
+## 🛂 Key Takeaways from the "Visitor Management" Video
+
+---
+
+### 📋 Visitor Control Procedures
+- Clearly define:
+  - **Who can approve visitor access**
+  - **Why** a visitor is allowed entry
+  - Required **approval levels** for various types of visitors
+  - **Expected behavior** while on-site
+
+---
+
+### 🆔 Visitor Identification
+- All individuals must wear **identification badges** inside secure areas.
+- **Visitor badges** should be:
+  - **Visually distinct** from employee badges
+  - Clearly indicate if the visitor requires an **escort**
+
+---
+
+### 📝 Access Logging
+- Every visitor’s entry must be **recorded**:
+  - Options include a **paper logbook** or **digital access system**
+- Ensures a record for **security reviews or audits**
+
+---
+
+### 🎥 Monitoring
+- Use of **security cameras** is recommended in visitor-access areas
+- Inform visitors that **monitoring is in place**
+- Footage may be reviewed in case of **suspicious activity**
+
+
 
 ###Chapter 12 
 
