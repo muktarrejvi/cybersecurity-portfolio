@@ -94,3 +94,38 @@ Verifies **who** someone is using one or more factors:
 
 📘 *Source: CC Certified in Cybersecurity All-in-One Exam Guide by Steven Bennett*
 
+## 💻 Elements of a Cyberattack: A Summary
+
+---
+
+A typical cyberattack involves several key stages carried out by a cybercriminal:
+
+---
+
+### 1. 🕵️ Conduct Research
+- The attacker gathers as much **information** as possible about the target.
+- This can include:
+  - System architecture
+  - Publicly available data
+  - Employee details (e.g., via social engineering)
+
+---
+
+### 2. 🛠️ Exploit Targets
+- Uses tools such as **malware** to take advantage of **vulnerabilities**.
+- The goal is to gain **unauthorized access** to systems or data.
+
+---
+
+### 3. 🔥 Do Bad Things
+Once inside, the attacker may:
+
+- **Steal data** – Compromises **Confidentiality**  
+- **Modify data** – Compromises **Integrity**  
+- **Destroy data or disrupt services** – Compromises **Availability**
+
+> 🔺 These actions directly violate the **CIA Triad** of cybersecurity.
+
+---
+
+📘 *Source: CC Certified in Cybersecurity All-in-One Exam Guide by Steven Bennett*
