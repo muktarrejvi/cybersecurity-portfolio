@@ -250,8 +250,65 @@ Secure Communication Channels: Establish secure communication methods before an 
 - Footage may be reviewed in case of **suspicious activity**
 
 
+### Chapter 9
 
-###Chapter 12 
+## 👥 Provisioning and Deprovisioning Process
+
+---
+
+### 🔐 Provisioning
+
+When a **new user** joins the organization:
+- **Onboarding** is initiated.
+- Administrators:
+  - Create **authentication credentials**.
+  - Assign **authorizations** based on job roles.
+
+---
+
+### 🔒 Deprovisioning
+
+When a **user leaves** the organization:
+- **Offboarding** is performed.
+- Administrators:
+  - **Remove credentials and access rights** promptly.
+  - Act **immediately** in unfavorable exit scenarios to minimize security risks.
+
+---
+
+### 🔁 Workflows
+
+#### ✅ Routine Workflow
+- For **planned departures**:
+  - Supervisor notifies HR.
+  - Account is set to **expire on the last working day**.
+
+#### 🚨 Emergency Workflow
+- For **unexpected terminations**:
+  - **IT and HR coordinate**.
+  - Account is **terminated in real-time** to avoid security exposure.
+
+---
+
+### 🖥️ Account Management (Windows)
+
+- **Disable accounts** temporarily before deletion (safeguard step).
+- **Schedule account expiration** for routine departures.
+
+---
+
+### 🛡️ Security Implications
+
+- Timely provisioning/deprovisioning:
+  - Minimizes risk of **unauthorized access**.
+  - Enhances overall **enterprise security posture**.
+
+---
+
+> ✅ Proper account lifecycle management is critical for maintaining system integrity and protecting sensitive data.
+
+
+### Chapter 12 
 
 ## 🔐 Intrusion Detection and Prevention – Key Takeaways
 
