@@ -160,7 +160,7 @@
 ### 🏛️ Use of Industry Standards
 
 - Refer to **NIST SP 800-61**:  
-  The *Computer Security Incident Handling Guide* by NIST is a **gold standard** for structuring incident response programs.
+  The *Computer Security Incident Handling Guide* by NIST is a **gold standard** for structuring incident response programs. This is widely accepted.
 
 ---
 
