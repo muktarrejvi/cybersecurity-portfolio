@@ -446,7 +446,7 @@ Port scanners test **all 65,535 network ports** on a server to determine which a
 
 ### 📄 Agreements and Standards
 - If using third-party data centers:
-  - Include **environmental controls** in your **SLA** (Service Level Agreement) or **MOU** (Memorandum of Understanding).
+  - Include **environmental controls** in your **SLA** (Service Level Agreement) or **MOU** (Memorandum of Understanding)
 
 
 
