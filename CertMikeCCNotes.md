@@ -252,7 +252,7 @@ Secure Communication Channels: Establish secure communication methods before an 
 
 ### Chapter 9
 
-## 👥 Provisioning and Deprovisioning Process
+## 👥 Provisioning and Deprovisioning Process:
 
 ---
 
