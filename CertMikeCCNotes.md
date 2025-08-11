@@ -1,6 +1,5 @@
 ## Chapter 3
-## 🔐 Key Takeaways from the "Selecting Security Controls" Video
-
+## 🔐 Key Takeaways from the "Selecting Security Controls" 
 ---
 
 ### 🎯 Purpose of Security Controls
