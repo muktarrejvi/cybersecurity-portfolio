@@ -307,6 +307,62 @@ When a **user leaves** the organization:
 
 > ✅ Proper account lifecycle management is critical for maintaining system integrity and protecting sensitive data.
 
+### Chapter 10
+
+## 🌐 Network Types
+
+---
+
+### 🖥️ Local Area Networks (LANs)
+- Connect devices **within a single building or location**.
+- Enable communication between:
+  - Computers
+  - Servers
+  - Printers
+  - Other devices in the same office/home.
+
+---
+
+### 🌏 Wide Area Networks (WANs)
+- Connect multiple **LANs** over large distances.
+- Used for:
+  - Linking different office locations.
+  - Providing **global internet access**.
+
+---
+
+### 🔌 Wired Networks
+- Use **Ethernet cables** (RJ-45 connectors).
+- Advantages:
+  - **High-speed** connections.
+  - Stable performance.
+- Disadvantage:
+  - Requires **physical cabling**.
+
+---
+
+### 📡 Wireless Networks
+
+#### 📶 Wi-Fi
+- Creates **wireless LANs**.
+- Connects smartphones, laptops, and other devices **without cables**.
+
+#### 🔊 Bluetooth
+- Forms **Personal Area Networks (PANs)**.
+- Short-range (up to ~30 feet).
+- Example: Connecting headsets, speakers, and phones.
+
+#### 📍 Near Field Communication (NFC)
+- Very short-range (a few inches).
+- Used for:
+  - Wireless payments.
+  - Access control systems.
+
+---
+
+> 📝 **Summary**: Networks—whether wired or wireless—enable efficient communication between devices locally or across the globe.
+
+
 
 ### Chapter 12 
 
