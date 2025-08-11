@@ -360,7 +360,7 @@ When a **user leaves** the organization:
 
 ---
 
-> 📝 **Summary**: Networks—whether wired or wireless—enable efficient communication between devices locally or across the globe.
+> 📝 **Summary**: Networks—whether wired or wireless—enable efficient communication between devices locally or across the world.
 
 
 
