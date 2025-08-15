@@ -152,7 +152,7 @@
   - With third parties (e.g., law enforcement, vendors)
 
 - **Senior Management Approval**  
-  The plan should be officially **approved** to ensure it carries authority during real-world incidents.
+  The plan should be officially **approved** to ensure it carries authority during real-world incidents
 
 ---
 
