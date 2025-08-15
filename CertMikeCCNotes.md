@@ -111,7 +111,7 @@
 ---
 
 ### 🚨 Compliance Risks
-- Organizations must understand and follow relevant laws to:
+- Organizations must understand and follow relevant laws to
   - Avoid **penalties**
   - Maintain **customer trust**
   - Protect **reputation**
