@@ -504,4 +504,60 @@ Port scanners test **all 65,535 network ports** on a server to determine which a
   - Include **environmental controls** in your **SLA** (Service Level Agreement) or **MOU** (Memorandum of Understanding)
 
 
+### Chapter 14 Cloud Computing
+
+## 🤝 Manage Vendor Relationships
+
+---
+
+### 🔐 Vendor Security Policies
+- Vendors must follow **security policies and procedures** that are at least as strict as your organization’s.
+- Protects **Confidentiality, Integrity, and Availability (CIA)** of systems and data.
+
+---
+
+### 📋 Vendor Management Life Cycle
+
+1. **Selection**
+   - Choose vendors formally/informally.
+   - Ensure **security is a key factor** in the decision.
+
+2. **Onboarding**
+   - Set up technical arrangements (e.g., data transfer).
+   - Verify **contract details**.
+   - Establish **security incident notification procedures**.
+
+3. **Maintenance**
+   - Monitor vendor security practices via:
+     - Assessments  
+     - Site visits  
+     - Audit reports  
+   - Manage security incidents effectively.
+
+4. **Off-boarding**
+   - Vendor must **destroy all confidential data**.  
+   - Relationship is unwound **orderly and securely**.
+
+---
+
+### 📑 Due Diligence
+- Perform **research on vendors** to ensure:
+  - Reliability
+  - Financial stability
+- Especially important in **cloud computing** to avoid **vendor lock-in**.
+
+---
+
+### 🔄 Ongoing Monitoring
+- Regularly assess vendor’s **risk management platform**, including:
+  - Controls
+  - Methodologies
+  - Policies
+
+---
+
+> 📝 **Summary**: A structured vendor management process helps ensure long-term security, compliance, and resilience in business relationships.
+
+
+
 
