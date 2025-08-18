@@ -129,3 +129,6 @@ Once inside, the attacker may:
 ---
 
 📘 *Source: CC Certified in Cybersecurity All-in-One Exam Guide by Steven Bennett*
+
+Thanks
+
