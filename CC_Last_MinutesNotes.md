@@ -146,26 +146,25 @@ Once inside, the attacker may:
 
 🔑 **Key Idea**: Using secure protocols ensures that sensitive data (like passwords, payment info, or personal data) remains protected during transmission.
 
-## 🔢 TCP/UDP Port Ranges
+## 🔢 TCP/UDP Port Ranges with Examples
 
 Port numbers are categorized into three main ranges, as defined by **IANA**:
 
-| Range            | Name                  | Description | Examples |
-|------------------|-----------------------|-------------|----------|
-| **0 – 1023**     | Well-known ports      | Used by standard protocols that are part of the TCP/IP suite. Commonly referred to as **system ports**. | HTTP (80), HTTPS (443), DNS (53), SMTP (25) |
-| **1024 – 49151** | Registered ports      | Ports registered with IANA for specific applications or vendor software. | Microsoft SQL Server (1433), Oracle DB (1521) |
-| **49152 – 65535**| Dynamic / Private ports | Also called **ephemeral ports**. Assigned temporarily by applications for client connections. Not controlled by IANA. | Used by web browsers, custom apps, etc. |
+| Range            | Name                  | Description | Common Examples |
+|------------------|-----------------------|-------------|-----------------|
+| **0 – 1023**     | Well-known ports      | Standard services and protocols. Also called **system ports**. | - **20/21** FTP (File Transfer Protocol)<br>- **22** SSH (Secure Shell)<br>- **23** Telnet<br>- **25** SMTP (Email)<br>- **53** DNS (Domain Name System)<br>- **67/68** DHCP (Dynamic Host Config)<br>- **80** HTTP (Web)<br>- **110** POP3 (Email)<br>- **143** IMAP (Email)<br>- **161** SNMP (Network Management)<br>- **443** HTTPS (Secure Web)<br>- **3389** RDP (Remote Desktop) |
+| **1024 – 49151** | Registered ports      | Assigned to vendor-specific or widely used applications. | - **1433** Microsoft SQL Server<br>- **1521** Oracle Database<br>- **2049** NFS (Network File System)<br>- **2082/2083** cPanel admin<br>- **3306** MySQL Database<br>- **3389** (sometimes registered for RDP)<br>- **3690** Subversion (SVN)<br>- **5432** PostgreSQL<br>- **5900** VNC (Virtual Network Computing)<br>- **8080** HTTP Alternative (often web apps) |
+| **49152 – 65535**| Dynamic / Private ports | **Ephemeral ports**, used temporarily by client applications for outbound connections. Not registered with IANA. | - A web browser connecting to HTTPS might use a random port like **49160** → server **443**<br>- Skype / Zoom dynamically allocate ports<br>- Online games use these for peer-to-peer connections<br>- BitTorrent clients often bind to dynamic ports |
 
 ---
 
 ### 🔑 Key Notes:
-- **Secure vs. Nonsecure Ports**  
-  - HTTPS (443) = Secure  
-  - HTTP (80) = Nonsecure  
-- While common services use standard ports, **any service can technically run on any port**.  
-- **Ephemeral ports** are created for a short period (e.g., when your browser connects to a website, it uses one).  
-
-
+- **Well-known ports** are fixed and universally recognized.  
+- **Registered ports** may vary but are often standardized by vendors.  
+- **Dynamic/private ports** are chosen by the OS when a client initiates a connection.  
+- Example:  
+  - Client (ephemeral port `49160`) → Server (`443` HTTPS).  
+  - When session ends, the ephemeral port is released.  
 
 
 Thanks
