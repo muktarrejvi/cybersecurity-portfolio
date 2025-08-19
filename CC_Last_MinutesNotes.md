@@ -146,6 +146,26 @@ Once inside, the attacker may:
 
 🔑 **Key Idea**: Using secure protocols ensures that sensitive data (like passwords, payment info, or personal data) remains protected during transmission.
 
+## 🔢 TCP/UDP Port Ranges
+
+Port numbers are categorized into three main ranges, as defined by **IANA**:
+
+| Range            | Name                  | Description | Examples |
+|------------------|-----------------------|-------------|----------|
+| **0 – 1023**     | Well-known ports      | Used by standard protocols that are part of the TCP/IP suite. Commonly referred to as **system ports**. | HTTP (80), HTTPS (443), DNS (53), SMTP (25) |
+| **1024 – 49151** | Registered ports      | Ports registered with IANA for specific applications or vendor software. | Microsoft SQL Server (1433), Oracle DB (1521) |
+| **49152 – 65535**| Dynamic / Private ports | Also called **ephemeral ports**. Assigned temporarily by applications for client connections. Not controlled by IANA. | Used by web browsers, custom apps, etc. |
+
+---
+
+### 🔑 Key Notes:
+- **Secure vs. Nonsecure Ports**  
+  - HTTPS (443) = Secure  
+  - HTTP (80) = Nonsecure  
+- While common services use standard ports, **any service can technically run on any port**.  
+- **Ephemeral ports** are created for a short period (e.g., when your browser connects to a website, it uses one).  
+
+
 
 
 Thanks
