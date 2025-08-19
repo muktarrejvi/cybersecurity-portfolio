@@ -130,5 +130,23 @@ Once inside, the attacker may:
 
 📘 *Source: CC Certified in Cybersecurity All-in-One Exam Guide by Steven Bennett*
 
+## 🔒 Secure Protocols
+
+- **Definition**: Protocols that **encrypt data** while it is being transmitted across a network.  
+- **Purpose**: To protect the **confidentiality** and **integrity** of data in transit, preventing interception or tampering.  
+
+### ✅ Examples of Secure Protocols
+- **HTTPS** → Secure web browsing (encrypted HTTP).  
+- **SSH** → Secure remote login and command execution.  
+- **TLS/SSL** → Provides encryption for various applications (web, email, VoIP).  
+- **SFTP/FTPS** → Secure file transfer.  
+- **IPSec** → Encrypts and authenticates IP packets.  
+
+---
+
+🔑 **Key Idea**: Using secure protocols ensures that sensitive data (like passwords, payment info, or personal data) remains protected during transmission.
+
+
+
 Thanks
 
