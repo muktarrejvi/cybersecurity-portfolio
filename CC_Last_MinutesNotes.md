@@ -166,6 +166,37 @@ Port numbers are categorized into three main ranges, as defined by **IANA**:
   - Client (ephemeral port `49160`) → Server (`443` HTTPS).  
   - When session ends, the ephemeral port is released.  
 
+## 🌐 OSI Model: Application & Presentation Layers
+
+### Application Layer (Layer 7)
+- **Note**: "Application" here refers to **protocols used by applications**, not the apps themselves.  
+- **Function**: Provides services that allow user applications (like browsers or email clients) to communicate over a network.  
+- **Common Protocols**:  
+  - DNS → Domain Name resolution  
+  - FTP / SFTP → File transfers  
+  - SNMP → Network management  
+  - Telnet & SSH → Remote access  
+  - HTTP / HTTPS → Web communication  
+  - LDAP → Directory services  
+- **Data Unit**: `Data` (same for Layers 5–7)
+
+---
+
+### Presentation Layer (Layer 6)
+- **Function**: Ensures data is in a usable **format** for both sender and receiver.  
+  - Translates data between application and network formats.  
+  - Handles encryption, compression, and encoding.  
+- **Example**:  
+  - A computer saves an image in **TIFF** or **JPEG**.  
+  - The receiving system interprets the format correctly so the image can be opened.  
+- **Protocols**: None directly – this layer focuses on **data representation**.
+
+---
+
+🔑 **Key Difference**:  
+- **Layer 7 (Application)** = *Communication protocols* (HTTP, DNS, SSH, etc.)  
+- **Layer 6 (Presentation)** = *Data translation & formatting* (encryption, compression, encoding).
+
 
 Thanks
 
