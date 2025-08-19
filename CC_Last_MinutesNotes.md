@@ -26,7 +26,7 @@ Verifies **who** someone is using one or more factors:
 ---
 
 ### ✍️ Nonrepudiation
-- Guarantees that a sender **cannot deny** sending a message.
+- Guarantees that a sender **cannot deny** sending a message
 - Achieved through methods like **digital signatures**.
 
 ---
