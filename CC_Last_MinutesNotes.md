@@ -181,21 +181,24 @@ Port numbers are categorized into three main ranges, as defined by **IANA**:
 - **Data Unit**: `Data` (same for Layers 5–7)
 
 ---
+# 🌐 OSI Model – 7 Layers Summary
 
-### Presentation Layer (Layer 6)
-- **Function**: Ensures data is in a usable **format** for both sender and receiver.  
-  - Translates data between application and network formats.  
-  - Handles encryption, compression, and encoding.  
-- **Example**:  
-  - A computer saves an image in **TIFF** or **JPEG**.  
-  - The receiving system interprets the format correctly so the image can be opened.  
-- **Protocols**: None directly – this layer focuses on **data representation**.
+| Layer | Name            | Main Function                                                                 | Examples of Protocols / Technologies     | Data Unit |
+|-------|-----------------|-------------------------------------------------------------------------------|------------------------------------------|-----------|
+| 7     | **Application** | Provides services to applications for network communication.                  | HTTP, HTTPS, DNS, FTP, SFTP, LDAP, SNMP  | Data      |
+| 6     | **Presentation**| Translates, encrypts, compresses data so it can be properly understood.       | JPEG, PNG, GIF, MP3, TLS/SSL (encryption)| Data      |
+| 5     | **Session**     | Establishes, manages, and terminates sessions between applications.           | NetBIOS, RPC, PPTP, SQL session handling | Data      |
+| 4     | **Transport**   | Ensures reliable delivery, error checking, flow control, segmentation.        | TCP, UDP, SCTP                            | Segments  |
+| 3     | **Network**     | Determines best path, logical addressing, routing of packets.                 | IP, ICMP, IPsec, RIP, OSPF, BGP          | Packets   |
+| 2     | **Data Link**   | Provides node-to-node delivery, physical addressing (MAC), error detection.   | Ethernet, PPP, Switches, ARP, Frame Relay| Frames    |
+| 1     | **Physical**    | Transmits raw bits over a physical medium (cables, signals, voltages).        | Cables, Hubs, Wi-Fi (radio waves), Fiber | Bits      |
 
 ---
 
-🔑 **Key Difference**:  
-- **Layer 7 (Application)** = *Communication protocols* (HTTP, DNS, SSH, etc.)  
-- **Layer 6 (Presentation)** = *Data translation & formatting* (encryption, compression, encoding).
+### 🔑 Quick Memory Aids
+- **Top-down data unit flow**: Data → Segments → Packets → Frames → Bits  
+- **Mnemonic (Layer 7 → Layer 1)**: *"All People Seem To Need Data Processing"*  
+- **Mnemonic (Layer 1 → Layer 7)**: *"Please Do Not Throw Sausage Pizza Away"*
 
 
 Thanks
