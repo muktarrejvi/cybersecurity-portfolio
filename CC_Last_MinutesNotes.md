@@ -200,6 +200,14 @@ Port numbers are categorized into three main ranges, as defined by **IANA**:
 - **Mnemonic (Layer 7 → Layer 1)**: *"All People Seem To Need Data Processing"*  
 - **Mnemonic (Layer 1 → Layer 7)**: *"Please Do Not Throw Sausage Pizza Away"*
 
+# 🌐 Network Fundamentals Summary
+
+### Key Points
+- **LAN (Local Area Network)** and **WAN (Wide Area Network)** are the main network types.  
+- Networks can be **wired** (cables) or **wireless** (Wi-Fi, Bluetooth, NFC).  
+- Devices use **MAC addresses** (hardware) and **IP addresses** (logical).  
+- **OSI Model** has 7 layers; **TCP/IP Model** has 4 layers.  
+- Two versions of IP: **IPv4** and **IPv6**.  
 
 Thanks
 
