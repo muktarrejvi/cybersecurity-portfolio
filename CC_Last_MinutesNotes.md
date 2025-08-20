@@ -209,5 +209,28 @@ Port numbers are categorized into three main ranges, as defined by **IANA**:
 - **OSI Model** has 7 layers; **TCP/IP Model** has 4 layers.  
 - Two versions of IP: **IPv4** and **IPv6**.  
 
+## 🚨 Network Threats and Attacks – Summary
+
+### 🔹 Common Attack Categories
+- **Malware** – Viruses, trojans, worms, botnets, ransomware, rootkits.  
+- **Scripting Attacks** – Buffer overflows, XSS (cross-site scripting), HTTP response splitting, SQL injection, timing/race conditions.  
+- **Social Engineering** – Tricks users into actions that harm security (e.g., phishing, spear phishing).  
+- **Password Attacks** – Methods include social engineering, phishing, brute force, dictionary attacks, rainbow tables.  
+- **Man-in-the-Middle (MitM)** – Criminals intercept and manipulate communication between two parties.  
+
+### 🔹 Additional Threats
+- **Backdoors** – Hidden ways to bypass normal authentication or access.  
+- **Exfiltration** – Unauthorized transfer of data out of a system.  
+- **Cyber Extortion** – Criminals demand money or data in exchange for not causing harm.  
+- **Denial of Service (DoS/DDoS)** – Attacks that disrupt system **availability** by overwhelming resources.  
+
+---
+
+✅ **Key Idea**: Most attacks target the **CIA triad** (Confidentiality, Integrity, Availability).  
+- Malware & exfiltration → Confidentiality  
+- SQL injection & data modification → Integrity  
+- DoS/DDoS → Availability  
+
+
 Thanks
 
