@@ -53,7 +53,7 @@
 
 ### 🧾 Baselining
 - A **baseline** is a snapshot of system or application settings at a specific point in time.
-- Used to compare with the current state to detect **unauthorized or unexpected changes**.
+- Used to compare with the current state to detect **unauthorized or unexpected changes**
 - Helps ensure **system integrity**.
 
 ---
