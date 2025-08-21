@@ -48,7 +48,7 @@ Verifies **who** someone is using one or more factors:
 ---
 
 ### 🌐 Fake Websites
-- Used to **harvest sensitive information**, such as login credentials or personal data.
+- Used to **harvest sensitive information**, such as login credentials or personal data
 - Common in phishing campaigns.
 
 ---
