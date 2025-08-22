@@ -14,7 +14,7 @@
 
 - **Recovery Controls**  
   **Respond to and remediate** incidents after they happen.  
-  📌 *Example:* Restoring data from backups post-ransomware attack.
+  📌 *Example:* Restoring data from backups post-ransomware attack
 
 ---
 
