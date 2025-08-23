@@ -231,6 +231,35 @@ Port numbers are categorized into three main ranges, as defined by **IANA**:
 - SQL injection & data modification → Integrity  
 - DoS/DDoS → Availability  
 
+## 🔐 Quick Review – Data Lifecycle & Encryption
+
+### 📂 Data Lifecycle
+1. **Creation** – Data is generated or collected.  
+2. **Storage** – Data is stored securely.  
+3. **Usage** – Data is actively used by applications or users.  
+4. **Sharing** – Data is transmitted or made available to others.  
+5. **Archival** – Data is stored long-term but rarely accessed.  
+6. **Destruction** – Data is securely deleted when no longer needed.  
+
+---
+
+### 🔑 Encryption Concepts
+- **Encryption** – Converts plaintext ➝ ciphertext (unreadable format).  
+- **Decryption** – Converts ciphertext ➝ plaintext (readable format).  
+
+#### Types of Encryption:
+- **Symmetric Encryption**  
+  - Same key used for **encryption and decryption**.  
+  - Faster, but key distribution is challenging.  
+
+- **Asymmetric Encryption**  
+  - Uses a **public key** (shareable) and a **private key** (kept secret).  
+  - More secure for key exchange, but computationally slower.  
+
+---
+
+
+
 
 Thanks
 
