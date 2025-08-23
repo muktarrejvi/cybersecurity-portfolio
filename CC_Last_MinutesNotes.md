@@ -258,6 +258,9 @@ Port numbers are categorized into three main ranges, as defined by **IANA**:
 
 ---
 
+✅ **Key Idea**:  
+- **Symmetric = One Key** (fast, efficient, but less secure for sharing).  
+- **Asymmetric = Two Keys** (secure sharing, slower performance).  
 
 
 
