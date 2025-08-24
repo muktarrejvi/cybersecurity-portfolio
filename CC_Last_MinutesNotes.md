@@ -262,6 +262,34 @@ Port numbers are categorized into three main ranges, as defined by **IANA**:
 - **Symmetric = One Key** (fast, efficient, but less secure for sharing).  
 - **Asymmetric = Two Keys** (secure sharing, slower performance).  
 
+## 🔎 Key Cybersecurity Terms
+
+- **Event**  
+  An occurrence of an activity on an information system.  
+
+- **Incident**  
+  One or more events that **jeopardize confidentiality, integrity, or availability (CIA)** of an asset.  
+  - If it results in unauthorized access, it may be called a **breach, intrusion, or compromise**.  
+
+- **Exploit**  
+  An action, program, or tool that takes advantage of a system **vulnerability**.  
+
+- **Threat**  
+  An event with the potential to **damage the organization**.  
+  - Examples: Cyberattack, social engineering, natural disaster, physical intrusion.  
+
+- **Threat Actors**  
+  Individuals or groups that can damage the organization.  
+  - Examples: Hackers, cyber criminals, insider threats.  
+
+- **Vulnerability**  
+  A weakness that can be exploited by a threat actor.  
+  - **Zero-day**: A vulnerability not yet widely known or patched.  
+
+---
+
+✅ **Key Point:**  
+- **Threat actor** uses an **exploit** to take advantage of a **vulnerability**, causing an **incident** that impacts CIA.
 
 
 Thanks
