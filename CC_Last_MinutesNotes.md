@@ -16,7 +16,7 @@ Verifies **who** someone is using one or more factors:
 
 - **Type 1:** Something you know (e.g., password)
 - **Type 2:** Something you have (e.g., smart card)
-- **Type 3:** Something you are (e.g., fingerprint)
+- **Type 3:** Something you are (e.g., fingerprint).
 
 ---
 
