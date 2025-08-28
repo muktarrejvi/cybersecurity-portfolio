@@ -2,7 +2,7 @@
 
 ---
 
-### 🔺 CIA Triad .
+### 🔺 CIA Triad
 Security is built around three core principles:
 
 - **Confidentiality** – Protecting the secrecy of information.
