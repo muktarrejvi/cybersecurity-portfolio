@@ -20,9 +20,6 @@
 
 ### ⚙️ Mechanisms of Security Controls
 
-- **Technical Controls**  
-  Utilize technology to enforce protection.  
-  🔹 *Examples:* Firewalls, encryption, antivirus.
 
 - **Administrative Controls**  
   Define **policies, processes, and procedures** to manage security.  
@@ -31,6 +28,11 @@
 - **Physical Controls**  
   Involve **tangible protections** in the real world.  
   🔹 *Examples:* Locks, CCTV cameras, security personnel.
+
+  
+- **Technical Controls**  
+  Utilize technology to enforce protection.  
+  🔹 *Examples:* Firewalls, encryption, antivirus.
 
 ---
 
