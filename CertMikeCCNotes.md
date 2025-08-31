@@ -115,7 +115,7 @@
   - Avoid **penalties**
   - Maintain **customer trust**
   - Protect **reputation**
-- Requires **cross-functional collaboration**, especially with **legal teams**, to manage and mitigate risk effectively.
+- Requires **cross-functional collaboration**, especially with **legal teams**, to manage and mitigate risk effectively
 
 
 
