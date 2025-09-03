@@ -1,8 +1,1 @@
-# 📡 Beacon Frames in Wi-Fi
-
-- **Beacon Frames** are **management frames** in Wi-Fi.  
-- They **periodically advertise** the network's existence.  
-- They can also include information that directs users to a **captive portal**.  
-
----
-
+Beacon Frames in Wi-Fi are management frames that periodically advertise the network's existence and can include information directing users to a captive portal.
