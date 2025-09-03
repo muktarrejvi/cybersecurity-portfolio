@@ -48,3 +48,46 @@ for patterns of multiple entries in quick succession is the most effective techn
 - **MOU** → Informal, non-binding, intent only.  
 - **Partnership Contract** → Full legal partnership agreement.  
 
+## 🌐 Types of VPNs
+
+---
+
+### A. Site-to-Site VPN
+- Connects **two entire networks** (e.g., branch office ↔ headquarters).  
+- Used by organizations with **multiple office locations**.  
+- Transparent to end users; traffic between sites is encrypted.  
+- Often configured on **routers or firewalls**.  
+
+---
+
+### B. Remote Access VPN
+- Allows **individual users** to securely connect to a private network.  
+- Example: Employees connecting to their company’s network from home.  
+- Requires **VPN client software** or built-in OS support.  
+
+---
+
+### C. SSL/TLS VPN
+- A type of **Remote Access VPN** that uses **SSL/TLS encryption**.  
+- Users connect via a **web browser** (no special client needed).  
+- Popular for secure access to **web applications, email, portals**.  
+- Easier to deploy compared to traditional VPNs.  
+
+---
+
+### D. Layer 2 Tunneling Protocol (L2TP) VPN
+- A VPN protocol that works at **Layer 2** (Data Link layer).  
+- Typically combined with **IPSec** for encryption (L2TP/IPSec).  
+- Provides strong security but can be **slower** due to double encapsulation.  
+- Supported natively by most operating systems.  
+
+---
+
+✅ **Quick Comparison**
+| VPN Type              | Best For                          | Notes |
+|-----------------------|------------------------------------|-------|
+| **Site-to-Site**      | Office-to-office secure links      | Configured on network devices |
+| **Remote Access**     | Individual employee connections    | Requires client or OS support |
+| **SSL/TLS VPN**       | Web-based secure access            | Works via browser, user-friendly |
+| **L2TP/IPSec VPN**    | Secure tunneling with encryption   | Strong security, more overhead |
+
