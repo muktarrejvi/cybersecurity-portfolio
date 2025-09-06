@@ -7,7 +7,7 @@ Security is built around three core principles:
 
 - **Confidentiality** – Protecting the secrecy of information.
 - **Integrity** – Ensuring data is accurate, complete, and unaltered.
-- **Availability** – Ensuring information is accessible when needed.
+- **Availability** – Ensuring information is accessible when needed
 
 ---
 
