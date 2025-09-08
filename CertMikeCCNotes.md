@@ -97,7 +97,7 @@
 
 ---
 
-### 🇪🇺 GDPR – General Data Protection Regulation
+### 🇪🇺 GDPR – General Data Protection Regulation.
 - Enforced by the **European Union**, it applies to **all EU residents’ personal data**.
 - Even companies **outside the EU** must comply if they **handle EU citizen data**.
 - Emphasizes **user consent**, **data protection**, and **the right to be forgotten**.
