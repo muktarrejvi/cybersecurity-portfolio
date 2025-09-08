@@ -79,7 +79,7 @@
 
 ### 📊 Artifacts
 - Create **diagrams, maps, and documentation** to visualize system design and configuration.
-- Useful for:
+- Useful for:-
   - **Troubleshooting**
   - **Security audits**
   - **Incident response**
