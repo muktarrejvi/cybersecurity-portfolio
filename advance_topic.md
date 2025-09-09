@@ -123,3 +123,14 @@ for patterns of multiple entries in quick succession is the most effective techn
   - Patch levels  
   - Security configurations  
 - **Purpose**: Ensure only **secure, compliant devices** connect to the network.  
+
+
+
+## ⚙️ Standard Security Templates
+
+- Applied via **automated deployment scripts**.  
+- Ensure all servers follow **predefined security policies**.  
+- Benefits:
+  - **Consistency** in configuration  
+  - Easier **compliance** with regulations  
+  - Reduces **human error**  
