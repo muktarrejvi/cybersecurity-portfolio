@@ -153,4 +153,25 @@ for patterns of multiple entries in quick succession is the most effective techn
 
 - **(C) Spanning Tree Protocol (STP)**  
   - Prevents **Layer 2 loops**, provides some redundancy.  
-  - Less comprehensive than **active-passive failover**.  
+  - Less comprehensive than **active-passive failover**.
+  - 
+
+
+  ## 🛰️ Command and Control (C2) Communication
+
+- **C2 Communication (Correct)**  
+  - Increased outbound traffic to an external server.  
+  - Compromised systems communicate with attacker’s server for **instructions or data exfiltration**.  
+
+- **(A) DDoS ❌**  
+  - Overwhelms a target with traffic.  
+  - Not traffic to a single external server.  
+
+- **(C) Phishing ❌**  
+  - Deceptive emails/websites to steal information.  
+  - Not unusual traffic patterns.  
+
+- **(D) XSS ❌**  
+  - Injects malicious scripts into web pages.  
+  - Runs on client-side, not external server communication.  
+
