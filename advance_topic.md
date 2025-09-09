@@ -134,3 +134,23 @@ for patterns of multiple entries in quick succession is the most effective techn
   - **Consistency** in configuration  
   - Easier **compliance** with regulations  
   - Reduces **human error**  
+
+
+
+## 🔄 Redundancy & Failover Concepts
+
+- **(D) Active-Passive Failover**  
+  - Secondary device takes over if primary fails.  
+  - Ensures **continuous network operations**. ✅ Best for critical devices.  
+
+- **(A) SPOF Mitigation**  
+  - Identify & remove **Single Points of Failure**.  
+  - Improves resilience but does not define redundancy method.  
+
+- **(B) Network Segmentation**  
+  - Divides network into zones for **security & performance**.  
+  - Not a redundancy solution.  
+
+- **(C) Spanning Tree Protocol (STP)**  
+  - Prevents **Layer 2 loops**, provides some redundancy.  
+  - Less comprehensive than **active-passive failover**.  
