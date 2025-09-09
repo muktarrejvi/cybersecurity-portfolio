@@ -106,3 +106,9 @@ for patterns of multiple entries in quick succession is the most effective techn
 - **Key Point**:  
   Unlike worms (which spread automatically), viruses **depend on host files** and usually need **human interaction** to propagate.
 
+## 📡 Malware Beaconing
+
+- Workstations connect **periodically** to a **malicious IP**.  
+- Sends **small data packets** to a **Command & Control (C2) server**.  
+- Purpose: Get **instructions**, send **status updates**, or exfiltrate data.  
+- **Indicator**: Regular outbound connections to suspicious domains/IPs.  
