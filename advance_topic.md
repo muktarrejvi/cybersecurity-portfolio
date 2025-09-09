@@ -112,3 +112,14 @@ for patterns of multiple entries in quick succession is the most effective techn
 - Sends **small data packets** to a **Command & Control (C2) server**.  
 - Purpose: Get **instructions**, send **status updates**, or exfiltrate data.  
 - **Indicator**: Regular outbound connections to suspicious domains/IPs.  
+
+
+## 🛡️ Posture Validation Server (NAC)
+
+- Part of **Network Access Control (NAC)**.  
+- **Function**: Checks device compliance with security policies before allowing access.  
+- Validates:
+  - Antivirus status  
+  - Patch levels  
+  - Security configurations  
+- **Purpose**: Ensure only **secure, compliant devices** connect to the network.  
