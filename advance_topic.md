@@ -91,3 +91,18 @@ for patterns of multiple entries in quick succession is the most effective techn
 | **SSL/TLS VPN**       | Web-based secure access            | Works via browser, user-friendly |
 | **L2TP/IPSec VPN**    | Secure tunneling with encryption   | Strong security, more overhead |
 
+
+## 🦠 Virus – Characteristics
+
+- A **virus** is a type of malware that:
+  - **Attaches itself to executable files or programs**.
+  - **Replicates** by spreading to other files and systems.
+  - Often requires **user action** (e.g., running an infected file) to activate.  
+
+- **Spread Mechanism**:
+  - Via **file sharing**, **email attachments**, or **infected software**.
+  - Once executed, the virus may spread across a **local network** or the internet.  
+
+- **Key Point**:  
+  Unlike worms (which spread automatically), viruses **depend on host files** and usually need **human interaction** to propagate.
+
