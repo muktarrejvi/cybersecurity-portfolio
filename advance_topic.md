@@ -175,3 +175,7 @@ for patterns of multiple entries in quick succession is the most effective techn
   - Injects malicious scripts into web pages.  
   - Runs on client-side, not external server communication.  
 
+## 📊 Standardizing Data Protection Practices
+
+- **Correct:** Ensures sensitive data is consistently protected per org. policies → reduces risk of breaches.  
+- **Option A (❌):** Too broad — cannot guarantee compliance with all international regulations.  
