@@ -179,3 +179,10 @@ for patterns of multiple entries in quick succession is the most effective techn
 
 - **Correct:** Ensures sensitive data is consistently protected per org. policies → reduces risk of breaches.  
 - **Option A (❌):** Too broad — cannot guarantee compliance with all international regulations.  
+
+
+## ⚙️ Automated Configuration Management Tools
+
+- Ensure consistent configuration across all systems  
+- Reduce human error  
+ 
