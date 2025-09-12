@@ -188,3 +188,12 @@ for patterns of multiple entries in quick succession is the most effective techn
 - Enforce baseline security policies automatically  
 - Detect and correct configuration deviations  
 
+## 🔥 Stateful (Dynamic) Packet-Filtering Firewall
+- Tracks state of active connections  
+- Allows only packets from established, authorized sessions  
+- More secure than simple packet filters  
+
+**Not:**
+- **Bastion Host:** Just a hardened system  
+- **VPN:** Creates secure tunnels, not a firewall  
+- **Proxy Filter:** Works at application layer, doesn’t track session states  
