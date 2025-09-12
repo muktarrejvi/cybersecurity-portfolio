@@ -185,4 +185,6 @@ for patterns of multiple entries in quick succession is the most effective techn
 
 - Ensure consistent configuration across all systems  
 - Reduce human error  
- 
+- Enforce baseline security policies automatically  
+- Detect and correct configuration deviations  
+
