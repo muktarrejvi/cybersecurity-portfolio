@@ -291,6 +291,6 @@ Port numbers are categorized into three main ranges, as defined by **IANA**:
 ✅ **Key Point:**  
 - **Threat actor** uses an **exploit** to take advantage of a **vulnerability**, causing an **incident** that impacts CIA.
 
-
+Hi Thanks
 
 
