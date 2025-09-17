@@ -5,3 +5,6 @@ I have Practiced the followings
 1. CCT Hands-on
 2. TryHackMe
 3. HackTheBox
+
+Certification:
+1. Certified in Cybersecurity (ISC2)
