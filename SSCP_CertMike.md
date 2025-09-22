@@ -49,3 +49,18 @@
 ---
 
 ✅ These principles — Privacy Compliance, Employee Privacy, and Ethics — form the foundation of **trust, professionalism, and accountability** in cybersecurity practice.  
+## 🖥️ Physical Asset Management
+
+### Key Points
+- **Responsibility** – Cybersecurity teams often oversee the **physical security of technology resources**, as loss/theft can lead to major financial and data breaches.  
+- **Inventory Process** – A strong physical security program begins with accurate **hardware inventory**.  
+  - Track hardware from ordering → receiving → deployment → reassignment → decommissioning.  
+  - Include details like **serial numbers** and **custody changes**.  
+- **Integration** – Inventory should be tied to **provisioning and decommissioning processes**.  
+- **Asset Management Systems** – Commonly used to track devices; may be standalone or part of **IT service management platforms**.  
+- **Automation** – Some systems correlate inventory records with devices active on the network, flagging inconsistencies.  
+- **Media Management** – Sensitive data storage media (e.g., disks, tapes) should be tracked and protected, even if not all media can realistically be managed.  
+
+---
+
+✅ Maintaining an accurate, up-to-date asset inventory reduces the risk of **loss, theft, or misuse** of organizational resources.  
