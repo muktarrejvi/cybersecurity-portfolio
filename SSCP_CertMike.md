@@ -189,3 +189,47 @@
 ---
 
 ✅ A strong **data security strategy** protects sensitive information across all states, while adapting controls to new challenges like **big data environments**.  
+## 📝 Data Security Policies
+
+### Role of Policies
+- Provide **foundational authority** for security efforts and compliance.  
+- Set **clear expectations** for data protection and control usage.  
+- Guide **data access processes** for business needs.  
+- Define **exception procedures** for unique business requirements.  
+
+---
+
+### 🔑 Key Policy Areas
+
+1. **Data Classification Policies**  
+   - Define **sensitivity & criticality levels** of data.  
+   - Basis for handling requirements and protection measures.  
+
+2. **Data Storage Policies**  
+   - Approved storage locations by classification level.  
+   - Access control requirements & enforcement mechanisms.  
+   - Encryption requirements (e.g., encryption mandatory for cloud storage or laptops, optional for in-house servers).  
+
+3. **Data Transmission Policies**  
+   - Rules for transmitting data across different networks.  
+   - Mandatory encryption for sensitive information in transit.  
+   - Restrictions on sending sensitive data outside corporate networks.  
+
+4. **Data Lifecycle Policies**  
+   - **Retention Policies**  
+     - Define minimum retention (e.g., 7 years for tax records).  
+     - Define maximum retention (e.g., retain card data only until transaction completion).  
+   - **Disposal Policies**  
+     - Secure wiping of storage media before recycling/disposal.  
+     - Techniques include:  
+       - Software tools (e.g., DBAN).  
+       - Hardware methods (magnetic degaussers, shredders).  
+     - Addresses **data remnants** risk (deleted files may still be recoverable).  
+
+---
+
+### ✅ Takeaway
+Strong **data security policies**:  
+- Ensure consistent data protection.  
+- Reduce risk exposure.  
+- Provide a solid foundation for regulatory compliance and organizational security.  
