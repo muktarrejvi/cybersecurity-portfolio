@@ -233,3 +233,51 @@ Strong **data security policies**:
 - Ensure consistent data protection.  
 - Reduce risk exposure.  
 - Provide a solid foundation for regulatory compliance and organizational security.  
+
+## 👥 Data Security Roles
+
+### 📌 Data Governance Model (Four-Tier Structure)
+1. **Data Owner (a.k.a. Data Controller under GDPR)**  
+   - Senior-level official with overall responsibility for a dataset.  
+   - Defines policies and guidelines for data use/security.  
+   - Makes final decisions on data handling.  
+   - Example: VP of HR = Data Owner for employee data.  
+
+2. **Data Steward**  
+   - Implements the policies set by the Data Owner.  
+   - Handles day-to-day governance (e.g., who can access data).  
+   - Reports to the Data Owner.  
+   - Example: Director of HR Information Services.  
+
+3. **Data Custodian**  
+   - IT staff/system administrators who manage data storage and processing.  
+   - Ensure backups, encryption, access controls, compliance.  
+   - Rarely make policy decisions but enforce protections.  
+
+4. **Data User**  
+   - Employees (analysts, managers, service staff) who interact with data daily.  
+   - Must comply with rules set by owners/stewards.  
+   - Responsible for avoiding unauthorized disclosure.  
+
+---
+
+### 🌍 External Roles
+- **Data Subjects**  
+  - The individuals described in collected data (e.g., employees, customers).  
+  - Not part of governance structure but hold privacy rights.  
+
+- **Data Processors**  
+  - Third parties handling data on behalf of the organization.  
+  - Perform tasks like data entry, analysis, transmission, or destruction.  
+  - Must follow policies/security requirements set by Data Owner/Controller.  
+
+---
+
+### ⚠️ Key Distinction
+- **System Owner ≠ Data Owner**  
+  - Owning IT infrastructure does not mean owning the data stored/processed within it.  
+  - Important for internal governance and inter-organizational data sharing.  
+
+---
+
+✅ Strong data governance requires coordination between **owners, stewards, custodians, and users**, while respecting the rights of **data subjects** and enforcing policies with **processors**.  
