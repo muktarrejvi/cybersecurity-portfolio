@@ -30,3 +30,13 @@
 ---
 
 ✅ These principles and standards are essential for building a **robust privacy compliance program**.  
+## 🧑‍💼 Employee Privacy
+
+### Key Takeaways
+- **Minimization Principle** – Collect only the information necessary for employment and retain it only for valid business reasons.  
+- **Access Limitation** – Restrict access to sensitive employee data to the smallest possible group with a valid need-to-know.  
+- **Encryption & Masking** – Use encryption and masking to protect sensitive data and ensure it is not exposed unnecessarily.  
+
+---
+
+✅ Following these practices ensures strong protection of employee information and compliance with privacy requirements.  
