@@ -105,3 +105,40 @@
 ---
 
 ✅ Understanding licensing models ensures **legal compliance**, controls **software costs**, and supports **security governance**.  
+
+
+## 🔄 Change and Configuration Management
+
+### 📌 Change Management
+- **Purpose**: Ensure IT changes support business objectives without disrupting operations.  
+- **Process**: Standardized workflow for requesting, reviewing, approving, and implementing changes.  
+- **Request for Change (RFC)** includes:  
+  - Description of change  
+  - Expected impact  
+  - Risk assessment  
+  - Rollback plan  
+  - People involved  
+  - Schedule  
+  - Affected configuration items  
+- **Approval**:  
+  - Minor changes – approved by manager.  
+  - Major changes – reviewed by **Change Advisory Board (CAB)**.  
+  - Routine/pre-approved changes – automatically approved once RFC is submitted.  
+- **Communication**: Notify stakeholders (users, customers, technical staff) at the right time.  
+- **Audit Preparedness**: Provides paper trail for demonstrating compliance to auditors.  
+
+---
+
+### ⚙️ Configuration Management
+- **Purpose**: Track and control how systems are set up.  
+- **Scope**:  
+  - Operating system settings  
+  - Installed software inventory  
+- **Lifecycle**: From provisioning → ongoing updates → disposal.  
+- **Baselining**:  
+  - Capture a snapshot of a system at a specific point in time.  
+  - Compare against baseline to detect unauthorized or unintended changes.  
+
+---
+
+✅ Together, **Change Management** minimizes disruption from IT changes, while **Configuration Management** ensures systems remain secure and consistent throughout their lifecycle.  
