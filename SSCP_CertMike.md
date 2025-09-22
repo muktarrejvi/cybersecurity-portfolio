@@ -64,3 +64,44 @@
 ---
 
 ✅ Maintaining an accurate, up-to-date asset inventory reduces the risk of **loss, theft, or misuse** of organizational resources.  
+
+## 📜 Software Licensing
+
+### Importance
+- Software is valuable **intellectual property**.  
+- Protected by **license agreements** that define how it can be used.  
+
+---
+
+### 🔑 License Agreement Types
+1. **Enterprise License Agreements (ELAs)**  
+   - Negotiated contracts between vendor and customer.  
+   - Common for expensive enterprise software.  
+
+2. **End User License Agreements (EULAs)**  
+   - Standard agreements shown during software installation/setup.  
+   - Users must accept terms before using the software.  
+
+---
+
+### ⏳ License Duration
+- **Perpetual License** – One-time fee; use indefinitely (updates/support may cost extra).  
+- **Subscription License** – Recurring fee (monthly/annual); usually includes updates & support.  
+
+---
+
+### 👥 User Models
+- **Concurrent Use License** – Limits the number of simultaneous users.  
+- **Named User License** – Tied to specific individuals (via username/login).  
+
+---
+
+### 🌍 Distribution Models
+- **Closed Source (Proprietary)** – Licensed for a fee.  
+- **Freeware** – Free to use, sometimes with restrictions or reduced features.  
+- **Open Source** – Free to use, modify, and distribute (e.g., GPL, MIT License).  
+- **Cloud Service Licenses (SaaS)** – Agreements for online platforms (e.g., terms & conditions links).  
+
+---
+
+✅ Understanding licensing models ensures **legal compliance**, controls **software costs**, and supports **security governance**.  
