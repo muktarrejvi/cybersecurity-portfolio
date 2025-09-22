@@ -40,3 +40,20 @@
 ---
 
 ✅ Following these practices ensures strong protection of employee information and compliance with privacy requirements.  
+
+## ⚖️ Ethics
+
+### Key Points
+- **Codes of Professional Ethics** – Security professionals must follow ethical codes from bodies like (ISC)² and industry organizations.  
+- **(ISC)² Code of Ethics**  
+  - **Preamble** – Emphasizes high ethical standards to ensure safety and welfare of society.  
+  - **Four Canons**:  
+    1. Protect society, the common good, public trust, and infrastructure.  
+    2. Act honorably, honestly, justly, responsibly, and legally.  
+    3. Provide diligent and competent service to principals.  
+    4. Advance and protect the profession.  
+- **Consequences of Violations** – Breaches can result in certification revocation, and members are obligated to report violations.  
+
+---
+
+✅ Ethics serve as the foundation of professionalism in cybersecurity, guiding decisions and ensuring trust.  
