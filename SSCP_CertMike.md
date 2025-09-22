@@ -142,3 +142,50 @@
 ---
 
 ✅ Together, **Change Management** minimizes disruption from IT changes, while **Configuration Management** ensures systems remain secure and consistent throughout their lifecycle.  
+
+## 🔐 Understanding Data Security
+
+### Importance
+- Data is often an organization’s **most valuable asset**.  
+- Security professionals focus on ensuring **Confidentiality, Integrity, and Availability (CIA)**.  
+
+---
+
+### 📊 Data States & Risks
+1. **Data at Rest**  
+   - Stored on hard drives, USBs, cloud services, or backups.  
+   - Risks: Physical theft, unauthorized logical access.  
+   - Protection: File/device encryption, strong access controls.  
+
+2. **Data in Transit**  
+   - Moving across networks (e.g., credit card entered on a website).  
+   - Risks: Eavesdropping, interception.  
+   - Protection: TLS/SSL encryption, secure VPNs.  
+
+3. **Data in Use**  
+   - Actively processed in system memory.  
+   - Risks: Memory scraping, unauthorized process access.  
+   - Protection: Process isolation, memory protection techniques.  
+
+---
+
+### 🛡️ Protection Measures
+- **Policies & Procedures** – Define proper use of sensitive data and required controls.  
+- **Encryption** –  
+  - File/disk encryption for data at rest.  
+  - TLS for data in transit.  
+- **Access Controls** – File system ACLs to define who can view, modify, or delete data.  
+
+---
+
+### 📈 Big Data Considerations
+- Big data = very large datasets unsuitable for traditional relational databases.  
+- Uses **NoSQL technologies** (e.g., key-value stores).  
+- Security concerns:  
+  - Protecting **personally identifiable information (PII)**.  
+  - Ensuring proper access controls.  
+  - Securing distributed storage and analysis platforms.  
+
+---
+
+✅ A strong **data security strategy** protects sensitive information across all states, while adapting controls to new challenges like **big data environments**.  
