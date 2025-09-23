@@ -296,3 +296,22 @@ Strong **data security policies**:
 - **Control Failures**:  
   - False Positive – Alert without a real issue → reduces trust.  
   - False Negative – Missed detection → creates false sense of safety.  
+
+
+
+## 📚 Control & Risk Frameworks – Key Takeaways
+- **Purpose** – Provide structure for designing, implementing, and assessing security programs.  
+- **COBIT** – Focus on linking business goals to IT/security; strong audit use.  
+- **ISO Standards** –  
+  - ISO 27001: Security management systems.  
+  - ISO 27002: Specific security controls.  
+  - ISO 27701: Privacy management.  
+  - ISO 31000: Risk management.  
+- **NIST Frameworks** –  
+  - SP 800-53: Security & privacy controls (~500 pages).  
+  - Cybersecurity Framework (CSF): 6 functions → Govern, Identify, Protect, Detect, Respond, Recover (22 categories, subcategories).  
+  - SP 800-37: Risk Management Framework (integrates security/privacy into system lifecycle).  
+- **FedRAMP** – Centralized cloud service certification for US government.  
+- **SABSA** – Business-driven security architecture aligning security with organizational strategy.  
+
+✅ Frameworks = structured, repeatable way to ensure risks are managed and controls cover confidentiality, integrity, and availability.  
