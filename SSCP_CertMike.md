@@ -281,3 +281,18 @@ Strong **data security policies**:
 ---
 
 ✅ Strong data governance requires coordination between **owners, stewards, custodians, and users**, while respecting the rights of **data subjects** and enforcing policies with **processors**.  
+## 🛡️ Security Control Selection & Implementation – Key Takeaways
+- **Purpose of Controls** – Reduce likelihood, minimize impact, or detect security issues.  
+- **Types by Purpose**:  
+  - Preventive – Stop issues (e.g., firewalls).  
+  - Detective – Identify issues (e.g., IDS, alarms).  
+  - Corrective – Fix issues (e.g., backups).  
+  - Deterrent – Discourage attacks (e.g., warning signs, guard dogs).  
+- **Types by Mechanism**:  
+  - Technical – Firewalls, anti-malware, DLP, session timeouts.  
+  - Administrative – Policies, access reviews, training, audits.  
+  - Physical – Locks, cameras, mantraps.  
+- **Defense in Depth** – Layer multiple controls for the same objective.  
+- **Control Failures**:  
+  - False Positive – Alert without a real issue → reduces trust.  
+  - False Negative – Missed detection → creates false sense of safety.  
