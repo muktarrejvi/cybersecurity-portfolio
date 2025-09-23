@@ -425,3 +425,30 @@ Security professionals use a 4-part framework to provide clear guidance: **Polic
 - **Policies & Standards** → Always mandatory.  
 - **Guidelines** → Always optional.  
 - **Procedures** → May be mandatory or optional.  
+
+# 🚀 DevOps and DevSecOps
+
+## 🔑 DevOps
+- **Goal**: Bridge gap between **developers** (rapid releases) & **operations** (stability).  
+- **Philosophy**: Collaboration, open communication, automation.  
+- **Tied to**: Agile & **Continuous Integration (CI)** → frequent code releases (daily or even hundreds/day).  
+
+### Core Concept: **Infrastructure as Code (IaC)**
+- Servers/configurations managed via **scripts**, not manual changes.
+- **Advantages**:
+  - Scalability: Spin up many servers quickly.
+  - Reduced errors: Immutable servers (no manual login/config changes).
+  - Easy testing: Test environments spun up/destroyed easily.
+
+---
+
+## 🔐 DevSecOps
+- Extends DevOps by embedding **security into every phase** ("Security as Code").
+- **Security automation**: Testing, monitoring, compliance integrated into CI/CD pipeline.
+- Ensures stability, scalability, and **built-in security**.
+
+---
+
+## ✅ Exam Tip
+- **DevOps** = Dev + Ops collaboration, automation, IaC.  
+- **DevSecOps** = Same, but with **security integrated** into workflows.  
