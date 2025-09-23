@@ -298,20 +298,85 @@ Strong **data security policies**:
   - False Negative – Missed detection → creates false sense of safety.  
 
 
+# 🛡️ Control & Risk Frameworks – Detailed Summary
 
-## 📚 Control & Risk Frameworks – Key Takeaways
-- **Purpose** – Provide structure for designing, implementing, and assessing security programs.  
-- **COBIT** – Focus on linking business goals to IT/security; strong audit use.  
-- **ISO Standards** –  
-  - ISO 27001: Security management systems.  
-  - ISO 27002: Specific security controls.  
-  - ISO 27701: Privacy management.  
-  - ISO 31000: Risk management.  
-- **NIST Frameworks** –  
-  - SP 800-53: Security & privacy controls (~500 pages).  
-  - Cybersecurity Framework (CSF): 6 functions → Govern, Identify, Protect, Detect, Respond, Recover (22 categories, subcategories).  
-  - SP 800-37: Risk Management Framework (integrates security/privacy into system lifecycle).  
-- **FedRAMP** – Centralized cloud service certification for US government.  
-- **SABSA** – Business-driven security architecture aligning security with organizational strategy.  
+Security control and risk frameworks help organizations design, implement, and manage comprehensive security programs without starting from scratch. They ensure **coverage of risks** and **alignment with business goals**.
 
-✅ Frameworks = structured, repeatable way to ensure risks are managed and controls cover confidentiality, integrity, and availability.  
+---
+
+## 🔑 Major Frameworks
+
+### **COBIT (Control Objectives for Information and Related Technology)**
+- Published by ISACA.
+- Strong **audit focus** – widely used by auditors.
+- Links **business goals ↔ IT/security functions**.
+- Governance principles: stakeholder value, holistic approach, dynamic governance, separation of governance & management, tailoring to enterprise, end-to-end coverage.
+
+---
+
+### **ISO Standards**
+- **ISO 27001**: Information Security Management Systems (ISMS) – control objectives.  
+- **ISO 27002**: Detailed list of security controls (how to achieve 27001 objectives).  
+- **ISO 27701**: Privacy management (extension to 27001, privacy controls).  
+- **ISO 31000**: Risk management guidance – enterprise risk framework.  
+- **Use case**: Common worldwide; often required for compliance and certification.
+
+---
+
+### **NIST Publications**
+- **SP 800-53**: *Security and Privacy Controls for Information Systems*.  
+  - Mandatory for US federal agencies.  
+  - ~500 pages of detailed control catalogs.  
+- **Cybersecurity Framework (CSF)**:  
+  - 6 Core Functions → **Govern, Identify, Protect, Detect, Respond, Recover**.  
+  - 22 Categories → Asset management, risk assessment, etc.  
+  - Provides a **common language** for security discussions.  
+- **SP 800-37 (Risk Management Framework – RMF)**:  
+  - Integrates security/privacy into the **system development lifecycle**.  
+  - Risk management is **ongoing, adaptive, and iterative**.
+
+---
+
+### **FedRAMP (Federal Risk and Authorization Management Program)**
+- US Government cloud security certification program.  
+- Centralized certification for **cloud service providers (CSPs)**.  
+- Marketplace lists approved vendors.  
+- Saves time by reusing certifications across agencies.
+
+---
+
+### **SABSA (Sherwood Applied Business Security Architecture)**
+- Less common but business-oriented.  
+- **Top-down approach** – start with business requirements → security strategy → operational tactics.  
+- Ensures **security supports business goals**.  
+- Includes risk management to ensure proportional controls.
+
+---
+
+## 🧩 Control Types in Frameworks
+- **Preventive**: Stop attacks (e.g., firewall).  
+- **Detective**: Identify incidents (e.g., IDS/alarms).  
+- **Corrective**: Fix issues (e.g., restore from backup).  
+- **Deterrent**: Discourage attacks (e.g., warning signs, guards).  
+- **Mechanisms**: Technical, Administrative, Physical.  
+- **Defense-in-depth**: Multiple overlapping controls reduce risk of failure (false positives/negatives).
+
+---
+
+## 📊 Comparison Table
+
+| Framework  | Focus Area | Typical Use |
+|------------|------------|-------------|
+| **COBIT**  | Governance & audit | Align IT/security with business; audit assessments |
+| **ISO 27001/27002** | Security management & controls | Global certification, enterprise ISMS |
+| **ISO 27701** | Privacy management | GDPR & privacy compliance |
+| **ISO 31000** | Risk management | Enterprise-wide risk programs |
+| **NIST 800-53** | Security & privacy controls | US government, also private orgs |
+| **NIST CSF** | Cyber risk mgmt (6 functions) | Common language, high-level strategy |
+| **NIST 800-37** | Risk Management Framework | Integrate risk/security into lifecycle |
+| **FedRAMP** | Cloud service certification | US Gov CSP approval |
+| **SABSA** | Business-driven security | Aligning security architecture with strategy |
+
+---
+
+✅ **Key Point**: Frameworks provide structure, consistency, and assurance that risks are covered across confidentiality, integrity, and availability. They also support compliance, audits, and business alignment.
