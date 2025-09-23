@@ -380,3 +380,48 @@ Security control and risk frameworks help organizations design, implement, and m
 ---
 
 ✅ **Key Point**: Frameworks provide structure, consistency, and assurance that risks are covered across confidentiality, integrity, and availability. They also support compliance, audits, and business alignment.
+# 📘 Security Policy Framework
+
+Security professionals use a 4-part framework to provide clear guidance: **Policies, Standards, Guidelines, Procedures**.
+
+---
+
+## 🔑 Document Types
+
+### **1. Policies**
+- **Foundation** of the security program.
+- High-level, carefully written, approved by senior leadership.
+- Compliance = **mandatory**.
+- Should be **timeless** (avoid overly specific tech/location references).
+  - Example (Bad): "Encrypt with AES-256."
+  - Example (Good): "Encrypt sensitive data using IT-approved methods."
+
+---
+
+### **2. Standards**
+- Specific **technical/operational requirements**.
+- Derive authority from policies.
+- Compliance = **mandatory**.
+- Examples: Approved encryption protocols, storage locations, config parameters.
+- Often based on **CIS Benchmarks**, vendor configuration guides.
+
+---
+
+### **3. Guidelines**
+- **Best practices & recommendations**.
+- Compliance = **optional**.
+- Example: "Use encrypted Wi-Fi when possible, or use VPN as backup."
+
+---
+
+### **4. Procedures**
+- **Step-by-step instructions** for tasks.
+- Compliance: **depends on organization/procedure** (may be mandatory or optional).
+- Example: Incident response activation steps (text alert, start video conference, inform leadership).
+
+---
+
+## ✅ Exam Tip
+- **Policies & Standards** → Always mandatory.  
+- **Guidelines** → Always optional.  
+- **Procedures** → May be mandatory or optional.  
