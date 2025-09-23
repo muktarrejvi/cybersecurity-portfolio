@@ -12,7 +12,7 @@
   3. **Choice & Consent** – Collect, store, use, and share data only with consent.  
   4. **Collection** – Gather data only for disclosed purposes.  
   5. **Use, Retention & Disposal** – Use only for intended purposes and securely dispose when no longer needed.  
-  6. **Access** – Allow individuals to review/update their data.  
+  6. **Access** – Allow individuals to review/update their data.  .
   7. **Disclosure to Third Parties** – Share only with consent and for disclosed purposes.  
   8. **Security** – Protect data from unauthorized access.  
   9. **Quality** – Ensure accuracy, completeness, and relevance.  
