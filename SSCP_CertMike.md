@@ -452,3 +452,92 @@ Security professionals use a 4-part framework to provide clear guidance: **Polic
 ## ✅ Exam Tip
 - **DevOps** = Dev + Ops collaboration, automation, IaC.  
 - **DevSecOps** = Same, but with **security integrated** into workflows.  
+
+
+
+# 📊 Security Process Data, Reviews, Metrics, Audits & Control Management
+
+## 1. Collecting Security Process Data
+- **Types of data**:
+  - **Technical Data**: Logs from servers, firewalls, IDS/IPS, access control systems, etc.  
+    → Usually collected & analyzed via **SIEM systems**.  
+  - **Process Data**: Documentation supporting security processes (e.g., backup tests, account reviews, vulnerability scans).
+- **Why it matters**:
+  - Enables **regular evaluation** of security processes.  
+  - Provides **evidence for audits** (not just verbal assurances).  
+- **Example**: Tracking quarterly user account reviews in a Google Sheet with version history → prevents falsified records.
+
+---
+
+## 2. Management Review
+- **Purpose**:
+  - Double-check employee work for accuracy & completeness.  
+  - Reduce fraud/malfeasance via oversight.  
+- **Key areas of focus**:
+  - **Privileged Access Review**:  
+    - Monitor admin/system engineer actions.  
+    - Require RFCs (Request for Change) & VP approval for exceptions.  
+    - Manager verifies via logs (100% or sample-based).  
+  - **Account Management Review**:  
+    - Verify active accounts belong to current staff.  
+    - Check permissions are role-appropriate.  
+    - Validate changes (escalations, creations, revocations).  
+
+---
+
+## 3. Security Metrics
+- **Purpose**: Evaluate program effectiveness & risks over time.  
+- **Types**:
+  - **KPIs (Key Performance Indicators)** → Look backwards (past performance).  
+    - Examples: % decrease in breaches, time to implement new controls, # of security trainings conducted.  
+  - **KRIs (Key Risk Indicators)** → Look forward (future risk level).  
+    - Criteria (per ISACA): Business impact, Implementation effort, Reliability, Sensitivity.  
+- **Framework Reference**: ITIL framework (offers 9 suggested KPIs).  
+- **Key Use**: Provides leadership with clear visibility into program health.
+
+---
+
+## 4. Audits and Assessments
+- **Similarities**: Both evaluate security controls & recommend improvements.  
+- **Differences**:  
+  - **Assessment**: Informal, initiated by IT/security staff (self-check).  
+  - **Audit**: Formal, requested by execs/regulators, follows strict standards.  
+- **Examples**:
+  - **PCI DSS audit**:  
+    - Requirement: Encrypt/truncate/hash card numbers.  
+    - Auditor must:  
+      1. Examine documentation.  
+      2. Review data repositories/logs.  
+      3. Verify controls prevent reconstruction of card data.  
+- **Auditors**:
+  - **Internal**: Employed by org, but independent of audited unit.  
+  - **External**: Independent firms (Big 4: PwC, EY, Deloitte, KPMG).  
+- **Common Deliverables**:
+  - **Gap analysis** → roadmap for remediation.  
+  - **Attestation** → formal statement that controls are adequate & effective.  
+- **Routine Use**: Regular audits & assessments build trust & compliance readiness.
+
+---
+
+## 5. Control Management
+- **Routine Activities**:
+  - **Control Testing**: Continuous/automated checks (e.g., monitor firewall port changes).  
+  - **Exception Management**:  
+    - Formal process to request exceptions (documented justification, risks, mitigations).  
+    - Example: State of Washington exception request form.  
+  - **Remediation Plans**: Document corrective steps for failed/missing controls.  
+  - **Compensating Controls**: Alternative measures when exceptions are granted.  
+    - Must:  
+      1. Meet intent & rigor of original control.  
+      2. Provide equal defense level.  
+      3. Be **above & beyond** other controls (no double-counting).  
+    - Example: PCI DSS detailed compensating control process.  
+
+---
+
+## ✅ Key Takeaways
+- **Data collection** → enables evidence-based security validation.  
+- **Management reviews** → prevent errors & insider misuse.  
+- **Metrics (KPIs/KRIs)** → give measurable insight into performance & risk.  
+- **Audits/assessments** → ensure compliance & identify gaps.  
+- **Control management** → ensures security controls remain effective, exceptions are justified, and risks are managed with compensating measures.  
