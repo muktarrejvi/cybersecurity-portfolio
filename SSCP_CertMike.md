@@ -7,7 +7,7 @@
   - *Protected Health Information (PHI)*: Healthcare records (regulated under HIPAA).  
 
 - **Generally Accepted Privacy Principles (GAPP)**  
-  1. **Management** – Policies and governance for privacy protection.  
+  1. **Management** – Policies and governance for privacy protection.
   2. **Notice** – Inform individuals about data collection and privacy practices.  
   3. **Choice & Consent** – Collect, store, use, and share data only with consent.  
   4. **Collection** – Gather data only for disclosed purposes.  
