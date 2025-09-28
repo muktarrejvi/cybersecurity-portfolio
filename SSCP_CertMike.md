@@ -16,7 +16,7 @@
   7. **Disclosure to Third Parties** – Share only with consent and for disclosed purposes.  
   8. **Security** – Protect data from unauthorized access.  
   9. **Quality** – Ensure accuracy, completeness, and relevance.  
-  10. **Monitoring & Enforcement** – Monitor compliance and provide dispute resolution.  
+  10. **Monitoring & Enforcement** – Monitor compliance and provide dispute resolution. 
 
 - **ISO/IEC 27018**  
   - A code of practice for protecting PII in public cloud environments.  
