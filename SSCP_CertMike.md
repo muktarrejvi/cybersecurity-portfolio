@@ -9,7 +9,7 @@
 - **Generally Accepted Privacy Principles (GAPP)**  
   1. **Management** – Policies and governance for privacy protection.
   2. **Notice** – Inform individuals about data collection and privacy practices.  
-  3. **Choice & Consent** – Collect, store, use, and share data only with consent.  
+  3. **Choice & Consent** – Collect, store, use, and share data only with consent.
   4. **Collection** – Gather data only for disclosed purposes.  
   5. **Use, Retention & Disposal** – Use only for intended purposes and securely dispose when no longer needed.  
   6. **Access** – Allow individuals to review/update their data.  .
