@@ -44,7 +44,7 @@
 
 - **Consequences of Violations**  
   - Breaches can result in revocation of certification.  
-  - Members must report any violations they become aware of.  
+  - Members must report any violations they become aware of
 
 ---
 
