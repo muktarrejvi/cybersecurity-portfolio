@@ -2,7 +2,7 @@
 ## 🛡️ Professional Responsibility
 
 ### 🔒 Privacy Compliance
-- **PII & PHI**  
+- **PII & PHI** 
   - *Personally Identifiable Information (PII)*: Data linked to an individual.  
   - *Protected Health Information (PHI)*: Healthcare records (regulated under HIPAA).  
 
