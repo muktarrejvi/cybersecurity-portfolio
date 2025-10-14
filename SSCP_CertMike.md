@@ -19,7 +19,7 @@
   10. **Monitoring & Enforcement** – Monitor compliance and provide dispute resolution. 
 
 - **ISO/IEC 27018**  
-  - A code of practice for protecting PII in public cloud environments.  
+  - A code of practice for protecting PII in public cloud environments
 
 
 
