@@ -206,4 +206,95 @@ These are the **three essential steps** in access control:
 
 **Key Principle:** Network segmentation reduces risk; compromise of one zone does not expose entire network.
 
+# Authentication and Access Control Key Takeaways
+
+## 7. Third-Party Connections
+
+- **Interfaces for External Systems:**
+  - APIs, app extensions, middleware.
+  - Enable communication but introduce security challenges.
+- **Security Practices:**
+  - Secure coding, authentication & authorization mechanisms.
+  - Input validation and encryption of data in transit.
+  - Regular auditing and monitoring of APIs and middleware.
+- **Vendor Management:**
+  - Conduct due diligence before integrating third-party systems.
+  - Assess security practices, incident response, compliance.
+  - Include security expectations in contracts and SLAs.
+- **Goal:** Proactive management reduces risks and strengthens overall security posture.
+
+---
+
+## 8. Zero-Trust Network Architecture
+
+- **Concept:** Trust **individuals**, not networks.
+- **Shift from Traditional Security:** Traditional perimeter-based security relies on network location; zero trust relies on strong authentication per user.
+- **Key Components:**
+  - Identity and Access Management (IAM) as cornerstone.
+  - Continuous monitoring of user and network activity.
+  - SIEM systems for log aggregation & anomaly detection.
+  - SOAR platforms for automated incident response.
+  - Cloud Access Security Brokers (CASB) for consistent cloud security policies.
+  - Endpoint Detection & Response (EDR) for endpoint monitoring and automatic remediation.
+- **Benefit:** Minimizes risk from compromised endpoints and enforces consistent security across users and devices.
+
+---
+
+## 9. SAML (Security Assertion Markup Language)
+
+| Actor | Role |
+|-------|------|
+| Principal | End user requesting access |
+| Identity Provider (IdP) | Verifies user's identity |
+| Service Provider (SP) | Provides requested service |
+
+**SAML Workflow:**
+1. User requests access to SP resource.
+2. SP checks for logged-in session; if none, redirects to IdP.
+3. User authenticates to IdP (e.g., username/password, MFA).
+4. IdP issues security assertion for SP.
+5. SP validates assertion, establishes security context, and grants access.
+
+**Benefits:**
+- True Single Sign-On (SSO) experience.
+- SP authenticates user without accessing user password.
+
+---
+
+## 10. OAuth and OpenID Connect
+
+- **OAuth:** Authorization protocol, grants access permissions between services.
+- **OpenID Connect (OIDC):** Authentication layer on top of OAuth; allows user identity verification.
+- **Common Usage:** Logging into websites using Google, Facebook, LinkedIn, Amazon accounts.
+- **Example Workflow:**
+  1. User clicks "Sign in with LinkedIn" on third-party site.
+  2. OAuth session redirects to identity provider (LinkedIn).
+  3. User authenticates (username/password + MFA).
+  4. User redirected back to third-party site with access granted.
+- **Benefit:** Provides secure federated SSO without sharing passwords.
+
+---
+
+## 11. Device Authentication
+
+- **Digital Certificates:**
+  - Act as “something you have” factor.
+  - Authenticate users, devices, servers.
+  - Used in SSH connections, PKI smart cards, IEEE 802.1x network authentication.
+- **Key-Based Authentication (Public/Private Keys):**
+  - Private key kept secret; public key shared with server.
+  - SSH authentication: server sends challenge → user encrypts with private key → server verifies with public key.
+  - Allows automated server-to-server authentication without passwords.
+- **Certificate-Based Authentication:**
+  - Public key signed by trusted certificate authority.
+  - Confirms both possession of key and user/device identity.
+- **MAC Address Authentication:**
+  - Uses hardware MAC address for identification.
+  - **Limitation:** Easily spoofed; not considered secure.
+- **Practical Example (SSH on AWS EC2):**
+  - Generate key pair (public/private).
+  - Store public key on server, private key locally.
+  - Use SSH with private key to authenticate.
+  - Set restrictive permissions on private key for security (`chmod 0600`).
+
 
