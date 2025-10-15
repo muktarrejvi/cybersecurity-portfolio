@@ -297,4 +297,86 @@ These are the **three essential steps** in access control:
   - Use SSH with private key to authenticate.
   - Set restrictive permissions on private key for security (`chmod 0600`).
 
+## 12. Account and Privilege Management
+
+### Account Management Principles
+- **Least Privilege:** Users get only the permissions needed for their role.
+- **Separation of Duties:** Sensitive actions require collaboration between multiple individuals.
+- **Job Rotation & Mandatory Vacation:** Reduces fraud risk by rotating roles and enforcing absence.
+- **Naming Conventions:** Standardized account names help tie accounts to real identities.
+- **Account Lifecycle Management:**
+  - Provisioning: Grant new users correct access.
+  - Modifying: Adjust permissions when roles change.
+  - Recertification: Review and remove unnecessary access.
+  - Deprovisioning: Remove access of terminated users.
+
+---
+
+### Account Policies
+- **Group Policy Objects (GPOs) in Windows:**
+  - Apply security and configuration settings across domains.
+  - Example: Enforce password-protected screensavers, set timeout limits, prevent user changes.
+- **Benefits:** Centralized, consistent policy enforcement.
+
+---
+
+### Password Policies
+- **Requirements:**
+  - Minimum length (≥8 characters recommended).
+  - Complexity (uppercase, lowercase, digits, symbols; evolving with MFA usage).
+  - History & reuse prevention.
+  - Expiration policies (NIST recommends avoiding forced changes if MFA is enabled).
+  - Account lockout after repeated failed logins.
+- **Self-service:** Automated password recovery to reduce helpdesk load.
+- **Windows GPO Implementation:**
+  - Minimum password length = 8
+  - Password history = 8 previous passwords
+  - Maximum password age = 90 days, minimum = 30 days
+  - Password complexity = enabled
+
+---
+
+### Role Management
+- **Roles simplify permissions management:**
+  - Group permissions together and assign to multiple users.
+  - Reduces need for shared generic accounts.
+- **Windows Example:**
+  - Create security groups for HR, Accounting.
+  - Assign users to groups; permissions automatically inherited.
+  - Folder access example: Assign “Human Resources” group full control to sensitive folders.
+
+---
+
+### Monitoring, Reporting, and Maintenance
+- **Detect Inaccurate Permissions:**
+  - Identify privilege creep (users retain old permissions after job changes).
+  - Perform regular user account audits with management.
+- **Detect Unauthorized Access:**
+  - Continuous monitoring of account activity.
+  - Watch for unusual logins: geographic anomalies, impossible travel, unusual hours, unusual file access.
+- **Geolocation Tools:**
+  - Geotagging: Log geographic location of logins.
+  - Geofencing: Alerts when devices leave defined boundaries.
+- **Account Types to Monitor:**
+  - Standard user accounts
+  - Administrator accounts
+  - System/managed service accounts (follow least privilege, no interactive logins)
+
+---
+
+### Provisioning and Deprovisioning
+- **Provisioning:** 
+  - Create accounts for new users.
+  - Grant authentication credentials and job-specific authorizations.
+- **Deprovisioning:**
+  - Remove access when users leave (resign, retire, or terminated).
+  - Timely action prevents unauthorized access and mitigates risks.
+- **Workflows:**
+  - Routine: Triggered by HR notification; automated account expiration.
+  - Emergency: Immediate termination coordination for adverse situations.
+- **Windows Example:**
+  - Disable account first (temporary safeguard).
+  - Delete account or schedule future expiration for planned departures.
+- **Benefit:** Ensures timely access revocation and reduces security risks.
+
 
