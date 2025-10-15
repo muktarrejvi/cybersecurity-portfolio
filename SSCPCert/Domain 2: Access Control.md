@@ -125,3 +125,85 @@ These are the **three essential steps** in access control:
 - Learn about **role-based access control (RBAC)** and **discretionary access control (DAC)** models.  
 - Review **identity lifecycle management** processes.
 
+
+
+
+# Authentication and Access Control Key Takeaways
+
+## 1. Authentication Factors
+
+| Factor | Description | Examples | Notes |
+|--------|-------------|---------|-------|
+| Something you know | Knowledge-based authentication | Passwords, passphrases, password keys | Strong passwords: mix upper/lowercase, digits, symbols; passphrases are memorable & secure |
+| Something you are | Biometric traits | Fingerprint, face, iris, voice | Measures physical characteristics |
+| Something you have | Physical possession | Smartphone, hardware token, key fob, smart card | OTP codes, smart card chips; adds strong security layer |
+
+**Authentication Errors:**
+
+| Error Type | Description | Measurement | Impact |
+|------------|-------------|------------|-------|
+| False Acceptance (FAR) | Unauthorized user granted access | FAR | High security risk |
+| False Rejection (FRR) | Authorized user denied access | FRR | Affects availability |
+| Crossover Error Rate (CER) | FAR = FRR | CER | Balanced measure of authentication strength |
+
+---
+
+## 2. Multifactor Authentication (MFA)
+
+- Combines **two or more factors** from different categories.
+- **Examples:**
+  - Password (something you know) + Smart Card (something you have)
+  - Fingerprint (something you are) + PIN (something you know)
+- **Important:** Combining two techniques from the **same factor** (e.g., password + security question) is **not MFA**.
+- **Benefit:** Reduces risk of account compromise.
+
+---
+
+## 3. Something You Have – Implementation
+
+| Method | Description | Example | Protocol |
+|--------|-------------|---------|---------|
+| Hardware Token | Small device generates code | Key fob token | HOTP (counter-based) |
+| Soft Token | Smartphone app generates OTP | Google Authenticator | TOTP (time-based; synchronized clocks) |
+| Smart Card | Embedded chip verified by reader | US DoD CAC card | - |
+
+- **OTPs (One-Time Passwords):** Used in both hardware & soft tokens.
+- **Security Benefit:** Adds strong layer to password authentication.
+
+---
+
+## 4. Password Authentication Protocols
+
+| Protocol | Description | Security Considerations |
+|----------|-------------|------------------------|
+| PAP | Username/password sent to server | No encryption; vulnerable to interception |
+| CHAP | Challenge-response with shared secret | Password not sent over network; secure |
+| MS-CHAP / MS-CHAPv2 | Microsoft version of CHAP | Broken; insecure, avoid use |
+
+---
+
+## 5. Single Sign-On (SSO) and Federation
+
+- **Federated Identity Management:** Shared identity info across systems.
+  - Example: Login with Google, Facebook, or Twitter accounts.
+- **Single Sign-On:** Authenticated session shared across multiple systems.
+  - Example: Active Directory + ADFS in enterprises.
+  - Users log in once; session lasts for set period (e.g., business day).
+- **Trust Relationships:**
+  - **Direction:** One-way or two-way
+  - **Transitivity:** Transitive (trust extends automatically) or nontransitive (manual trust needed)
+
+---
+
+## 6. Internetwork Trust Architectures
+
+| Network Zone | Purpose | Notes |
+|--------------|---------|-------|
+| Border Firewall | Connects internet to intranet & DMZ | Blocks unauthorized inbound; allows outbound per policy |
+| Intranet Zones | Internal networks | Segments: endpoints, wireless, guest, data center |
+| DMZ (Demilitarized Zone) | Public-facing servers | Isolates high-risk systems from intranet |
+| Extranet | Third-party access | Limited access via VPN; strict authentication & authorization |
+
+**Key Principle:** Network segmentation reduces risk; compromise of one zone does not expose entire network.
+
+
