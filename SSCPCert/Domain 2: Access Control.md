@@ -380,3 +380,73 @@ These are the **three essential steps** in access control:
 - **Benefit:** Ensures timely access revocation and reduces security risks.
 
 
+## 13. Authorization
+
+### Authorization Principles
+- **Definition:** Determines what resources and privileges a user has after authentication.
+- **Least Privilege:** Users get only the minimum permissions needed for their job.
+  - Limits damage from insider attacks.
+  - Restricts external attackers who compromise low-privilege accounts.
+- **Separation of Duties:** Sensitive actions require at least two individuals.
+  - Reduces fraud risk (e.g., vendor setup vs. issuing checks in accounting).
+- **Privilege Creep:** Users accumulate permissions from previous roles, violating least privilege and separation of duties.
+  - Regular manual or automated account reviews are essential to prevent this.
+
+---
+
+### Access Control Models
+
+#### Mandatory Access Control (MAC)
+- Most stringent model; enforced by the operating system.
+- Users **cannot** change permissions.
+- Access decisions based on labels:
+  - Example: US government classifications (Top Secret > Secret > Confidential)
+  - Users with higher clearance can access lower-classified documents.
+- Common implementation: **SELinux** (Linux kernel module).
+
+#### Discretionary Access Control (DAC)
+- Resource owners can assign permissions to other users.
+- Flexible, common in organizations.
+- Example: NTFS file system on Windows allows owners to grant read, write, modify, or full control.
+- Users with appropriate permissions can delegate access to others.
+
+---
+
+### Access Control Lists (ACLs)
+- **Definition:** Table mapping users/groups to permissions for a resource.
+- Common NTFS permissions:
+  - **Full Control:** All actions.
+  - **Modify:** Read, write, execute, delete.
+  - **Read & Execute:** Read and run programs.
+  - **Read:** View contents only.
+  - **Write:** Create/add data.
+- Example setup:
+  - Alice (owner) → Full Control
+  - Bob → Full Control
+  - Carol → Read/Write
+  - Tracy → Read only
+
+---
+
+### Advanced Authorization Concepts
+
+#### Implicit Deny / Default Deny
+- Anything not explicitly allowed is denied.
+- Common example: Firewalls block requests unless a rule permits them.
+
+#### Role-Based Access Control (RBAC)
+- Permissions assigned to roles; users inherit permissions by role.
+- Simplifies management when users join, leave, or need additional permissions.
+- Example: Alice assigned "Accounting Clerk" and "Supervisor" roles → inherits all associated permissions.
+
+#### Attribute-Based Access Control (ABAC)
+- Policies defined based on user, object, and environment attributes.
+- Supports conditional access:
+  - Example: Manager can access salary info only after executive approval and only for their team.
+- Can include **time** and **location** restrictions (e.g., only in office, during business hours).
+
+#### Implementation Example: Time-Based Restrictions in Windows
+- Active Directory → User Properties → Logon Hours
+- Restrict access to specific days or hours (e.g., weekdays 8 AM–6 PM).
+- Enhances security by preventing after-hours unauthorized actions.
+
