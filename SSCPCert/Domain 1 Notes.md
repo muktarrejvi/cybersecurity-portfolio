@@ -184,3 +184,191 @@ Assess whether security awareness and training are effective and if employees kn
 > Security begins and ends with people.  
 > Effective cybersecurity training transforms users from the weakest link into the first line of defense.
 
+# 🏢 Physical Security & Facility Protection
+
+Physical security ensures that IT assets, infrastructure, and personnel are protected from unauthorized physical access, environmental damage, and tampering.  
+This section covers **facility design, environmental control & protection, access management, and visitor control.**
+
+---
+
+## 1. Site and Facility Design
+
+### 🔹 Purpose
+- Protect physical spaces containing critical assets — servers, networking gear, backups, and sensitive data.
+- Prevent unauthorized access, theft, or tampering.
+
+### 🔹 Facility Types & Security Focus
+
+| Facility Type | Description | Security Concern |
+|----------------|--------------|------------------|
+| **Data Centers** | Houses servers, storage, and networking infrastructure. | Strict access control, CCTV, and visitor logging. |
+| **Server Rooms** | Smaller, often ad-hoc setups. | Risk of poor controls, require same standards as data centers. |
+| **Media Storage Facilities** | Hold backups and recovery data (often off-site). | Equal or greater security than main data center. |
+| **Evidence Storage Rooms** | For forensic evidence; maintain chain of custody. | Tamper-proof, logged, restricted access. |
+| **Intermediate Distribution Frames (IDFs)** | Network distribution hubs throughout buildings. | Locked, monitored, with limited authorized access. |
+| **Wiring Closets** | Contain cables and connections across facilities. | Risk of eavesdropping or tampering; must be secured. |
+| **Other Restricted Areas** | Operations centers, control rooms. | Inventory and assess all sensitive locations. |
+
+### 🔹 Key Practices
+- Maintain an inventory of sensitive areas.  
+- Conduct **regular physical security assessments**.  
+- Apply **layered security controls** — locks, cameras, access logs, alarms.
+
+### ✅ Takeaway
+> “Physical protection is the foundation of cybersecurity — without it, logical controls can easily be bypassed.”
+
+---
+
+## 2. Data Center Environmental Controls
+
+### 🔹 Purpose
+Maintain optimal environmental conditions for reliable and safe operation of electronic systems.
+
+### 🔹 Environmental Factors
+
+| Factor | Description | Standard / Range |
+|---------|--------------|------------------|
+| **Temperature** | Prevent overheating and hardware degradation. | **64.4°F–80.6°F** (ASHRAE Expanded Environmental Envelope) |
+| **Humidity** | Avoid condensation (too high) or static (too low). | **Dew point: 15.8°F–59°F** |
+| **Airflow** | Maintain front-to-back cooling. | Implement **Hot Aisle/Cold Aisle** layout. |
+
+### 🔹 Cooling Design
+- Equipment draws **cool air from front**, expels **hot air from back**.  
+- **Hot Aisle/Cold Aisle** alternation maximizes cooling efficiency.  
+- **HVAC systems** regulate temperature and humidity automatically.
+
+### 🔹 Energy Consideration
+- Newer standards reduce overcooling → lower energy use and carbon footprint.
+
+### ✅ Takeaway
+> “Controlled temperature, humidity, and airflow keep data centers stable and extend equipment life.”
+
+---
+
+## 3. Data Center Environmental Protection
+
+### 🔹 Purpose
+Protect critical infrastructure from **fire, flooding, and electromagnetic interference (EMI).**
+
+---
+
+### 🔸 Fire Protection
+
+**Fire Triangle:** Oxygen + Heat + Fuel → remove one to extinguish.  
+**Fire Extinguisher Classes:**
+| Class | Fire Type | Example |
+|--------|------------|----------|
+| **A** | Common combustibles | Paper, wood |
+| **B** | Flammable liquids | Gasoline, oil |
+| **C** | Electrical fires | Server/equipment fires |
+| **D** | Metal fires | Industrial use |
+| **K** | Kitchen fires | Cooking oils, fats |
+
+**Suppression Systems:**
+- **Wet Pipe:** Water-filled at all times (risky for data centers).  
+- **Dry Pipe:** Water released only after fire detection (safer).  
+- **Chemical Systems:** Remove oxygen — used with caution for occupied spaces.
+
+**Detection:**  
+- Sensors detect **heat, smoke, or chemical precursors** in early stages.
+
+---
+
+### 🔸 Flooding Protection
+- Avoid locating data centers below ground or near water lines.  
+- Use **moisture sensors** and proper drainage design.  
+- Be aware of fire suppression leaks as potential flood risks.
+
+---
+
+### 🔸 Electromagnetic Interference (EMI)
+- EMI can **disrupt operations** or **leak information** (emanations).  
+- Mitigation: shielded cabling, separation of power and data lines.  
+- **Faraday cages**: advanced protection (used in classified facilities).
+
+---
+
+### ✅ Takeaway
+> “Plan for heat, fire, water, and radiation — environmental resilience protects uptime and data integrity.”
+
+---
+
+## 4. Physical Access Control
+
+### 🔹 Purpose
+Prevent unauthorized entry into facilities, detect intrusions, and record activity.
+
+### 🔹 Access Control Mechanisms
+
+| Method | Description |
+|---------|-------------|
+| **Preset Locks** | Mechanical keys — require strict key management. |
+| **Cipher Locks** | Keypad entry — shared or individual PINs. |
+| **Card Access Systems** | Swipe, proximity, or smart cards. |
+| **Biometric Locks** | Use fingerprints, retina, or voice for identity verification. |
+
+### 🔹 Anti-Tailgating Controls
+- **Mantraps:** Two-door systems verifying one person per entry.
+- **Security Personnel:** Monitor access logs and enforce rules.
+
+### 🔹 Monitoring and Detection
+- **Motion/Noise Sensors:** Detect unexpected movement or activity.  
+- **CCTV / IP Cameras:**  
+  - **Deterrent control:** visible presence.  
+  - **Detective control:** record and analyze events.  
+  - Use **infrared** for low-light environments.
+
+### 🔹 Physical Barriers & Deterrents
+| Type | Function |
+|-------|-----------|
+| **Fences & Bollards** | Prevent unauthorized vehicle/pedestrian entry. |
+| **Cages** | Protect racks in shared data centers. |
+| **Lighting & Signage** | Increase visibility, deter intruders, support legal enforcement. |
+| **Industrial Camouflage** | Conceal sensitive sites to avoid attention (ground and aerial). |
+
+### ✅ Takeaway
+> “Layered access control, detection, and deterrence combine to secure the facility perimeter and interior.”
+
+---
+
+## 5. Visitor Management
+
+### 🔹 Purpose
+Ensure controlled, auditable, and monitored access for visitors and contractors.
+
+### 🔹 Visitor Control Procedures
+- Define **who can authorize** access and **under what conditions**.
+- Maintain a **visitor log** (paper or electronic).
+- Require **visible ID badges**:
+  - Clearly labeled as “Visitor”.
+  - Indicate if **escort required**.
+- Distinguish employees from visitors visually.
+
+### 🔹 Escort & Monitoring
+- Escorts accompany visitors unless unescorted access is pre-approved.
+- Cameras monitor visitor-accessible zones (disclosure required).
+
+### 🔹 Device and Recording Restrictions
+- Limit or ban **phones, cameras, and audio/video recording**.
+- Some facilities require devices to be stored in **secure lockers**.
+
+### ✅ Takeaway
+> “Effective visitor control ensures transparency, accountability, and minimizes insider threat exposure.”
+
+---
+
+## 🧩 Overall Summary
+
+| Domain | Focus | Key Practices |
+|---------|--------|---------------|
+| **Facility Design** | Identify and secure all critical areas | Access control, assessments, inventory |
+| **Environmental Controls** | Maintain stable conditions | HVAC, hot/cold aisles, humidity control |
+| **Environmental Protection** | Prevent fire, water, and EMI risks | Fire suppression, sensors, Faraday shielding |
+| **Physical Access Control** | Restrict, monitor, and record entry | Locks, biometrics, CCTV, mantraps |
+| **Visitor Management** | Manage non-employee access | Logs, escorts, device restrictions |
+
+---
+
+### 🛡️ Final Insight
+> Physical security forms the first defensive layer in cybersecurity —  
+> without it, even the strongest firewalls and encryption are meaningless.
