@@ -486,3 +486,156 @@ Automation streamlines cybersecurity operations — **faster response, fewer err
 | **Vulnerability Impacts** | CIA triad, risk assessment | Understand consequences of breaches |
 | **Supply Chain Vulnerabilities** | Vendor lifecycle monitoring, secondary backups | Reduce exposure to third-party risks |
 | **Configuration Vulnerabilities** | Security baselines, patch management, least privilege | Prevent exploitable misconfigurations |
+
+
+
+# Architectural Vulnerabilities and Vulnerability Management
+
+## 1. Architectural Vulnerabilities
+
+### Definition
+- Arise when a **complex system is improperly designed**.
+- Can create **fundamental flaws** that are difficult to remediate.
+
+### IT Architecture
+- Set of **well-defined practices** and **processes** to build complex systems.
+- IT architects design systems to **meet business requirements**, similar to how building architects work.
+- **Security should be incorporated early** as a design criterion rather than added later.
+
+### Example
+- System encrypts sensitive information, but **business processes expose it** (e.g., printing sensitive data and leaving it unsecured).
+- Untrained users and insecure processes can **negate technical protections**.
+
+### System Sprawl
+- Large organizations have **thousands of connected devices**.
+- Many devices are **undocumented or unmanaged**, creating **security gaps**.
+- Security professionals should **assess architectural processes** to ensure proper security controls.
+
+---
+
+## 2. Vulnerability Management
+
+### Purpose
+- Modern software is **complex**, with millions of lines of code.
+- **Mistakes are inevitable**, leading to vulnerabilities.
+- Vulnerability management provides a structured way to **identify, analyze, patch, and track vulnerabilities**.
+
+### Key Steps
+1. Identify vulnerabilities in software or systems.
+2. Develop a **patch** or fix.
+3. Deploy patches through update mechanisms.
+4. Track remediation and report results.
+
+### Requirements
+- Understand **why the program exists** (security, corporate policy, regulatory compliance).
+- Follow **industry and government standards** like:
+  - **PCI DSS** – Requires regular vulnerability scans for cardholder data systems.
+  - **FISMA** – Requires scanning, analyzing, and remediating vulnerabilities for US government agencies.
+
+### Types of Vulnerability Scans
+- **Network scans** – Probe connected devices for vulnerabilities.
+- **Application scans** – Test software code for flaws.
+- **Web application scans** – Detect web-specific issues like SQL injection and XSS.
+- Supplement scans with **system and configuration reviews**.
+
+---
+
+## 3. Identifying Scan Targets
+
+### Steps
+1. Define **program requirements** based on security goals, regulations, or corporate policies.
+2. Generate a **trusted asset inventory**.
+   - Use configuration management tools or discovery scans.
+3. Prioritize assets based on:
+   - **Impact** – Data classification and business importance.
+   - **Exposure** – Network access and services.
+   - **Criticality** – Operational importance of the system.
+
+### Best Practices
+- Even if scanning all systems, **asset prioritization** is essential for remediation planning.
+- Critical systems should be prioritized over non-critical ones.
+
+---
+
+## 4. Scan Configuration
+
+### Setting Up a Scan (e.g., in Nessus)
+- **Select scan type**: Advanced scan allows custom configurations.
+- **Define targets**: IP addresses, hostnames, or network ranges.
+- **Schedule scans**: Daily, weekly, or custom frequency based on asset sensitivity.
+- **Notifications**: Email recipients can receive scan reports automatically.
+- **Discovery and Port Scanning**: Configure ping types, ports, and protocols.
+- **Assessment Sensitivity**:
+  - Normal accuracy balances false positives and missed vulnerabilities.
+  - Options to increase or decrease sensitivity exist.
+- **Advanced Settings**:
+  - Enable safe checks to prevent system disruption.
+  - Adjust performance and scan rate limits.
+  - Use plugin settings to optimize scan scope and speed.
+
+### Organizing Scans
+- Group systems based on **data sensitivity** or **asset type**.
+- Reuse custom templates for efficiency.
+
+---
+
+## 5. Scan Perspective
+
+### Importance
+- Scanner **location affects results**:
+  - DMZ scanner sees most vulnerabilities.
+  - Internal network scanner sees fewer due to firewall/IPS filtering.
+  - Internet-based scanner shows attacker’s view.
+
+### Techniques
+- **Server-based scans** – Network probes from an external or internal perspective.
+- **Agent-based scans** – Installed on servers to check configuration directly.
+- **Credentialed scans** – Use read-only credentials to gather configuration information.
+
+### Best Practice
+- Mix multiple perspectives to obtain a **comprehensive view** of vulnerabilities.
+
+---
+
+## 6. SCAP (Security Content Automation Protocol)
+
+### Purpose
+- Provides a **consistent language** for discussing security issues and automating vulnerability management.
+- Helps **systems communicate** using a shared standard.
+
+### Components
+| Component | Purpose |
+|-----------|---------|
+| CVSS (Common Vulnerability Scoring System) | Evaluate severity of vulnerabilities |
+| CCE (Common Configuration Enumeration) | Standardize system configuration language |
+| CPE (Common Platform Enumeration) | Standardize product names and versions |
+| CVE (Common Vulnerabilities and Exposures) | Standardize vulnerability identifiers |
+| XCCDF (Extensible Configuration Checklist Description Format) | Share checklists and results |
+| OVAL (Open Vulnerability and Assessment Language) | Describe testing procedures programmatically |
+
+---
+
+## 7. CVSS (Common Vulnerability Scoring System)
+
+### Purpose
+- Assigns a **score from 0 to 10** to indicate vulnerability severity.
+
+### Base Metrics
+**Exploitability Metrics**
+1. **Attack Vector** – Physical, Local, Adjacent Network, Network
+2. **Attack Complexity** – High or Low
+3. **Privileges Required** – High, Low, None
+4. **User Interaction** – Required or None
+
+**Impact Metrics**
+1. **Confidentiality** – None, Partial, High
+2. **Integrity** – None, Low, High
+3. **Availability** – None, Low, High
+
+**Scope Metric**
+- Indicates if the vulnerability affects **other components**.
+- Values: **Changed** or **Unchanged**.
+
+### Summary
+- Combine **exploitability, impact, and scope** metrics to calculate a **CVSS score**.
+- CVSS scores guide **prioritization of remediation efforts**.
