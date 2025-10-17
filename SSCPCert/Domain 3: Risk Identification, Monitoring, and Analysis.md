@@ -346,3 +346,143 @@ Automation streamlines cybersecurity operations — **faster response, fewer err
 | **Intelligence Sharing** | ISACs, Internal Teams | Enhances collaboration |
 | **Threat Identification** | Asset, Threat, Service Focus | Ensures comprehensive modeling |
 | **Automation** | SOAR, ML, Automated Feeds | Improves efficiency and speed |
+
+
+
+# Threat Hunting, MITRE ATT&CK, and Vulnerability Management — Key Takeaways
+
+## 1. Threat Hunting
+
+### Overview
+- Cybersecurity has shifted from purely defensive strategies to **assumption of compromise**.
+- Threat hunting is a **proactive, systematic approach** to detect indicators of compromise (IoCs) in networks.
+- Uses a combination of:
+  - Traditional security techniques  
+  - Predictive analytics and AI  
+
+### Threat Hunting Mindset
+- Shift from **defense-focused** to **offense-focused** thinking.
+- Think like the attackers:
+  - How might they gain access?  
+  - What systems or assets might they target?
+
+### Process Steps
+1. **Establish Hypothesis**
+   - Formulate a possible attack scenario.
+   - Sources: Threat actor profiles, threat feeds, vulnerability advisories, intelligence fusion.
+2. **Identify Indicators of Compromise (IoCs)**
+   - Examples:
+     - Unexpected or malicious binary files  
+     - Unusual running processes or resource usage  
+     - Unauthorized accounts or permissions  
+     - Deviations in network traffic or log anomalies  
+     - Unauthorized configuration changes
+3. **Integrate Threat Intelligence**
+   - Combine **internal and third-party intelligence** to improve detection.
+4. **Asset Prioritization**
+   - Focus on **critical systems** to highlight IoCs efficiently.
+5. **Incident Response**
+   - On detecting IoCs, follow **containment, eradication, and recovery** protocols.
+
+---
+
+## 2. MITRE ATT&CK Framework
+
+### Overview
+- Developed by MITRE Corporation — a **nonprofit R&D organization**.
+- ATT&CK = **Adversarial Tactics, Techniques & Common Knowledge**
+- Knowledge base from **real-world attacker observations**.
+
+### Framework Structure
+- **Tactics (columns):** General attack strategies
+  - Initial Access, Execution, Persistence, Privilege Escalation, Defense Evasion, Credential Access, Discovery, Lateral Movement, Collection, Command & Control, Exfiltration, Impact
+- **Techniques (rows):** Specific methods to achieve tactics
+
+### Example: Privilege Escalation
+- Techniques: Access token manipulation, DLL tampering, exploiting accessibility features
+- Each technique includes:
+  - Sub-techniques  
+  - Description  
+  - Example threat actors  
+  - Mitigation controls  
+  - Detection methods  
+
+### Key Benefit
+- Helps organizations **understand attacker behaviors** and tailor defenses.
+
+---
+
+## 3. Vulnerability Impacts
+
+### CIA Triad
+1. **Confidentiality:** Protects sensitive information from unauthorized access
+   - Violations = Disclosure, Data Breaches, Data Exfiltration
+2. **Integrity:** Prevents unauthorized changes
+   - Violations = Data tampering, accidental corruption
+3. **Availability:** Ensures authorized access
+   - Violations = Denial of Service (DoS) attacks
+
+### Risk Categories
+| Type | Description |
+|------|-------------|
+| **Financial** | Costs from restoring systems, investigations, identity theft |
+| **Reputational** | Loss of goodwill among customers, employees, suppliers |
+| **Strategic** | Hindrance in achieving organizational goals |
+| **Operational** | Disruption of daily functions, delays, manual workarounds |
+| **Compliance** | Violating legal or regulatory requirements (e.g., HIPAA) |
+
+### Key Insight
+- Vulnerability analysis should account for all **risk types** to evaluate potential organizational impact.
+
+---
+
+## 4. Supply Chain Vulnerabilities
+
+### Overview
+- Organizations depend on **hardware, software, and services from vendors**.
+- Vulnerabilities arise when vendor products reach **end-of-life (EOL)** or **end-of-support (EOS)**.
+
+### Vendor Lifecycle Terms
+1. **End-of-Sale:** Product no longer sold, support continues
+2. **End-of-Support:** Vendor stops providing updates or support
+3. **End-of-Life:** Product no longer supported, no updates or patches
+
+### Risks
+- Unsupported products = **unpatchable vulnerabilities**
+- Embedded systems in products may contain hidden vulnerabilities
+- Cloud service vendors must be trusted for ongoing **security and data access**
+- Mitigation: Maintain **secondary backups**, monitor vendor announcements, and assess vendor viability
+
+---
+
+## 5. Configuration Vulnerabilities
+
+### Overview
+- Misconfigured systems, devices, or applications can lead to **serious security breaches**.
+- Common sources:
+  - Default vendor configurations (ports, permissions, accounts)
+  - Weak or misconfigured cryptographic protocols
+  - Improper patch management
+  - Excessive account privileges
+
+### Key Best Practices
+- Apply **security baselines** and documented standards
+- Manage **encryption keys and digital certificates** carefully
+- Patch **OS, applications, and firmware** promptly
+- Follow **principle of least privilege** for accounts
+
+### Key Insight
+- Small configuration errors can provide attackers with **full control**.
+- Consistent **review and management** of configurations reduces risk.
+
+---
+
+### Summary Table
+
+| Topic | Key Practices | Benefit |
+|-------|---------------|---------|
+| **Threat Hunting** | Hypothesis-driven detection, IoCs, asset prioritization | Detect compromises early |
+| **MITRE ATT&CK** | Tactics & techniques, attacker behavior modeling | Guides defense and mitigation strategies |
+| **Vulnerability Impacts** | CIA triad, risk assessment | Understand consequences of breaches |
+| **Supply Chain Vulnerabilities** | Vendor lifecycle monitoring, secondary backups | Reduce exposure to third-party risks |
+| **Configuration Vulnerabilities** | Security baselines, patch management, least privilege | Prevent exploitable misconfigurations |
