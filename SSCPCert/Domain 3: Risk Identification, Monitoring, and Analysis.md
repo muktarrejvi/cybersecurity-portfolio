@@ -760,3 +760,117 @@ Automation streamlines cybersecurity operations — **faster response, fewer err
 ### Standards & Best Practices
 - ISO/IEC 27018 → PII protection in public cloud
 - Conduct **privacy impact assessments** regularly
+
+
+
+# Data Breaches, Log Monitoring, and Continuous Security Monitoring
+
+## 1. Data Breaches
+
+### Consequences
+- **Reputational damage**
+- **Identity theft incidents**
+- **Fines and legal penalties**
+- **Intellectual property theft**
+
+### Escalation and Responsibilities
+- Immediate escalation to **senior management** for any sensitive data breach.
+- Follow laws and regulations depending on:
+  - **Industry-specific rules** (HIPAA, PCI DSS, SOX)
+  - **Jurisdiction-specific rules** (US state laws, EU GDPR)
+- Applies to breaches of **Personally Identifiable Information (PII)**:
+  - Social Security numbers
+  - Driver’s license numbers
+  - Bank account numbers
+  - Other sensitive identifiers
+
+### Common Requirements
+- Notify affected individuals
+- Inform government agencies
+- Public disclosure when necessary
+- Provide **credit monitoring** or compensation to victims
+
+### Exam Tip
+- **Encryption** protects against breaches and often provides **exemptions** under notification laws.
+
+---
+
+## 2. Monitoring Log Files
+
+### Purpose
+- Log files allow **detection of suspicious activity** and **support incident response**.
+
+### Sources of Logs
+- **Network logs / NetFlow** – system communications and traffic volume
+- **DNS logs** – network lookups
+- **System logs / Event logs** – OS-level activity
+- **Application logs** – app-level events (logins, SQL injections)
+- **Authentication logs** – centralized authentication usage
+- **Specialized logs** – VoIP, call manager, memory dumps, vulnerability scans
+
+### Syslog Overview
+- Protocol for **standardized logging**
+- Components:
+  1. **Header** – timestamp, source IP, process ID
+  2. **Facility** – origin (0–23, e.g., kernel, mail service)
+  3. **Severity** – criticality (0 = emergency, 7 = debug)
+  4. **Message** – log content
+- Variants:
+  - **syslog-ng** – adds encryption, reliable delivery
+  - **Rsyslog** – further improvements
+  - **journalctl** – binary log storage on Linux
+- **Log retention** – balance space vs. investigative needs
+- **Tagging** – metadata for easier filtering (application, user, etc.)
+- **NXLog** – centralized logging across platforms
+
+---
+
+## 3. Security Information and Event Management (SIEM)
+
+### Functions
+1. **Central aggregation** – collects logs from multiple sensors securely
+2. **Correlation & AI analysis** – detects patterns of potential threats
+3. **Real-time monitoring** – alerts administrators immediately
+
+### Benefits
+- Consolidates siloed data across teams
+- Enables **log correlation** for incident detection
+- Dashboards centralize alerts and trend analysis
+
+### SOAR (Security Orchestration, Automation, and Response)
+- Enhanced SIEM functionality
+- Automates responses via:
+  - **Playbooks** – process-focused, semi-automated
+  - **Runbooks** – fully automated tasks (isolation, enrichment, notifications)
+- Requires **ongoing tuning** to reduce false positives
+
+---
+
+## 4. Continuous Security Monitoring
+
+### Definition (NIST)
+> Ongoing awareness of information security, vulnerabilities, and threats to support risk management decisions.
+
+### Core Characteristics
+- Align with **organizational risk tolerance**
+- **Adaptive to changing business needs**
+- Management provides **leadership and resources**
+
+### Continuous Monitoring Process (6 Steps)
+1. Define monitoring strategy based on **risk tolerance**
+2. Establish **metrics and assessment frequencies**
+3. Implement program (data collection, automated reports)
+4. Analyze and report findings
+5. Respond to findings (mitigate, avoid, transfer, accept risk)
+6. Review and update program continuously
+
+### Data Analysis Approaches
+- **Point-in-time analysis** – event-focused investigations
+- **Anomaly analysis / heuristic** – detect outliers (e.g., unusual login times)
+- **Trend analysis** – track historical changes
+- **Behavioral analysis** – user activity patterns
+- **Availability analysis** – system performance vs. SLAs
+
+### Tools
+- **SIEM** – aggregation, correlation, alerting
+- **AI / ML** – anomaly detection and pattern recognition
