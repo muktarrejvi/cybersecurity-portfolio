@@ -4,6 +4,7 @@
 The **Risk Identification, Monitoring, and Analysis** domain (Domain 3 of the SSCP Exam) represents **15% of total exam questions**.  
 It focuses on identifying, analyzing, monitoring, and managing risks in cybersecurity operations
 
+
 ---
 
 ## 1. Risk Assessment
