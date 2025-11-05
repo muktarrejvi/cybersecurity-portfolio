@@ -31,7 +31,7 @@
 
   
 - **Technical Controls**  
-  Utilize technology to enforce protection.  
+  Utilize technology to enforce protection. 
   🔹 *Examples:* Firewalls, encryption, antivirus.
 
 ---
