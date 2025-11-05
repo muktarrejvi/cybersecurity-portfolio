@@ -10,7 +10,7 @@
 
 - **Detective Controls**  
   **Identify and alert** on potential threats for further investigation.  
-  📌 *Example:* Intrusion Detection Systems (IDS). It can be for Network or can be for host.
+  📌 *Example:* Intrusion Detection Systems (IDS). It can be for Network or can be for host
 
 - **Recovery Controls**  
   **Respond to and remediate** incidents after they happen.  
