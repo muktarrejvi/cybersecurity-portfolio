@@ -10,7 +10,7 @@ Includes work on SIEM analysis, log parsing, and threat detection exercises.
 - **C|CT Hands-on Labs**
 - **TryHackMe Blue Team Path**
 - **Hack The Box SOC Analyst Path**
-
+ hi
 ---
 
 ## 📜 Certification
