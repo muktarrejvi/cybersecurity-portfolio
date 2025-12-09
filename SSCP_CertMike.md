@@ -46,7 +46,6 @@
   - Breaches can result in revocation of certification.  
   - Members must report any violations they become aware of
 
----
 
 ✅ These principles — Privacy Compliance, Employee Privacy, and Ethics — form the foundation of **trust, professionalism, and accountability** in cybersecurity practice.  
 ## 🖥️ Physical Asset Management
