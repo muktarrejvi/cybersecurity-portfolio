@@ -60,7 +60,7 @@ These are the **three essential steps** in access control:
 ### Modern Environment
 - IAM systems must function across **on-premises** and **cloud infrastructures**, integrating seamlessly in hybrid environments.
 
----
+
 
 ## Identification Mechanisms: Usernames & Access Cards
 
