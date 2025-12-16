@@ -5,7 +5,7 @@
 ### 🎯 Purpose of Security Controls
 
 - **Preventive Controls**  
-  Aim to **stop threats** before they occur. 
+  Aim to **stop threats** before they occur
   📌 *Example:* Firewalls blocking unwanted traffic
   
 - **Detective Controls**  
