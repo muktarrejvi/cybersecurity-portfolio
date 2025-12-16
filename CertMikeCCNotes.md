@@ -6,7 +6,7 @@
 
 - **Preventive Controls**  
   Aim to **stop threats** before they occur. 
-  📌 *Example:* Firewalls blocking unwanted traffic.
+  📌 *Example:* Firewalls blocking unwanted traffic
   
 - **Detective Controls**  
   **Identify and alert** on potential threats for further investigation.  
