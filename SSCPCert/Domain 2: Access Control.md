@@ -7,7 +7,7 @@
   - Understanding **Internet trust architectures**  
   - Supporting the **Access Management Lifecycle**  
   - Administering **Access Control Systems**  
-- Forms the foundation of **Identity and Access Management (IAM)** in cybersecurity.
+- Forms the foundation of **Identity and Access Management (IAM)** in cybersecurity. Twat
 
 ---
 
