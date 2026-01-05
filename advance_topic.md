@@ -7,7 +7,7 @@ for patterns of multiple entries in quick succession is the most effective techn
 
 ---
 
-### A. Service Level Agreement (SLA)
+### A. Service Level Agreement (SLA) .
 - A **formal contract** between a service provider and a customer.  
 - Defines:
   - Expected **service quality** (e.g., uptime, response times).  
