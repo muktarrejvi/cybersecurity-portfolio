@@ -170,7 +170,7 @@ These are the **three essential steps** in access control:
 - **OTPs (One-Time Passwords):** Used in both hardware & soft tokens.
 - **Security Benefit:** Adds strong layer to password authentication.
 
----
+--
 
 ## 4. Password Authentication Protocols
 
