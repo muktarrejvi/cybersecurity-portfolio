@@ -383,7 +383,7 @@ These are the **three essential steps** in access control:
 ## 13. Authorization
 
 ### Authorization Principles
-- **Definition:** Determines what resources and privileges a user has after authentication.
+- **Definition:** Determines what resources and privileges a user has after authentication
 - **Least Privilege:** Users get only the minimum permissions needed for their job.
   - Limits damage from insider attacks.
   - Restricts external attackers who compromise low-privilege accounts.
