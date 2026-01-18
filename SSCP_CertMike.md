@@ -166,7 +166,7 @@
    - Risks: Memory scraping, unauthorized process access.  
    - Protection: Process isolation, memory protection techniques.  
 
----
+
 
 ### 🛡️ Protection Measures
 - **Policies & Procedures** – Define proper use of sensitive data and required controls.  
