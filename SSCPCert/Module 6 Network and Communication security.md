@@ -30,7 +30,24 @@ This domain focuses on how data moves across networks, how attackers exploit net
 | Network Access | OSI 2,1 | Ethernet, ARP, Wi-Fi |
 
 ---
+## UTP Cable Categories and Maximum Speed
 
+| Category | Max Speed | Max Bandwidth | Typical Use |
+|---------|-----------|---------------|-------------|
+| Cat 1 | No data (Voice only) | N/A | Telephone lines (obsolete) |
+| Cat 2 | 4 Mbps | 4 MHz | Old Token Ring (obsolete) |
+| Cat 3 | 10 Mbps | 16 MHz | 10BASE-T Ethernet (old) |
+| Cat 4 | 16 Mbps | 20 MHz | Token Ring (obsolete) |
+| Cat 5 | 100 Mbps | 100 MHz | Fast Ethernet (100BASE-T) |
+| Cat 5e | 1 Gbps | 100 MHz | Gigabit Ethernet (common LAN) |
+| Cat 6 | 1 Gbps (10 Gbps ≤55 m) | 250 MHz | Modern networks |
+| Cat 6a | 10 Gbps | 500 MHz | Enterprise / Data centers |
+| Cat 7 | 10 Gbps | 600 MHz | Shielded, high-performance |
+| Cat 8 | 25–40 Gbps | 2000 MHz | Data centers (short distance) |
+
+
+
+---
 ### OSI vs TCP/IP – Key Differences
 
 | OSI Model | TCP/IP Model |
