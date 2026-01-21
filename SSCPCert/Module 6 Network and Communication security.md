@@ -295,6 +295,6 @@ Segmentation limits **blast radius** of attacks.
 - **IPS blocks, IDS alerts**
 - **WAF protects web apps**
 - **RADIUS for users, TACACS+ for admins**
-- **WEP is dead**
+- **WEP is dead** Sure?
 - **Segmentation reduces damage**
 
