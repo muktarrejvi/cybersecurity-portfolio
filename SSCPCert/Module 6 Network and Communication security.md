@@ -1,348 +1,283 @@
+# SSCP Domain 6 — Network and Communications Security
 
-# SSCP – Domain 6: Network and Communications Security
-
-This document provides **human-style detailed key takeaways**, explanations, and **practical examples** for **SSCP Domain 6**. The content is written as a learner would summarize after watching lectures or reading study material.
-
----
-
-## Domain 6.0: Network and Communications Security – Overview
-
-Network and Communications Security focuses on protecting **data in transit**, **network infrastructure**, and **communication channels** from unauthorized access, misuse, modification, or disruption.  
-This domain emphasizes **network fundamentals, attacks, access controls, segmentation, security devices, and wireless security**.
+This domain focuses on how data moves across networks, how attackers exploit networks, and how security controls protect network communications.
 
 ---
 
-## 6.1 Understand and Apply Fundamental Concepts of Networking
+## 6.1 Fundamental Networking Concepts
 
-### Key Concepts
-- **Network**: A group of connected devices that communicate using agreed protocols.
-- **Protocols**: Rules for communication (e.g., TCP/IP, UDP).
-- **OSI Model**: Conceptual 7-layer model used to understand how data flows.
-- **TCP/IP Model**: Practical 4-layer model used on the internet.
+### OSI Model (7 Layers)
 
-### Example
-When a user opens a website:
-- Application Layer → HTTP request
-- Transport Layer → TCP ensures reliable delivery
-- Network Layer → IP routes packets
-- Data Link & Physical → Ethernet/Wi-Fi transmits bits
-
-### Key Takeaway
-> Understanding networking fundamentals helps security professionals identify **where attacks occur** and **which controls to apply**.
+| Layer | Name | Key Function | Common Protocols / Examples |
+|-----|------|-------------|-----------------------------|
+| 7 | Application | User-facing network services | HTTP, HTTPS, FTP, SMTP, DNS |
+| 6 | Presentation | Encryption, compression, formatting | TLS/SSL, ASCII, JPEG |
+| 5 | Session | Session establishment & management | NetBIOS session, RPC |
+| 4 | Transport | Reliable delivery & flow control | TCP, UDP |
+| 3 | Network | Logical addressing & routing | IP, ICMP, IPSec |
+| 2 | Data Link | MAC addressing & framing | Ethernet, ARP, VLAN (802.1Q) |
+| 1 | Physical | Transmission of raw bits | Cables, voltages, fiber |
 
 ---
 
-## 6.2 Understand Network Attacks and Countermeasures
+### TCP/IP Model (4 Layers)
+
+| TCP/IP Layer | Corresponding OSI Layers | Protocol Examples |
+|-------------|-------------------------|------------------|
+| Application | OSI 7,6,5 | HTTP, HTTPS, FTP, SMTP, DNS |
+| Transport | OSI 4 | TCP, UDP |
+| Internet | OSI 3 | IP, ICMP, IPSec |
+| Network Access | OSI 2,1 | Ethernet, ARP, Wi-Fi |
+
+---
+
+### OSI vs TCP/IP – Key Differences
+
+| OSI Model | TCP/IP Model |
+|---------|-------------|
+| Conceptual / theoretical | Practical / real-world |
+| 7 layers | 4 layers |
+| ISO standard | DoD standard |
+| Used for learning & troubleshooting | Used for implementation |
+| Separates presentation & session | Combines them |
+
+📌 **Exam Tip:**  
+OSI is used for **troubleshooting**, TCP/IP for **actual networking**
+
+---
+
+### Common Ports (High-Yield)
+
+| Protocol | Port | Secure? |
+|--------|------|--------|
+| HTTP | 80 | ❌ |
+| HTTPS | 443 | ✅ |
+| FTP | 21 | ❌ |
+| SSH | 22 | ✅ |
+| SMTP | 25 | ❌ |
+| DNS | 53 | ❌ |
+| POP3 | 110 | ❌ |
+| IMAP | 143 | ❌ |
+| SNMP | 161 | ❌ |
+| RDP | 3389 | ❌ |
+
+---
+
+## 6.2 Network Attacks and Countermeasures
 
 ### Common Network Attacks
 
-#### 1. Distributed Denial of Service (DDoS)
-- Overwhelms a server or network with massive traffic.
-- Often launched using botnets.
-
-**Example**:  
-A shopping website crashes during a sale due to millions of fake requests.
-
-**Countermeasure**:
-- Content Delivery Networks (CDNs)
-- Rate limiting
-- Traffic filtering
+| Attack | Description | Impact |
+|------|------------|-------|
+| DDoS | Floods target with traffic | Service outage |
+| MITM | Attacker intercepts traffic | Data theft |
+| DNS Poisoning | Fake DNS records | Redirect users |
+| ARP Spoofing | MAC-IP manipulation | MITM |
+| Replay Attack | Reuses captured packets | Unauthorized access |
+| Packet Sniffing | Captures unencrypted traffic | Credential theft |
 
 ---
 
-#### 2. Man-in-the-Middle (MITM)
-- Attacker secretly intercepts communication.
-- Common in unsecured Wi-Fi networks.
+### Countermeasures
 
-**Example**:  
-Attacker captures login credentials at a public café Wi-Fi.
+| Attack | Countermeasure |
+|------|---------------|
+| DDoS | CDN, rate limiting, load balancer |
+| MITM | TLS, certificate validation |
+| DNS Poisoning | DNSSEC |
+| ARP Spoofing | Static ARP, DHCP snooping |
+| Sniffing | Encryption (TLS, IPSec) |
 
-**Countermeasure**:
-- Encryption (HTTPS, TLS)
-- VPN usage
-- Certificate validation
-
----
-
-#### 3. DNS Poisoning
-- Corrupts DNS records to redirect users to malicious sites.
-
-**Example**:  
-Typing `bank.com` redirects to a fake banking website.
-
-**Countermeasure**:
-- DNSSEC
-- Secure DNS resolvers
-- Monitoring DNS changes
+📌 **Exam Tip:**  
+CDNs absorb DDoS traffic before it reaches the server.
 
 ---
 
-### Key Takeaway
-> Most network attacks exploit **trust, lack of encryption, or availability weaknesses**.
+## 6.3 Network Access Controls
+
+### IEEE 802.1X (Port-Based Access Control)
+
+- Prevents unauthorized devices from joining a network
+- Uses authentication **before** granting access
+
+#### 802.1X Components
+- **Supplicant:** Client device
+- **Authenticator:** Switch / AP
+- **Authentication Server:** RADIUS
 
 ---
 
-## 6.3 Manage Network Access Controls
+### RADIUS vs TACACS+
 
-### Network Access Control (NAC)
+| Feature | RADIUS | TACACS+ |
+|------|--------|---------|
+| Encryption | Password only | Entire payload |
+| Transport | UDP | TCP |
+| Authentication | Centralized | Centralized |
+| Authorization | Limited | Granular |
+| Accounting | Yes | Yes |
+| Vendor | Open standard | Cisco |
 
-Controls **who can access** the network and **what they can access**.
-
----
-
-### Standards and Protocols
-
-#### IEEE 802.1X
-- Port-based network access control.
-- Requires authentication before access is granted.
-
-**Example**:
-Employees must authenticate before connecting to office Wi-Fi.
+📌 **Exam Rule:**  
+- **RADIUS** → network access  
+- **TACACS+** → device administration
 
 ---
 
-#### RADIUS
-- Centralized authentication protocol.
-- Commonly used for VPNs and Wi-Fi.
+### Remote Access Technologies
 
-**Key Feature**:
-- Authentication and authorization.
-
----
-
-#### TACACS+
-- Similar to RADIUS but more granular.
-- Separates authentication, authorization, and accounting.
-
-**Used for**:
-- Network device administration (routers, switches).
+| Technology | Description |
+|-----------|------------|
+| VPN | Encrypted tunnel over public network |
+| Thin Client | Centralized processing |
+| Remote Desktop | Full GUI remote access |
 
 ---
 
-### Remote Access Operation
+## 6.4 Network Security Management
 
-#### Virtual Private Network (VPN)
-- Encrypted tunnel over public networks.
+### Placement of Security Devices
 
-**Example**:
-Employees securely access company systems from home.
-
----
-
-#### Thin Client
-- Minimal local processing.
-- Relies on centralized servers.
-
-**Benefit**:
-- Easier security management.
+| Placement | Description |
+|--------|------------|
+| Inline | Actively inspects & blocks traffic |
+| Passive | Monitors only |
+| Virtual | Cloud-based security controls |
 
 ---
 
-### Key Takeaway
-> Strong access controls ensure **only authenticated and authorized users** access the network.
+### Network Segmentation
 
----
+| Method | Purpose |
+|------|--------|
+| VLAN | Logical separation |
+| Firewall Zones | Trust boundaries |
+| ACL | Traffic filtering |
+| Micro-segmentation | Zero Trust enforcement |
+| Data/Control Plane | Network function separation |
 
-## 6.4 Manage Network Security
-
-### Placement of Network Devices
-
-#### Inline
-- Actively inspects traffic.
-- Can block malicious packets.
-
-**Example**: Firewall placed between LAN and internet.
-
----
-
-#### Passive
-- Monitors traffic only.
-- Does not block.
-
-**Example**: IDS connected to a network tap.
-
----
-
-#### Virtual
-- Deployed in cloud or virtual environments.
-
-**Example**: Virtual firewall in AWS.
-
----
-
-### Segmentation
-
-#### Physical vs Logical
-- Physical: Separate hardware
-- Logical: VLANs, ACLs
-
----
-
-#### VLAN
-- Separates networks logically on the same switch.
-
-**Example**:
-Finance VLAN isolated from Guest VLAN.
-
----
-
-#### ACL
-- Rules that allow or deny traffic.
-
----
-
-#### Firewall Zones
-- Trust levels (Internal, DMZ, External).
-
----
-
-#### Micro-segmentation
-- Very fine-grained segmentation.
-
-**Used in**:
-- Cloud and zero-trust environments.
+📌 **Exam Tip:**  
+Segmentation limits **blast radius** of attacks.
 
 ---
 
 ### Secure Device Management
-- Patch management
-- Strong authentication
+
+- Change default credentials
 - Disable unused services
-- Secure configuration backups
+- Patch firmware
+- Secure management interfaces
+- Use SSH instead of Telnet
 
 ---
 
-### Key Takeaway
-> Segmentation limits **lateral movement** and reduces **attack impact**.
-
----
-
-## 6.5 Operate and Configure Network-Based Security Devices
+## 6.5 Network Security Devices
 
 ### Firewalls
-- Control traffic based on rules.
 
-#### Filtering Methods
-- Packet filtering
-- Stateful inspection
-- Application-level filtering
-
----
-
-### Proxies
-- Act as intermediaries.
-- Hide internal systems.
+| Type | Function |
+|----|---------|
+| Packet Filtering | Layer 3/4 filtering |
+| Stateful | Tracks sessions |
+| Application Firewall | Layer 7 inspection |
+| WAF | Protects web applications |
 
 ---
 
-### Web Application Firewall (WAF)
-- Protects web applications.
-- Blocks SQL injection, XSS.
+### Proxy Servers
+
+| Type | Purpose |
+|----|--------|
+| Forward Proxy | Hides internal clients |
+| Reverse Proxy | Protects servers |
 
 ---
 
 ### IDS vs IPS
 
-| Feature | IDS | IPS |
-|------|-----|-----|
-| Detects attacks | Yes | Yes |
-| Blocks attacks | No | Yes |
-| Placement | Passive | Inline |
+| IDS | IPS |
+|----|----|
+| Detect only | Detect + block |
+| Passive | Inline |
+| Alerts SOC | Stops attack |
 
 ---
 
-### Routers and Switches
-- Routers: Connect networks
-- Switches: Connect devices
+### Traffic Shaping
 
-**Security Features**:
-- Port security
-- Access control
-- Logging
+| Device | Purpose |
+|------|--------|
+| Load Balancer | Distributes traffic |
+| WAN Optimizer | Improves WAN performance |
 
 ---
 
-### Traffic-Shaping Devices
-
-#### Load Balancing
-- Distributes traffic across servers.
-
-#### WAN Optimization
-- Improves performance over long distances.
-
----
-
-### Key Takeaway
-> Security devices must be **correctly placed and configured** to be effective.
-
----
-
-## 6.6 Secure Wireless Communications
+## 6.6 Wireless Security
 
 ### Wireless Technologies
 
-#### Wi-Fi
-- Most common wireless network.
-
-#### Cellular Networks
-- 4G/5G mobile communication.
-
-#### Bluetooth
-- Short-range communication.
-
-#### NFC
-- Very short-range (payments, access cards).
+| Technology | Use Case |
+|-----------|---------|
+| Cellular (4G/5G) | Mobile data |
+| Wi-Fi | Local connectivity |
+| Bluetooth | Short-range devices |
+| NFC | Payments |
+| IoT | Sensors & automation |
 
 ---
 
-### Authentication and Encryption Protocols
+### Wireless Security Protocols
 
-#### WEP
-- Weak and insecure.
-- Easily cracked.
-
----
-
-#### WPA / WPA2 / WPA3
-- Stronger encryption.
-- WPA3 is the most secure.
+| Protocol | Security Level |
+|--------|---------------|
+| WEP | ❌ Broken |
+| WPA | Weak |
+| WPA2 | Secure |
+| WPA3 | Strongest |
 
 ---
 
-#### EAP
-- Framework for authentication.
-- Used with 802.1X.
+### EAP Methods
+
+| EAP Type | Description |
+|--------|------------|
+| EAP-TLS | Certificate-based |
+| PEAP | Encrypted tunnel |
+| EAP-TTLS | Secure authentication |
 
 ---
 
-### Internet of Things (IoT)
+### IoT Security Risks
 
-**Risks**:
-- Weak passwords
-- No patching
-- Always connected
-
-**Security Controls**:
-- Network isolation
-- Strong authentication
-- Regular updates
+- Weak authentication
+- Default passwords
+- Poor patching
+- Insecure communication
 
 ---
 
-### Key Takeaway
-> Wireless networks increase convenience **but significantly increase attack surface**.
+## Domain 6 Exam Focus Summary
+
+| Topic | Must Remember |
+|-----|--------------|
+| OSI Model | Layers + protocols |
+| TCP/IP | Practical model |
+| DDoS | CDN mitigation |
+| 802.1X | Port-based NAC |
+| RADIUS vs TACACS+ | UDP vs TCP |
+| IDS vs IPS | Detect vs block |
+| WPA3 | Best wireless security |
+| Segmentation | Limits attack spread |
 
 ---
 
-## Final Exam-Focused Summary
+## One-Line Exam Memory Hooks
 
-- Understand **how networks work before securing them**
-- Focus on **attacks + countermeasures**
-- Memorize **RADIUS vs TACACS+ vs 802.1X**
-- Know **IDS vs IPS**
-- Segmentation is critical for **damage containment**
-- Wireless security is a **high-risk exam area**
+- **OSI = Troubleshooting**
+- **TCP/IP = Real networking**
+- **IPS blocks, IDS alerts**
+- **WAF protects web apps**
+- **RADIUS for users, TACACS+ for admins**
+- **WEP is dead**
+- **Segmentation reduces damage**
 
----
-
-**End of Domain 6 – SSCP**
