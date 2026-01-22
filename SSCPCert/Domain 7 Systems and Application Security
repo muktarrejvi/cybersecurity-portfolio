@@ -1,1 +1,300 @@
 
+# SSCP Domain 7 – Systems and Application Security
+## Key Topic Definitions & Explanations (Exam-Focused)
+
+---
+
+## Service Level Agreement (SLA)
+**Definition:**  
+A formal contract between a service provider and customer that defines expected service performance, availability, responsibilities, and penalties.
+
+**Includes:**
+- Uptime guarantees
+- Response and recovery times
+- Security responsibilities
+- Penalties for non-compliance
+
+**Example:**  
+Cloud provider guarantees 99.9% uptime and 4-hour incident response.
+
+---
+
+## Data Portability
+**Definition:**  
+The ability to securely transfer data between service providers without disruption or data loss.
+
+**Purpose:**
+- Prevent vendor lock-in
+- Support migration and continuity
+
+**Example:**  
+Exporting customer data from AWS to Azure in standard format.
+
+---
+
+## Secure Data Destruction
+**Definition:**  
+The process of permanently and irreversibly destroying data so it cannot be recovered.
+
+**Methods:**
+- Cryptographic erasure
+- Secure wiping
+- Physical destruction
+
+**Example:**  
+Encrypting cloud storage and destroying the encryption keys.
+
+---
+
+## Auditing Rights
+**Definition:**  
+The contractual right to review and verify a service provider’s security controls and compliance.
+
+**Includes:**
+- Compliance audits
+- Security assessments
+- Third-party audits
+
+**Example:**  
+Customer audits cloud provider for ISO 27001 compliance.
+
+---
+
+## Malware
+**Definition:**  
+Malicious software designed to disrupt, damage, or gain unauthorized access to systems.
+
+---
+
+### Virus
+**Definition:**  
+Malware that attaches to legitimate files and spreads when executed.
+
+**Example:**  
+Infected email attachment.
+
+---
+
+### Worm
+**Definition:**  
+Self-propagating malware that spreads without user interaction.
+
+**Example:**  
+WannaCry spreading via network vulnerabilities.
+
+---
+
+### Trojan
+**Definition:**  
+Malware disguised as legitimate software.
+
+**Example:**  
+Fake software update.
+
+---
+
+### Ransomware
+**Definition:**  
+Malware that encrypts data and demands payment.
+
+**Example:**  
+LockBit attack.
+
+---
+
+### Spyware
+**Definition:**  
+Malware that secretly monitors user activity.
+
+---
+
+### Rootkit
+**Definition:**  
+Malware that hides itself and maintains privileged access.
+
+---
+
+### Fileless Malware
+**Definition:**  
+Malware that operates in memory using legitimate tools.
+
+---
+
+## Malware Countermeasures
+**Definition:**  
+Security controls used to detect, prevent, and remove malware.
+
+**Examples:**
+- Anti-malware software
+- Code signing
+- Patch management
+
+---
+
+## Insider Threat
+**Definition:**  
+Security risk posed by authorized users misusing access.
+
+---
+
+## Distributed Denial of Service (DDoS)
+**Definition:**  
+Attack that overwhelms a system with traffic to make it unavailable.
+
+---
+
+## Botnet
+**Definition:**  
+A network of compromised devices controlled by an attacker.
+
+---
+
+## Zero-Day Exploit
+**Definition:**  
+Attack exploiting an unknown or unpatched vulnerability.
+
+---
+
+## Advanced Persistent Threat (APT)
+**Definition:**  
+Long-term targeted attack focused on data exfiltration.
+
+---
+
+## Data Loss Prevention (DLP)
+**Definition:**  
+Security technology that prevents unauthorized data leakage.
+
+---
+
+## Social Engineering
+**Definition:**  
+Psychological manipulation to trick users into revealing information.
+
+---
+
+## Behavior Analytics
+**Definition:**  
+Use of AI, ML, and analytics to detect abnormal behavior.
+
+---
+
+## Host-Based Intrusion Prevention System (HIPS)
+**Definition:**  
+Software that actively blocks malicious activity on a host.
+
+---
+
+## Host-Based Firewall
+**Definition:**  
+Firewall that filters traffic on a single system.
+
+---
+
+## Application Whitelisting
+**Definition:**  
+Security control allowing only approved applications to run.
+
+---
+
+## Endpoint Encryption
+**Definition:**  
+Encryption protecting data stored on endpoints.
+
+---
+
+## Trusted Platform Module (TPM)
+**Definition:**  
+Hardware chip that stores cryptographic keys securely.
+
+---
+
+## Endpoint Detection and Response (EDR)
+**Definition:**  
+Endpoint solution that detects, investigates, and responds to threats.
+
+---
+
+## Mobile Device Management (MDM)
+**Definition:**  
+Technology used to manage and secure mobile devices.
+
+---
+
+## Bring Your Own Device (BYOD)
+**Definition:**  
+Policy allowing personal devices for work purposes.
+
+---
+
+## Containerization (Mobile)
+**Definition:**  
+Separates corporate and personal data on a device.
+
+---
+
+## Mobile Application Management (MAM)
+**Definition:**  
+Controls security of mobile applications instead of devices.
+
+---
+
+## Cloud Deployment Models
+- **Public Cloud:** Shared infrastructure
+- **Private Cloud:** Dedicated infrastructure
+- **Hybrid Cloud:** Public + Private
+- **Community Cloud:** Shared by similar organizations
+
+---
+
+## Cloud Service Models
+- **IaaS:** Customer manages OS & apps
+- **PaaS:** Provider manages OS
+- **SaaS:** Provider manages everything
+
+---
+
+## Shared Responsibility Model
+**Definition:**  
+Security responsibilities are shared between provider and customer.
+
+---
+
+## Hypervisor
+**Definition:**  
+Software that creates and manages virtual machines.
+
+---
+
+## Containers
+**Definition:**  
+Lightweight virtualization isolating applications.
+
+---
+
+## Virtual Appliance
+**Definition:**  
+Preconfigured virtual machine for specific functions.
+
+---
+
+## Continuity and Resilience
+**Definition:**  
+Ability to maintain operations during and after disruptions.
+
+---
+
+## Shared Storage
+**Definition:**  
+Centralized storage accessed by multiple systems.
+
+---
+
+## Exam Tip
+> If it involves **contracts, vendors, or cloud**, think **SLA, portability, auditing, shared responsibility**.
+
+---
+
+## Reference
+Chapple, Mike, and David Seidl.  
+ISC2 SSCP Systems Security Certified Practitioner Official Practice Tests, Wiley, 2021.
