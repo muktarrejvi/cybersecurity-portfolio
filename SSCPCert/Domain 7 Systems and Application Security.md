@@ -1,288 +1,494 @@
 # SSCP Domain 7 – Systems and Application Security
-
+## Detailed Explanation with Examples (Exam-Oriented)
 
 ---
 
-## Service Level Agreement (SLA)
-**Definition:**  
-A formal contract between a service provider and a customer that defines service expectations, performance metrics, responsibilities, and penalties.
+## 7.1 Identify and Analyze Malicious Code and Activity
 
-**Key Elements:**
-- Availability (uptime)
-- Response and recovery times
-- Security responsibilities
-- Penalties for violations
+---
+
+### Malware
+
+#### Rootkit
+**Explanation:**  
+A rootkit hides malicious processes and gives attackers persistent, privileged access.
 
 **Example:**  
-A cloud provider guarantees 99.9% uptime and a 4-hour incident response time.
+An attacker installs a kernel rootkit that hides malicious processes from Task Manager and antivirus.
 
 ---
 
-## Data Portability
-**Definition:**  
-The ability to securely transfer data between different service providers or platforms without data loss or disruption.
-
-**Purpose:**
-- Avoid vendor lock-in
-- Support system migration
+#### Spyware
+**Explanation:**  
+Spyware secretly monitors user activity and sends data to attackers.
 
 **Example:**  
-Exporting customer data from one cloud provider to another in a standard format.
+A keylogger records passwords typed on a banking website.
 
 ---
 
-## Secure Data Destruction
-**Definition:**  
-The process of permanently destroying data so that it cannot be recovered.
-
-**Methods:**
-- Cryptographic erasure
-- Secure wiping
-- Physical destruction
+#### Scareware
+**Explanation:**  
+Uses fake alerts to scare users into installing malware or paying money.
 
 **Example:**  
-Deleting encryption keys used to protect cloud storage data.
+A popup claims “Your PC is infected!” and asks for payment.
 
 ---
 
-## Auditing Rights
-**Definition:**  
-The contractual right of a customer to verify and assess a service provider’s security controls and compliance.
-
-**Includes:**
-- Internal audits
-- Third-party audits
-- Compliance assessments
+#### Ransomware
+**Explanation:**  
+Encrypts files and demands ransom to restore access.
 
 **Example:**  
-An organization audits a cloud provider for ISO 27001 compliance.
+WannaCry encrypts hospital systems and demands Bitcoin.
 
 ---
 
-## Malware
-**Definition:**  
-Software designed to disrupt, damage, or gain unauthorized access to systems.
-
----
-
-### Virus
-**Definition:**  
-Malware that attaches to legitimate files and spreads when executed.
-
----
-
-### Worm
-**Definition:**  
-Self-propagating malware that spreads without user interaction.
-
----
-
-### Trojan
-**Definition:**  
+#### Trojan
+**Explanation:**  
 Malware disguised as legitimate software.
 
----
-
-### Ransomware
-**Definition:**  
-Malware that encrypts data and demands payment.
+**Example:**  
+A cracked software installer that installs a backdoor.
 
 ---
 
-### Spyware
-**Definition:**  
-Malware that secretly monitors user activity.
+#### Virus
+**Explanation:**  
+Requires user action to spread; attaches to files.
+
+**Example:**  
+An infected USB spreads malware when opened.
 
 ---
 
-### Rootkit
-**Definition:**  
-Malware that hides itself and maintains privileged access.
+#### Worm
+**Explanation:**  
+Self-propagates across networks without user interaction.
+
+**Example:**  
+Conficker spreads automatically via network vulnerabilities.
 
 ---
 
-### Fileless Malware
-**Definition:**  
-Malware that operates in memory using legitimate system tools.
+#### Trapdoor
+**Explanation:**  
+Hidden access left intentionally by developers.
+
+**Example:**  
+A hardcoded admin password left for testing.
 
 ---
 
-## Malware Countermeasures
-**Definition:**  
-Controls used to detect, prevent, and remove malware.
+#### Backdoor
+**Explanation:**  
+Hidden method to bypass authentication.
 
-**Examples:**
-- Anti-malware software
-- Code signing
-- Patch management
+**Example:**  
+Malware opens a secret SSH port.
 
 ---
 
-## Insider Threat
-**Definition:**  
-Security risk posed by trusted users abusing authorized access.
+#### Fileless Malware
+**Explanation:**  
+Runs in memory using legitimate tools (PowerShell).
+
+**Example:**  
+Attack executes malicious PowerShell commands from RAM.
 
 ---
 
-## Distributed Denial of Service (DDoS)
-**Definition:**  
-An attack that overwhelms systems with traffic to make them unavailable.
+### Malware Countermeasures
+
+#### Scanners
+**Explanation:**  
+Detect known malware signatures.
+
+**Example:**  
+Scheduled antivirus scans detect trojans.
 
 ---
 
-## Botnet
-**Definition:**  
-A network of compromised devices controlled by an attacker.
+#### Anti-malware
+**Explanation:**  
+Detects, prevents, and removes malware.
+
+**Example:**  
+Windows Defender blocking ransomware behavior.
 
 ---
 
-## Zero-Day Exploit
-**Definition:**  
-An attack exploiting a previously unknown vulnerability.
+#### Code Signing
+**Explanation:**  
+Ensures software integrity and authenticity.
+
+**Example:**  
+Unsigned software blocked by OS security policy.
 
 ---
 
-## Advanced Persistent Threat (APT)
-**Definition:**  
-A long-term targeted attack focused on data theft.
+### Malicious Activity
+
+#### Insider Threat
+**Explanation:**  
+Authorized user misuses access.
+
+**Example:**  
+Employee copies customer data to USB.
 
 ---
 
-## Data Loss Prevention (DLP)
-**Definition:**  
-Security technologies that prevent unauthorized data disclosure.
+#### Data Theft
+**Explanation:**  
+Unauthorized exfiltration of sensitive data.
+
+**Example:**  
+Attacker steals credit card database.
 
 ---
 
-## Social Engineering
-**Definition:**  
-Psychological manipulation used to trick users into revealing sensitive information.
+#### DDoS
+**Explanation:**  
+Overwhelms systems to make them unavailable.
+
+**Example:**  
+Botnet floods website with traffic.
 
 ---
 
-## Behavior Analytics
-**Definition:**  
-Use of machine learning, AI, and analytics to detect abnormal behavior.
+#### Botnet
+**Explanation:**  
+Network of compromised systems.
+
+**Example:**  
+IoT devices used for DDoS attack.
 
 ---
 
-## Host-Based Intrusion Prevention System (HIPS)
-**Definition:**  
-Security software that actively blocks malicious activity on a host.
+#### Zero-Day Exploit
+**Explanation:**  
+Attack exploiting unknown vulnerability.
+
+**Example:**  
+Attack occurs before patch exists.
 
 ---
 
-## Host-Based Firewall
-**Definition:**  
-A firewall that filters inbound and outbound traffic on a single system.
+#### Web-Based Attacks
+**Explanation:**  
+Attacks targeting web applications.
+
+**Example:**  
+SQL Injection stealing login credentials.
 
 ---
 
-## Application Whitelisting
-**Definition:**  
-A security control that allows only approved applications to run.
+#### Advanced Persistent Threat (APT)
+**Explanation:**  
+Long-term, stealthy, targeted attack.
+
+**Example:**  
+Nation-state spying on government networks.
 
 ---
 
-## Endpoint Encryption
-**Definition:**  
-Encryption that protects data stored on endpoint devices.
+### Malicious Activity Countermeasures
+
+#### User Awareness
+**Example:**  
+Training employees to detect phishing.
+
+#### System Hardening
+**Example:**  
+Disabling unused services.
+
+#### Patching
+**Example:**  
+Applying OS security updates.
+
+#### Isolation
+**Example:**  
+Quarantining infected endpoint.
+
+#### Data Loss Prevention (DLP)
+**Example:**  
+Blocking email with sensitive data.
 
 ---
 
-## Trusted Platform Module (TPM)
-**Definition:**  
-A hardware-based security chip used to securely store cryptographic keys.
+### Social Engineering
+
+#### Phishing
+**Explanation:**  
+Fraudulent emails to steal credentials.
+
+**Example:**  
+Fake Microsoft password reset email.
 
 ---
 
-## Endpoint Detection and Response (EDR)
-**Definition:**  
-Endpoint security solution that detects, investigates, and responds to threats.
+#### Impersonation
+**Explanation:**  
+Pretending to be a trusted entity.
+
+**Example:**  
+Attacker claims to be IT support.
 
 ---
 
-## Mobile Device Management (MDM)
-**Definition:**  
-Tools used to manage, secure, and enforce policies on mobile devices.
+### Behavior Analytics
+
+#### Machine Learning
+**Example:**  
+Detecting unusual login times.
+
+#### Artificial Intelligence
+**Example:**  
+AI flags abnormal network behavior.
+
+#### Data Analytics
+**Example:**  
+Correlating logs to detect attacks.
 
 ---
 
-## Bring Your Own Device (BYOD)
-**Definition:**  
-Policy allowing employees to use personal devices for work.
+## 7.2 Endpoint Device Security
 
 ---
 
-## Containerization (Mobile)
-**Definition:**  
-Separates corporate and personal data on a mobile device.
+### Host-based Intrusion Prevention System (HIPS)
+**Explanation:**  
+Blocks malicious behavior in real time.
+
+**Example:**  
+Stops unauthorized registry changes.
 
 ---
 
-## Mobile Application Management (MAM)
-**Definition:**  
-Security control that manages applications instead of devices.
+### Host-based Firewall
+**Explanation:**  
+Filters traffic at endpoint.
+
+**Example:**  
+Blocks inbound RDP connections.
 
 ---
 
-## Cloud Deployment Models
-- **Public Cloud:** Shared infrastructure
-- **Private Cloud:** Dedicated infrastructure
-- **Hybrid Cloud:** Combination of public and private
-- **Community Cloud:** Shared by similar organizations
+### Application Whitelisting
+**Explanation:**  
+Only approved apps can run.
+
+**Example:**  
+Blocks unknown executable files.
 
 ---
 
-## Cloud Service Models
-- **IaaS:** Customer manages OS and applications
-- **PaaS:** Provider manages OS and runtime
-- **SaaS:** Provider manages everything
+### Endpoint Encryption
+**Explanation:**  
+Encrypts data on device.
+
+**Example:**  
+BitLocker encrypts laptop hard drive.
 
 ---
 
-## Shared Responsibility Model
-**Definition:**  
-Security responsibilities are shared between the cloud provider and the customer.
+### Trusted Platform Module (TPM)
+**Explanation:**  
+Hardware security chip.
+
+**Example:**  
+Stores encryption keys securely.
 
 ---
 
-## Hypervisor
-**Definition:**  
-Software that creates and manages virtual machines.
+### Secure Browsing
+**Explanation:**  
+Protects against malicious websites.
+
+**Example:**  
+Browser blocks phishing site.
 
 ---
 
-## Containers
-**Definition:**  
-Lightweight virtualization that isolates applications.
+### Endpoint Detection and Response (EDR)
+**Explanation:**  
+Detects, investigates, and responds.
+
+**Example:**  
+EDR isolates infected laptop.
 
 ---
 
-## Virtual Appliance
-**Definition:**  
-A preconfigured virtual machine image designed for a specific purpose.
+## 7.3 Mobile Device Management (MDM)
 
 ---
 
-## Continuity and Resilience
-**Definition:**  
-The ability to maintain and recover operations during disruptions.
+### Corporate-Owned
+**Example:**  
+Company-issued iPhone with policies.
 
 ---
 
-## Shared Storage
-**Definition:**  
-Centralized storage accessible by multiple systems.
+### COPE
+**Explanation:**  
+Work + personal use.
+
+**Example:**  
+Employee installs personal apps on work phone.
 
 ---
 
-## Exam Tip
-If a question mentions **cloud, vendors, or outsourcing**, think:
-**SLA, Data Portability, Auditing Rights, Shared Responsibility Model**
+### BYOD
+**Explanation:**  
+Employee-owned device.
+
+**Example:**  
+Personal phone accessing work email.
 
 ---
 
-## Reference
-Chapple, Mike, and David Seidl.  
-*ISC2 SSCP Systems Security Certified Practitioner Official Practice Tests*. Wiley, 2021.
+### Containerization
+**Explanation:**  
+Separates work and personal data.
+
+**Example:**  
+Work email stored in encrypted container.
+
+---
+
+### Encryption
+**Example:**  
+Encrypts phone storage.
+
+---
+
+### Mobile Application Management (MAM)
+**Explanation:**  
+Controls corporate apps only.
+
+**Example:**  
+Restricts copy-paste from work apps.
+
+---
+
+## 7.4 Cloud Security
+
+---
+
+### Public Cloud
+**Example:**  
+AWS shared infrastructure.
+
+---
+
+### Private Cloud
+**Example:**  
+Company-owned data center cloud.
+
+---
+
+### Hybrid Cloud
+**Example:**  
+Sensitive data on private, apps on public cloud.
+
+---
+
+### Community Cloud
+**Example:**  
+Government agencies sharing cloud.
+
+---
+
+### IaaS
+**Example:**  
+AWS EC2 – customer manages OS.
+
+---
+
+### PaaS
+**Example:**  
+Google App Engine – no OS management.
+
+---
+
+### SaaS
+**Example:**  
+Microsoft 365 – provider manages everything.
+
+---
+
+### Hypervisor
+**Explanation:**  
+Manages virtual machines.
+
+**Example:**  
+VMware ESXi.
+
+---
+
+### Legal and Regulatory Concerns
+
+- Privacy laws
+- Data ownership
+- Jurisdiction
+
+**Example:**  
+Data stored outside country violates law.
+
+---
+
+### Data Storage, Processing, Transmission
+**Example:**  
+Encrypted backups with disaster recovery.
+
+---
+
+### Third-Party Requirements
+**Example:**  
+SLA guarantees uptime and data deletion.
+
+---
+
+### Shared Responsibility Model
+**Example:**  
+AWS secures infrastructure, customer secures data.
+
+---
+
+## 7.5 Secure Virtual Environments
+
+---
+
+### Virtual Appliances
+**Example:**  
+Preconfigured firewall VM.
+
+---
+
+### Containers
+**Example:**  
+Docker container running web app.
+
+---
+
+### Continuity and Resilience
+**Example:**  
+Failover VM in another region.
+
+---
+
+### Attacks and Countermeasures
+**Example:**  
+VM escape prevented by patching.
+
+---
+
+### Shared Storage
+**Example:**  
+SAN used by multiple VMs.
+
+---
+
+## FINAL EXAM TIP
+If you can **explain each topic with a simple real-life example**, you will **pass SSCP Domain 7 confidently**.
