@@ -1,5 +1,5 @@
 # SSCP Domain 7 – Systems and Application Security
-## Key Definitions and Explanations (GitHub Compatible)
+
 
 ---
 
