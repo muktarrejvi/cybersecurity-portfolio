@@ -1,39 +1,39 @@
 # SSCP Domain 7 – Systems and Application Security
-## Key Topic Definitions & Explanations (Exam-Focused)
+## Key Definitions and Explanations (GitHub Compatible)
 
 ---
 
 ## Service Level Agreement (SLA)
 **Definition:**  
-A formal contract between a service provider and customer that defines expected service performance, availability, responsibilities, and penalties.
+A formal contract between a service provider and a customer that defines service expectations, performance metrics, responsibilities, and penalties.
 
-**Includes:**
-- Uptime guarantees
+**Key Elements:**
+- Availability (uptime)
 - Response and recovery times
 - Security responsibilities
-- Penalties for non-compliance
+- Penalties for violations
 
 **Example:**  
-Cloud provider guarantees 99.9% uptime and 4-hour incident response.
+A cloud provider guarantees 99.9% uptime and a 4-hour incident response time.
 
 ---
 
 ## Data Portability
 **Definition:**  
-The ability to securely transfer data between service providers without disruption or data loss.
+The ability to securely transfer data between different service providers or platforms without data loss or disruption.
 
 **Purpose:**
-- Prevent vendor lock-in
-- Support migration and continuity
+- Avoid vendor lock-in
+- Support system migration
 
 **Example:**  
-Exporting customer data from AWS to Azure in standard format.
+Exporting customer data from one cloud provider to another in a standard format.
 
 ---
 
 ## Secure Data Destruction
 **Definition:**  
-The process of permanently and irreversibly destroying data so it cannot be recovered.
+The process of permanently destroying data so that it cannot be recovered.
 
 **Methods:**
 - Cryptographic erasure
@@ -41,27 +41,27 @@ The process of permanently and irreversibly destroying data so it cannot be reco
 - Physical destruction
 
 **Example:**  
-Encrypting cloud storage and destroying the encryption keys.
+Deleting encryption keys used to protect cloud storage data.
 
 ---
 
 ## Auditing Rights
 **Definition:**  
-The contractual right to review and verify a service provider’s security controls and compliance.
+The contractual right of a customer to verify and assess a service provider’s security controls and compliance.
 
 **Includes:**
-- Compliance audits
-- Security assessments
+- Internal audits
 - Third-party audits
+- Compliance assessments
 
 **Example:**  
-Customer audits cloud provider for ISO 27001 compliance.
+An organization audits a cloud provider for ISO 27001 compliance.
 
 ---
 
 ## Malware
 **Definition:**  
-Malicious software designed to disrupt, damage, or gain unauthorized access to systems.
+Software designed to disrupt, damage, or gain unauthorized access to systems.
 
 ---
 
@@ -69,17 +69,11 @@ Malicious software designed to disrupt, damage, or gain unauthorized access to s
 **Definition:**  
 Malware that attaches to legitimate files and spreads when executed.
 
-**Example:**  
-Infected email attachment.
-
 ---
 
 ### Worm
 **Definition:**  
 Self-propagating malware that spreads without user interaction.
-
-**Example:**  
-WannaCry spreading via network vulnerabilities.
 
 ---
 
@@ -87,17 +81,11 @@ WannaCry spreading via network vulnerabilities.
 **Definition:**  
 Malware disguised as legitimate software.
 
-**Example:**  
-Fake software update.
-
 ---
 
 ### Ransomware
 **Definition:**  
 Malware that encrypts data and demands payment.
-
-**Example:**  
-LockBit attack.
 
 ---
 
@@ -115,13 +103,13 @@ Malware that hides itself and maintains privileged access.
 
 ### Fileless Malware
 **Definition:**  
-Malware that operates in memory using legitimate tools.
+Malware that operates in memory using legitimate system tools.
 
 ---
 
 ## Malware Countermeasures
 **Definition:**  
-Security controls used to detect, prevent, and remove malware.
+Controls used to detect, prevent, and remove malware.
 
 **Examples:**
 - Anti-malware software
@@ -132,13 +120,13 @@ Security controls used to detect, prevent, and remove malware.
 
 ## Insider Threat
 **Definition:**  
-Security risk posed by authorized users misusing access.
+Security risk posed by trusted users abusing authorized access.
 
 ---
 
 ## Distributed Denial of Service (DDoS)
 **Definition:**  
-Attack that overwhelms a system with traffic to make it unavailable.
+An attack that overwhelms systems with traffic to make them unavailable.
 
 ---
 
@@ -150,112 +138,112 @@ A network of compromised devices controlled by an attacker.
 
 ## Zero-Day Exploit
 **Definition:**  
-Attack exploiting an unknown or unpatched vulnerability.
+An attack exploiting a previously unknown vulnerability.
 
 ---
 
 ## Advanced Persistent Threat (APT)
 **Definition:**  
-Long-term targeted attack focused on data exfiltration.
+A long-term targeted attack focused on data theft.
 
 ---
 
 ## Data Loss Prevention (DLP)
 **Definition:**  
-Security technology that prevents unauthorized data leakage.
+Security technologies that prevent unauthorized data disclosure.
 
 ---
 
 ## Social Engineering
 **Definition:**  
-Psychological manipulation to trick users into revealing information.
+Psychological manipulation used to trick users into revealing sensitive information.
 
 ---
 
 ## Behavior Analytics
 **Definition:**  
-Use of AI, ML, and analytics to detect abnormal behavior.
+Use of machine learning, AI, and analytics to detect abnormal behavior.
 
 ---
 
 ## Host-Based Intrusion Prevention System (HIPS)
 **Definition:**  
-Software that actively blocks malicious activity on a host.
+Security software that actively blocks malicious activity on a host.
 
 ---
 
 ## Host-Based Firewall
 **Definition:**  
-Firewall that filters traffic on a single system.
+A firewall that filters inbound and outbound traffic on a single system.
 
 ---
 
 ## Application Whitelisting
 **Definition:**  
-Security control allowing only approved applications to run.
+A security control that allows only approved applications to run.
 
 ---
 
 ## Endpoint Encryption
 **Definition:**  
-Encryption protecting data stored on endpoints.
+Encryption that protects data stored on endpoint devices.
 
 ---
 
 ## Trusted Platform Module (TPM)
 **Definition:**  
-Hardware chip that stores cryptographic keys securely.
+A hardware-based security chip used to securely store cryptographic keys.
 
 ---
 
 ## Endpoint Detection and Response (EDR)
 **Definition:**  
-Endpoint solution that detects, investigates, and responds to threats.
+Endpoint security solution that detects, investigates, and responds to threats.
 
 ---
 
 ## Mobile Device Management (MDM)
 **Definition:**  
-Technology used to manage and secure mobile devices.
+Tools used to manage, secure, and enforce policies on mobile devices.
 
 ---
 
 ## Bring Your Own Device (BYOD)
 **Definition:**  
-Policy allowing personal devices for work purposes.
+Policy allowing employees to use personal devices for work.
 
 ---
 
 ## Containerization (Mobile)
 **Definition:**  
-Separates corporate and personal data on a device.
+Separates corporate and personal data on a mobile device.
 
 ---
 
 ## Mobile Application Management (MAM)
 **Definition:**  
-Controls security of mobile applications instead of devices.
+Security control that manages applications instead of devices.
 
 ---
 
 ## Cloud Deployment Models
 - **Public Cloud:** Shared infrastructure
 - **Private Cloud:** Dedicated infrastructure
-- **Hybrid Cloud:** Public + Private
+- **Hybrid Cloud:** Combination of public and private
 - **Community Cloud:** Shared by similar organizations
 
 ---
 
 ## Cloud Service Models
-- **IaaS:** Customer manages OS & apps
-- **PaaS:** Provider manages OS
+- **IaaS:** Customer manages OS and applications
+- **PaaS:** Provider manages OS and runtime
 - **SaaS:** Provider manages everything
 
 ---
 
 ## Shared Responsibility Model
 **Definition:**  
-Security responsibilities are shared between provider and customer.
+Security responsibilities are shared between the cloud provider and the customer.
 
 ---
 
@@ -267,33 +255,34 @@ Software that creates and manages virtual machines.
 
 ## Containers
 **Definition:**  
-Lightweight virtualization isolating applications.
+Lightweight virtualization that isolates applications.
 
 ---
 
 ## Virtual Appliance
 **Definition:**  
-Preconfigured virtual machine for specific functions.
+A preconfigured virtual machine image designed for a specific purpose.
 
 ---
 
 ## Continuity and Resilience
 **Definition:**  
-Ability to maintain operations during and after disruptions.
+The ability to maintain and recover operations during disruptions.
 
 ---
 
 ## Shared Storage
 **Definition:**  
-Centralized storage accessed by multiple systems.
+Centralized storage accessible by multiple systems.
 
 ---
 
 ## Exam Tip
-> If it involves **contracts, vendors, or cloud**, think **SLA, portability, auditing, shared responsibility**.
+If a question mentions **cloud, vendors, or outsourcing**, think:
+**SLA, Data Portability, Auditing Rights, Shared Responsibility Model**
 
 ---
 
 ## Reference
 Chapple, Mike, and David Seidl.  
-ISC2 SSCP Systems Security Certified Practitioner Official Practice Tests, Wiley, 2021.
+*ISC2 SSCP Systems Security Certified Practitioner Official Practice Tests*. Wiley, 2021.
