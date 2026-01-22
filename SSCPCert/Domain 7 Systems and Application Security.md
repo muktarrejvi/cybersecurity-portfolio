@@ -7,6 +7,22 @@
 
 ---
 
+### Malware Types
+
+| Malware Type | Explanation | Example |
+|--------------|------------|---------|
+| Virus | Attaches to legitimate files and spreads when executed | Infected Word document |
+| Worm | Self-propagates over networks without user action | WannaCry |
+| Trojan | Disguised as legitimate software | Fake antivirus |
+| Ransomware | Encrypts data and demands payment | LockBit |
+| Spyware | Secretly collects user information | Keyloggers |
+| Rootkit | Hides malicious activity with elevated privileges | Kernel rootkit |
+| Scareware | Uses fear to trick users into actions | Fake virus alerts |
+| Backdoor | Hidden access method bypassing authentication | Hardcoded admin account |
+| Trapdoor | Deliberate backdoor left by developers | Debug account |
+| Fileless Malware | Runs in memory without files | PowerShell attacks |
+---
+
 ### Malware
 
 #### Rootkit
