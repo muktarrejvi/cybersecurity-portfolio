@@ -1,242 +1,130 @@
-# Domain 7: Systems and Application Security (SSCP)
+# Domain 7: Systems and Application Security (15%)
 
----
+**Domain Weight**: 15%  
+**Key Focus**: Identify/analyze malicious code & activity, secure endpoints & mobile devices, manage cloud/virtual environments, and apply countermeasures to protect systems and applications.
 
-## 7.1 Identify and Analyze Malicious Code and Activity
+This domain emphasizes practical defenses against common threats (malware, social engineering, cloud misconfigurations) and secure operations in modern environments (endpoints, mobile, cloud, virtualization).
+
+## 7.1 Identify and analyze malicious code and activity
 
 ### Malware Types
+- **Rootkits** — Hide presence/processes (kernel/user-mode)  
+- **Spyware** — Steals data (keystrokes, screenshots)  
+- **Scareware** — Fake alerts to trick purchases  
+- **Ransomware** — Encrypts files, demands payment  
+- **Trojans** — Disguised as legitimate software  
+- **Viruses** — Self-replicating, attaches to files  
+- **Worms** — Self-propagating over networks  
+- **Trapdoors / Backdoors** — Unauthorized access paths  
+- **Fileless malware** — Lives in memory (PowerShell, WMI)  
+- **App/code/OS/mobile code vulnerabilities** — Exploit flaws in software  
 
-| Malware Type | Explanation | Example |
-|--------------|------------|---------|
-| Virus | Attaches to legitimate files and spreads when executed | Infected Word document |
-| Worm | Self-propagates over networks without user action | WannaCry |
-| Trojan | Disguised as legitimate software | Fake antivirus |
-| Ransomware | Encrypts data and demands payment | LockBit |
-| Spyware | Secretly collects user information | Keyloggers |
-| Rootkit | Hides malicious activity with elevated privileges | Kernel rootkit |
-| Scareware | Uses fear to trick users into actions | Fake virus alerts |
-| Backdoor | Hidden access method bypassing authentication | Hardcoded admin account |
-| Trapdoor | Deliberate backdoor left by developers | Debug account |
-| Fileless Malware | Runs in memory without files | PowerShell attacks |
-
----
+**Example**: Emotet trojan spreads via phishing → installs ransomware → encrypts files and exfiltrates data.
 
 ### Malware Countermeasures
+- Scanners / anti-malware (signature + heuristic + behavioral)  
+- Code signing (verify authenticity)  
+- Containment/remediation (quarantine, rollback)  
+- Software security (secure development, patching)  
 
-- Anti-malware software
-- Malware scanners
-- Code signing
-- Regular updates and patches
-- Least privilege access
+**Example**: Endpoint anti-malware detects WannaCry exploit → quarantines file → prevents spread via SMB.
 
-**Example:**  
-Digitally signed software ensures code integrity and authenticity.
+### Malicious Activity Types
+- Insider threat (malicious or negligent)  
+- Data theft / exfiltration  
+- DDoS (flooding targets)  
+- Botnet (zombie devices for attacks)  
+- Zero-day exploits  
+- Web-based attacks (XSS, SQLi, CSRF)  
+- APT (advanced persistent threat – stealthy, targeted)  
 
----
-
-### Malicious Activities
-
-| Activity | Description |
-|--------|-------------|
-| Insider Threat | Abuse by authorized users |
-| Data Theft | Unauthorized data exfiltration |
-| DDoS | Overwhelming systems with traffic |
-| Botnet | Network of compromised devices |
-| Zero-Day | Exploits unknown vulnerabilities |
-| Web Attacks | SQL injection, XSS |
-| APT | Long-term targeted attacks |
-
----
+**Example**: APT group uses spear-phishing + zero-day to gain foothold → lateral movement → data exfiltration over months.
 
 ### Malicious Activity Countermeasures
+- User awareness/training  
+- System hardening (disable unnecessary services, least privilege)  
+- Patching/vulnerability management  
+- Isolation (segmentation, sandboxing)  
+- DLP (prevent unauthorized data movement)  
 
-- User awareness training
-- System hardening
-- Patch management
-- Network isolation
-- Data Loss Prevention (DLP)
-
----
+**Example**: After insider data theft, implement DLP rules to block USB copies of sensitive files + mandatory security awareness training.
 
 ### Social Engineering
+- Phishing/smishing/vishing  
+- Impersonation  
+- Scarcity/urgency tactics  
+- Whaling (targeting executives)  
 
-- Phishing
-- Impersonation
-- Pretexting
-
-**Example:**  
-Fake email pretending to be IT asking for password reset.
-
----
+**Example**: CEO receives email pretending to be CFO requesting urgent wire transfer → falls for impersonation → financial loss.
 
 ### Behavior Analytics
+- Machine learning / AI for anomaly detection  
+- UEBA (User and Entity Behavior Analytics)  
 
-- Machine Learning (ML)
-- Artificial Intelligence (AI)
-- Data Analytics
+**Example**: UEBA flags employee downloading 10 GB at 3 AM from unusual location → triggers alert for potential insider exfiltration.
 
-**Purpose:**  
-Detect anomalies in user or system behavior.
+## 7.2 Implement and operate endpoint device security
 
----
+- **HIPS / HIDS** — Host-based prevention/detection (blocks/monitors suspicious activity)  
+- **Host-based firewalls** — Control inbound/outbound traffic per host  
+- **Application whitelisting** — Only allow approved apps to run  
+- **Endpoint encryption** — Full disk encryption (BitLocker, FileVault)  
+- **TPM** — Hardware root of trust (secure boot, key storage)  
+- **Secure browsing** — Validate certificates, block malicious sites  
+- **EDR** — Endpoint Detection and Response (advanced hunting, behavioral blocking)  
 
-## 7.2 Implement and Operate Endpoint Device Security
+**Example**: Company deploys EDR → detects living-off-the-land attack using legitimate tools (PsExec) → isolates endpoint automatically.
 
-### Endpoint Security Controls
+## 7.3 Administer and manage mobile devices
 
-| Control | Description |
-|------|-------------|
-| HIPS | Prevents malicious activity on host |
-| Host Firewall | Filters traffic at host level |
-| Application Whitelisting | Only approved apps can run |
-| Endpoint Encryption | Protects data at rest |
-| TPM | Hardware-based security chip |
-| Secure Browsing | Protects against malicious websites |
-| EDR | Detects and responds to endpoint threats |
+- **Provisioning** — COPE (corporate-owned), BYOD (personal), MDM enrollment  
+- **Containerization** — Separate work/personal data (e.g., Samsung Knox, Microsoft Intune MAM)  
+- **Encryption** — Device + app-level  
+- **MAM** — Manage apps without full device control (wipe corporate apps only)  
 
-**Example:**  
-EDR detects suspicious PowerShell behavior and isolates device.
+**Example**: BYOD policy uses MDM + containerization → employee installs work email app in secure container → personal data remains untouched if device is wiped for security reasons.
 
----
+## 7.4 Understand and configure cloud security
 
-## 7.3 Administer Mobile Device Management (MDM)
+- **Deployment models** — Public, private, hybrid, community  
+- **Service models** — IaaS (you manage OS/apps), PaaS (platform managed), SaaS (fully managed)  
+- **Virtualization** — Hypervisor, VPC  
+- **Legal/regulatory** — Privacy (GDPR), jurisdiction, eDiscovery, shadow IT  
+- **Data handling** — Storage, processing, transmission, backup/recovery/resilience  
+- **Third-party** — SLA, data portability, destruction, auditing  
+- **Shared responsibility model** — Provider vs. customer duties (e.g., AWS secures hardware, you secure data/configs)  
 
-### Provisioning Techniques
+**Example**: In IaaS (AWS EC2), customer responsible for OS patching + IAM policies; AWS handles physical security + hypervisor.
 
-| Model | Description |
-|------|-------------|
-| Corporate Owned | Organization owns device |
-| COPE | Corporate Owned, Personally Enabled |
-| BYOD | User-owned device |
+## 7.5 Operate and maintain secure virtual environments
 
----
+- **Hypervisor types** — Type 1 (bare-metal, e.g., ESXi), Type 2 (hosted, e.g., VirtualBox)  
+- **Virtual appliances** — Pre-configured VMs (e.g., firewall appliance)  
+- **Containers** — Lightweight (Docker, Kubernetes) vs. VMs  
+- **Continuity/resilience** — Snapshots, replication, HA clusters  
+- **Storage** — Shared storage risks (e.g., data domain deduplication)  
+- **Threats & countermeasures** — VM escape, brute-force, threat hunting  
 
-### MDM Security Features
+**Example**: Attacker exploits hypervisor vulnerability for VM escape → countermeasures: patch hypervisor, isolate VMs with micro-segmentation, monitor for anomalous VM behavior.
 
-- Containerization (separate work/personal data)
-- Encryption
-- Mobile Application Management (MAM)
-- Remote wipe
-- Policy enforcement
+## Quick Reference Table – Key Concepts & Tools
 
-**Example:**  
-Work email stored in encrypted container on personal phone.
+| Concept/Tool          | Purpose                                      | Example / SSCP Tip                     |
+|-----------------------|----------------------------------------------|----------------------------------------|
+| EDR vs Anti-malware   | Behavioral detection + response              | EDR for advanced threats (fileless)    |
+| Shared Responsibility | Cloud security duties                        | Memorize: Provider = physical, you = data/config |
+| Container vs VM       | Isolation level                              | Containers share kernel → higher escape risk |
+| TPM                   | Hardware trust anchor                        | Enables secure boot & credential guard |
+| DLP                   | Prevents data leaks                          | Blocks PII upload to personal cloud    |
+| Zero-day              | Unknown vulnerability exploit                | Mitigate with behavior-based tools     |
 
----
+**Study Tips for Domain 7**  
+- Know malware types + indicators (exam loves examples like fileless, ransomware)  
+- Memorize shared responsibility differences (IaaS vs PaaS vs SaaS)  
+- Understand endpoint tools stack: HIPS → EDR → whitelisting → encryption  
+- Mobile: BYOD vs COPE + containerization/MDM/MAM distinctions  
+- Virtualization threats: focus on escape, hypervisor attacks  
 
-## 7.4 Understand and Configure Cloud Security
+Cross-reference: NIST SP 800-83 (malware), NIST SP 800-125 (virtualization), Cloud Security Alliance CCM, (ISC)² SSCP Study Guide.
 
-### Cloud Deployment Models
-
-| Model | Description |
-|------|-------------|
-| Public | Shared infrastructure |
-| Private | Dedicated infrastructure |
-| Hybrid | Public + Private |
-| Community | Shared by similar organizations |
-
----
-
-### Cloud Service Models
-
-| Model | Responsibility |
-|------|---------------|
-| IaaS | Customer manages OS & apps |
-| PaaS | Provider manages OS |
-| SaaS | Provider manages everything |
-
----
-
-### Virtualization
-
-- Hypervisors manage virtual machines
-- Type 1 (bare metal)
-- Type 2 (hosted)
-
----
-
-### Legal and Regulatory Concerns
-
-- Data privacy
-- Surveillance laws
-- Data ownership
-- Jurisdiction
-- eDiscovery
-
----
-
-### Data Storage, Processing, and Transmission
-
-- Archiving
-- Backup and recovery
-- Resilience
-- Encryption in transit and at rest
-
----
-
-### Third-Party / Outsourcing Requirements
-
-- Service Level Agreements (SLA)
-- Data portability
-- Secure data destruction
-- Auditing rights
-
----
-
-### Shared Responsibility Model
-
-- Cloud provider secures infrastructure
-- Customer secures data and access
-
----
-
-## 7.5 Operate and Maintain Secure Virtual Environments
-
-### Virtualization Components
-
-| Component | Description |
-|--------|-------------|
-| Hypervisor | Manages virtual machines |
-| Virtual Appliances | Preconfigured VM images |
-| Containers | Lightweight app isolation |
-
----
-
-### Security Considerations
-
-- VM escape attacks
-- Hypervisor hardening
-- Patch management
-- Network segmentation
-
----
-
-### Continuity and Resilience
-
-- High availability
-- Failover
-- Snapshots
-- Backups
-
----
-
-### Shared Storage
-
-- SAN
-- NAS
-- Risks: data leakage, misconfiguration
-
----
-
-## Key Exam Tips
-
-- **Malware vs Attack** → Malware is code, attack is activity  
-- **EDR > Antivirus** (detect + respond)  
-- **SaaS = least customer responsibility**  
-- **Shared responsibility model is critical**
-
----
-
-## Reference
-Chapple, Mike, and David Seidl.  
-*ISC2 SSCP Systems Security Certified Practitioner Official Practice Tests*, Wiley, 2021.
+Last updated: January 2026
