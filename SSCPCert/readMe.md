@@ -1,11 +1,5 @@
 # SSCP Exam Preparation – 2025/2026
 
-<p align="center">
-  <img src="https://img.shields.io/badge/SSCP-Systems%20Security%20Certified%20Practitioner-blue?style=for-the-badge&logo=ISC2&logoColor=white" alt="SSCP Badge">
-  <img src="https://img.shields.io/badge/Exam%20Domains-7-important?style=for-the-badge" alt="7 Domains">
-  <img src="https://img.shields.io/github/last-commit/muktarrevi/SSCPcert?style=flat-square" alt="Last Commit">
-</p>
-
 Personal study notes, summaries, key concepts, acronyms, tables, and preparation materials for the **ISC² SSCP** exam (current outline effective 2025–2026, CAT format).
 
 > **Goal:** Consistent 80–85%+ on practice exams → pass with ≥ 700/1000  
