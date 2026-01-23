@@ -12,7 +12,7 @@ Personal study notes, summaries, key concepts, acronyms, tables, and preparation
 | 1 | Security Concepts and Practices                     | 16%    | [Domain 1 Security Principles.md](./Domain%201%20Security%20Principles.md) | 3 months ago     | ████████░░ |
 | 2 | Access Controls                                     | 15%    | [Domain 2:Access Control.md](./Domain%202%3AAccess%20Control.md)          | 2 weeks ago      | ████████░░ |
 | 3 | Risk Identification, Monitoring, and Analysis      | 15%    | [Domain 3:Risk Identification, MONITORING, and Analysis.md](./Domain%203%3ARisk%20Identification%2C%20MONITORING%2C%20and%20Analysis.md) | 3 weeks ago      | ███████░░░ |
-| 4 | Incident Response and Recovery                      | 14%    | (not yet added)                                   | —                | ░░░░░░░░░░ |
+| 4 | Incident Response and Recovery                      | 14%    |                                   | —                | ░░░░░░░░░░ |
 | 5 | Cryptography                                        | 9%     | [Domain 5 Cryptography.md](./Domain%205%20Cryptography.md)               | 3 days ago       | ████████░░ |
 | 6 | Network and Communications Security                 | 16%    | [Domain 6 Network and Communication security.md](./Domain%206%20Network%20and%20Communication%20security.md) | yesterday        | █████████░ |
 | 7 | Systems and Application Security                    | 15%    | [Domain 7 Systems and Application Security.md](./Domain%207%20Systems%20and%20Application%20Security.md) | yesterday        | ████████░░ |
