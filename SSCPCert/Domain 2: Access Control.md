@@ -1,184 +1,160 @@
-# Domain 2: Access Controls  
-**SSCP (Systems Security Certified Practitioner) – 15% of exam**
+# SSCP Domain 2: Access Controls  
+**Detailed Study Notes – 2025/2026 Preparation**  
+(≈15–16% exam weight | Hands-on operational focus)
 
-## 1. Overview of Access Controls Domain
-- Core goal: Ensure only authorized entities can access resources while preventing unauthorized access.
-- Key activities: Implement/maintain authentication, support access management lifecycle, administer access control systems, understand internet trust architectures.
-- AAA framework: **Authentication** + **Authorization** + **Accounting** (tracking/logging).
+Domain 2 focuses on **implementing, maintaining, and supporting authentication, authorization, identity lifecycle, trust architectures, and access control models** in operational environments.
 
-## 2. Core Identity & Access Management Concepts
+## 2.1 Implement and maintain authentication methods
 
-### Entity vs Identity vs Attributes
-- **Entity**: Actual person, device, group, server, business unit, etc.
-- **Identity**: Role/context an entity uses (e.g., Bob = staff + alumnus + student).
-- **Attributes**: Descriptive data tied to an identity (major = Computer Science, graduation year = 2015, donor = Yes).
+### Single/Multi-Factor Authentication (MFA)
+- **Single-factor** → Only one method (usually password = something you know). Weak against phishing, credential stuffing.
+- **Multi-Factor Authentication (MFA)** → Two or more **independent** factors from different categories:
+  1. Something you **know** → Password, PIN, security question (avoid questions — easily guessable/social-engineered)
+  2. Something you **have** → Hardware token (YubiKey), soft token (Google Authenticator – TOTP), SMS (least secure – SIM swap risk), push notification
+  3. Something you **are** → Biometrics (fingerprint, face, iris – must include liveness detection to prevent spoofs)
+  4. Somewhere you **are** (emerging/contextual) → Geolocation, IP reputation
 
-### Identification vs Authentication vs Authorization
-| Step              | Action                              | Example (physical)          | Example (digital)          | Nature          |
-|-------------------|-------------------------------------|-----------------------------|----------------------------|-----------------|
-| **Identification** | Claim identity                      | “I’m Mike Chapple”          | Username                   | Assertion       |
-| **Authentication** | Prove the claim                     | Show driver’s license       | Password, biometrics, token| Proof           |
-| **Authorization**  | Determine allowed actions/rights    | Check appointment list      | ACL / RBAC check           | Permission grant|
+**Modern best practices (NIST SP 800-63B 2025-aligned)**:
+- Prefer **phishing-resistant MFA** → FIDO2/WebAuthn passkeys, certificate-based, hardware security keys
+- Avoid SMS/voice OTP if possible (NIST discourages)
+- **Crossover Error Rate (CER)** for biometrics — balance FAR (false accept) vs FRR (false reject)
+- Exam trap: Password + knowledge-based question = **NOT MFA** (same factor)
 
-- **Accounting** → Logging user activity for audit/reconstruction.
-
-## 3. Identification Mechanisms
-
-### Usernames
-- Used only for **identification** (not secret).
-- Common formats: first initial + last name (mchapple), or with numbers if duplicate.
-
-### Access / Identity Cards
-| Type                  | Technology                  | Security Level | Examples                          | Notes                                      |
-|-----------------------|-----------------------------|----------------|-----------------------------------|--------------------------------------------|
-| Magnetic stripe       | Magnetic stripe             | Low            | Old hotel keys, some ID cards     | Easily cloned/duplicated                   |
-| Contact Smart Card    | Embedded chip (contact)     | High           | DoD CAC, chip & PIN credit cards  | Insert into reader                         |
-| Contactless / Proximity (Passive) | RFID / NFC – powered by reader | Medium-High   | Many corporate badges             | Very close range, no battery               |
-| Contactless (Active)  | Battery + transmitter       | Medium         | Toll transponders (E-ZPass)       | Longer range, battery needs replacement    |
-
-## 4. Registration & Identity Proofing
-Four-step process (separation of duties is critical):
-
-1. Request creation of new entity
-2. Approve request (different person)
-3. Identity proofing (HR / registration authority)
-4. Issue credentials (separate issuer)
-
-**Identity Proofing techniques** (NIST guidance):
-- Two forms of government-issued photo ID
-- Fingerprints (government/high-security)
-- Background checks (at least criminal)
-
-## 5. Authentication Factors & Errors
-
-### Three Classic Factors
-1. **Something you know**     → Password, passphrase, PIN, password key
-2. **Something you are**      → Biometrics (fingerprint, face, iris, voice)
-3. **Something you have**     → Token, smart card, smartphone (soft token)
-
-### Error Rates
-- **FAR** (False Acceptance Rate) → Unauthorized user accepted (dangerous)
-- **FRR** (False Rejection Rate) → Authorized user rejected (inconvenient)
-- **Crossover Error Rate (CER)** → Point where FAR = FRR → balanced measure of strength
-
-## 6. Multifactor Authentication (MFA)
-- Must use **different factors** (password + token = MFA).
-- **Not MFA**: password + security question (both “something you know”).
-
-## 7. Something You Have – Common Implementations
-
-| Method          | Technology                  | Protocol | Notes                                      |
-|-----------------|-----------------------------|----------|--------------------------------------------|
-| Hardware token  | Key fob                     | HOTP / TOTP | Physical device, expensive to scale        |
-| Soft token      | Smartphone app              | TOTP     | Google Authenticator, Microsoft Authenticator |
-| Smart Card      | Embedded chip               | —        | DoD CAC, PIV cards                         |
-
-- **HOTP**: event-based (counter), code valid until used
-- **TOTP**: time-based (30-second windows), needs clock sync
-
-## 8. Password Authentication Protocols (Remote Access)
-
-| Protocol   | Encryption? | Security Status     | Notes                                      |
-|------------|-------------|----------------------|--------------------------------------------|
-| PAP        | No          | Insecure             | Sends password in clear text               |
-| CHAP       | Challenge-response | Secure (legacy) | Uses hash, no password sent                |
-| MS-CHAP    | —           | Broken               | Microsoft version – avoid                      |
-| MS-CHAPv2  | —           | Broken               | Improved but still cracked                 |
-
-## 9. SSO & Federation
-
-- **Federation** → Sharing identity info across organizations (Google, Facebook login on other sites).
-- **Single Sign-On (SSO)** → One login → session persists across systems (often within one org).
+### Single Sign-On (SSO)
+- One set of credentials → authenticated session reused across multiple systems/apps
+- Reduces password fatigue & reuse → improves security & user experience
 - Common implementations:
-  - Active Directory + ADFS (Microsoft)
-  - Shibboleth (higher education)
-- Trust types:
-  - One-way vs two-way
-  - Transitive vs non-transitive
+  - **Kerberos** (Windows AD native – ticket-based)
+  - **Active Directory Federation Services (ADFS)** → SAML-based federation for enterprise SSO
+  - **SAML 2.0** (enterprise/browser SSO)
+  - **OAuth 2.0 + OpenID Connect (OIDC)** (web & mobile – most common today)
 
-## 10. Internetwork Trust Architectures
+**SSO benefits & risks**:
+- Benefits: Fewer passwords, centralized policy enforcement
+- Risks: Single point of failure/compromise → use MFA + session monitoring
 
-| Zone         | Trust Level | Typical Use                              | Firewall Rules                     |
-|--------------|-------------|------------------------------------------|------------------------------------|
-| Internet     | Untrusted   | External world                           | Allow outbound, restrict inbound   |
-| Intranet     | Trusted     | Internal employee systems                | High trust                         |
-| DMZ          | Semi-trusted| Public-facing servers (web, mail, DNS)   | Limited inbound from Internet      |
-| Extranet     | Controlled  | Business partners, vendors (VPN access)  | Strict authentication & authorization |
+### Device Authentication
+- Machines authenticate to each other (not just users)
+- Methods:
+  - **Certificate-based** (X.509) → Public key + CA-signed → strong (802.1X, VPN, SSH)
+  - **SSH key pairs** → Public key on server, private key on client (never share private key)
+  - **MAC address** → Easily spoofed → **NOT secure**
+  - **TPM/Measured Boot** → Hardware root of trust (modern zero-trust)
 
-## 11. Zero Trust Architecture
-- **Core principle**: Trust **individuals/devices**, **not** the network/location.
-- Key technologies:
-  - Strong IAM
-  - Continuous monitoring (SIEM + SOAR)
-  - CASB (Cloud Access Security Broker)
-  - EDR (Endpoint Detection & Response)
+### Federated Access
+- Identity shared across organizations/domains without duplicating accounts
+- Protocols:
+  - **SAML 2.0** → XML-based assertions → IdP → SP (enterprise SSO)
+  - **OAuth 2.0** → Authorization framework (scopes/tokens) → NOT authentication by itself
+  - **OpenID Connect (OIDC)** → Authentication layer on OAuth → ID Token (JWT) with user claims
 
-## 12. Web SSO Protocols
+**Flow comparison**:
 
-| Protocol          | Purpose          | Main Actors                     | Key Benefit                              |
-|-------------------|------------------|----------------------------------|------------------------------------------|
-| **SAML**          | SSO (browser)    | Principal, IdP, SP               | True SSO, password never shared          |
-| **OAuth 2.0**     | Authorization    | Client, Resource Owner, Auth Server | Grants limited access (not authentication) |
-| **OpenID Connect**| Authentication   | Built on OAuth                   | Adds identity layer to OAuth             |
+| Protocol | Primary Purpose     | Token Format | Common Use Case                  | Phishing Resistant? |
+|----------|---------------------|--------------|----------------------------------|----------------------|
+| SAML     | SSO / Federation    | XML Assertion| Enterprise apps (Office 365)     | Medium              |
+| OAuth 2.0| Authorization       | Access Token | API access (Google APIs)         | Low (unless PKCE)   |
+| OIDC     | Authentication      | ID Token (JWT)| Social login (Sign in with Google)| Medium-High         |
 
-## 13. Device Authentication
-- **SSH key-based**: Public-private key pair (private key never shared).
-- **Certificate-based**: Public key signed by CA → higher assurance.
-- **MAC address**: Easily spoofed → **not secure** for authentication.
+## 2.2 Support internetwork trust architectures
 
-## 14. Account & Privilege Management Principles
+### Trust Relationships
+- **One-way trust** → Domain A trusts Domain B (not vice versa) → common for resource domains
+- **Two-way trust** → Mutual trust → bidirectional access
+- **Transitive trust** → A trusts B, B trusts C → A trusts C automatically → risk of unintended access
+- **Non-transitive** → Explicit trust required
+- **Zero trust** → No implicit trust based on network location → verify every access (identity + device + context)
 
-- **Least Privilege** → Minimum permissions needed for job.
-- **Separation of Duties** → Sensitive tasks require 2+ people.
-- **Job Rotation** + **Mandatory Vacation** → Deter fraud.
-- **Privilege Creep** → Accumulating old permissions → regular recertification needed.
+### Internet, Intranet, and Extranet
+| Zone       | Trust Level | Access From          | Typical Controls                     | Example                     |
+|------------|-------------|----------------------|--------------------------------------|-----------------------------|
+| Internet   | None        | Anyone               | Firewall, WAF, DDoS protection       | Public website              |
+| Intranet   | High        | Internal employees   | NAC, segmentation, EDR               | Internal file shares        |
+| Extranet   | Controlled  | Partners/vendors     | VPN, federation, limited accounts    | Supplier portal             |
 
-## 15. Password Policies (Modern NIST Guidance vs Legacy)
+### Third-Party Connections
+- Vendor portals, APIs, supply-chain integrations
+- Risks: API abuse, compromised credentials
+- Controls:
+  - OAuth/OIDC for delegated access
+  - API gateways + rate limiting + auth
+  - Vendor risk assessments + SLAs
+  - Continuous monitoring (CASB, UEBA)
 
-| Setting                  | Legacy Common Practice       | Current NIST Recommendation (SP 800-63B) |
-|--------------------------|-------------------------------|-------------------------------------------|
-| Minimum length           | 8–12 characters              | 8+ (user chosen) or 64+ (system gen)     |
-| Complexity               | Upper/lower/digit/symbol     | Not required if MFA in place             |
-| Expiration               | 90 days                      | Never force periodic changes             |
-| Password history         | Remember last 8–24           | Not strongly recommended                 |
-| Account lockout          | After 5–10 failed attempts   | Still useful                             |
+## 2.3 Participate in the identity management lifecycle
 
-## 16. Authorization Models
+### Proofing (Identity Proofing)
+- Verify real-world identity before issuing credentials
+- NIST IAL levels:
+  - IAL1 → Self-asserted (low assurance)
+  - IAL2 → Remote + document + selfie (most enterprise)
+  - IAL3 → In-person + biometrics (high-security/gov)
 
-| Model     | Control By          | Flexibility | Example Use Case                     | Typical Implementation |
-|-----------|---------------------|-------------|--------------------------------------|------------------------|
-| **MAC**   | OS / labels         | Very low    | Classified gov systems               | SELinux                |
-| **DAC**   | Resource owner      | High        | File shares, NTFS                    | Windows NTFS ACLs      |
-| **RBAC**  | Roles               | Medium      | Job-based permissions                | AD Security Groups     |
-| **ABAC**  | Attributes + rules  | Very high   | Conditional / contextual access      | Modern cloud IAM       |
+### Provisioning / De-provisioning
+- **Provisioning** → Create account + assign roles/entitlements (onboarding)
+- **De-provisioning** → Disable/delete account (offboarding/termination)
+- Best practice: Automate via HR system integration → immediate disable on termination
+- Emergency de-provisioning → Disable first (reversible), then delete
 
-- **Implicit Deny** / **Default Deny** → Anything not explicitly allowed is blocked.
+### Maintenance
+- Periodic recertification → Managers review entitlements
+- Detect privilege creep → Accumulating old permissions
+- Disable dormant accounts → After 90–180 days inactivity
 
-## 17. Monitoring, Reporting & Maintenance
+### Entitlement
+- Permissions/rights tied to role/job function
+- Enforce **least privilege** + **separation of duties**
 
-- **Privilege creep** detection → Regular access reviews / attestations.
-- **Continuous monitoring** flags:
-  - Impossible travel
-  - Unusual time / location
-  - Abnormal file access patterns
-- **Geotagging** & **Geofencing** → Useful for anomaly detection.
-- **Service / system accounts** → No interactive login, least privilege.
+### IAM Systems
+- Centralized stores: Active Directory, LDAP, Okta, Azure AD/Entra ID
+- Modern: Cloud IAM, SCIM for provisioning, JIT access
 
-## 18. Provisioning & Deprovisioning
-- **Onboarding**: Create account + assign entitlements.
-- **Offboarding**:
-  - Planned → Schedule expiration
-  - Emergency/termination → Immediate disable → later delete
-- Best practice: Disable first (reversible), then delete.
+## 2.4 Understand and apply access controls
 
----
+### Mandatory Access Control (MAC)
+- OS enforces based on labels (security clearance vs classification)
+- Example: SELinux, labeled security (Top Secret, Secret, Confidential)
+- Strongest confidentiality → no user override
 
-**Quick Exam Reminders**
-- Know difference: Identification vs Authentication
-- MFA requires **different factors**
-- PAP = insecure, CHAP = better, MS-CHAPv2 = broken
-- Least Privilege ≠ Separation of Duties
-- Implicit Deny is foundational
-- Zero Trust = trust identity, not network
+### Discretionary Access Control (DAC)
+- Owner controls permissions
+- Example: NTFS ACLs, Unix chmod
+- Flexible → but risk of over-sharing
 
-Good luck with your SSCP preparation!
+### Role-Based Access Control (RBAC)
+- Permissions tied to roles → users assigned roles
+- Example: AD Security Groups (HR Clerk, Accounting Supervisor)
+- Simplifies management → avoids generic accounts
+
+### Attribute-Based Access Control (ABAC)
+- Dynamic policies based on attributes (user, resource, environment)
+- Example: “Allow access if user.department = Finance AND time between 9-5 AND location = office”
+- Most flexible → used in modern zero-trust & cloud IAM
+
+### Rule-Based Access Control
+- Central rules (e.g., firewall ACLs, time-of-day restrictions)
+
+**Comparison Table – Access Models**
+
+| Model    | Who Controls?       | Flexibility | Strength                  | Weakness                     | Typical Use Case            |
+|----------|---------------------|-------------|---------------------------|------------------------------|-----------------------------|
+| MAC      | OS / Labels         | Low         | Highest security          | Rigid, complex               | Classified gov systems      |
+| DAC      | Resource owner      | High        | User-friendly             | Owner can misconfigure       | File shares, Windows NTFS   |
+| RBAC     | Admin via roles     | Medium      | Scalable, auditable       | Role explosion               | Enterprise AD environments  |
+| ABAC     | Policies + attrs    | Very high   | Contextual, dynamic       | Complex policy writing       | Cloud IAM, zero trust       |
+
+**Key Principles (Exam Favorites)**
+- **Least Privilege** → Minimum rights needed
+- **Need-to-Know** → Even if cleared, only access required data
+- **Separation of Duties** → No single person can complete sensitive transaction
+- **Implicit Deny** → Default = block unless explicitly allowed
+
+**Exam Tips**
+- Know differences: Identification (claim) vs Authentication (prove) vs Authorization (permissions)
+- MFA must use **different factors**
+- Zero Trust = verify identity/context — **not** network location
+- SAML = enterprise federation; OIDC = modern web/social login
+- Privilege creep → regular recertification required
+
+Good luck with your SSCP exam preparation!  
+Revise with official ISC2 practice tests + Sybex SSCP Study Guide (3rd ed. or later).
