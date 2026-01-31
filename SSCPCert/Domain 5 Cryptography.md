@@ -46,7 +46,7 @@ Cryptography is often **mandatory** to meet compliance requirements:
 - **PCI DSS** – Requires encryption of cardholder data
 - **ISO/IEC standards** – Define security and cryptographic best practices
 - **HIPAA** – Protects health information
-- **GDPR** – Requires protection of personal data
+- **GDPR** – Requires protection of personal data. General Data Privacy Regulation
 
 ---
 
