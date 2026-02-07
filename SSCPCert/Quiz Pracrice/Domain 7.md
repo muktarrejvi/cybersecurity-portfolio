@@ -11,7 +11,7 @@ B. Worm
 C. Rootkit  
 D. Ransomware  
 
-**Correct Answer:** C  
+**Correct Answer:** ??  
 **Explanation:** Rootkits hide malicious activity and often operate at the kernel level.
 
 ---
