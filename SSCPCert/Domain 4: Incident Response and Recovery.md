@@ -95,7 +95,10 @@ Safely return to normal operations.
 ### Restoration Planning
 - **RTO** (Recovery Time Objective): max acceptable downtime  
 - **RPO** (Recovery Point Objective): max acceptable data loss  
-- **MTD** (Maximum Tolerable Downtime)  
+- **MTD** (Maximum Tolerable Downtime) :  Maximum Tolerable Downtime (MTD) is the maximum amount of time a business process or system can be unavailable after a disruption before the organization suffers unacceptable damage (financial, legal, reputational, or operational).
+
+Example:
+If an online banking system has an MTD of 4 hours, the service must be restored within 4 hours after an outage, or the business impact becomes unacceptable.
 
 **Example**: Critical payroll system has RTO = 4 hours, RPO = 15 minutes → frequent snapshots and fast restore from cloud backup.
 
