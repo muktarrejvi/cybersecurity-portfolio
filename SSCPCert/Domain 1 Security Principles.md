@@ -75,7 +75,7 @@
 
 ### 🔑 License Agreement Types
 1. **Enterprise License Agreements (ELAs)**  
-   - Negotiated contracts between vendor and customer.  
+   - Negotiated contracts between vendor and customer. 
    - Common for expensive enterprise software.  
 
 2. **End User License Agreements (EULAs)**  
