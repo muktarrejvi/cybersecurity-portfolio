@@ -14,7 +14,7 @@ This domain focuses on **why cryptography is needed**, **how cryptographic mecha
 - Commonly achieved using **encryption**.
 - Examples:
   - Encrypting data stored on disk
-  - Encrypting network communications (TLS, IPsec)
+  - Encrypting network communications (TLS, IPsec).
 
 ### Integrity
 - Ensures data has **not been altered** intentionally or accidentally.
