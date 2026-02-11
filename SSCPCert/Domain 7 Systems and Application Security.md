@@ -127,4 +127,7 @@ This domain emphasizes practical defenses against common threats (malware, socia
 
 Cross-reference: NIST SP 800-83 (malware), NIST SP 800-125 (virtualization), Cloud Security Alliance CCM, (ISC)² SSCP Study Guide.
 
-Last updated: January 2026
+A DNS sinkhole (also called blackhole DNS) is the best and most scalable option here.
+Jennifer (as AD domain admin) can configure the organization's internal DNS servers (Active Directory-integrated DNS) or use a forwarding DNS setup to intercept queries for the known botnet C2 domain names and return a false/non-routable IP (e.g., 127.0.0.1, 0.0.0.0, or a local sinkhole server IP).
+
+Last updated: February 2026
