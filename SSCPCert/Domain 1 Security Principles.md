@@ -22,7 +22,6 @@
   - A code of practice for protecting PII in public cloud environments
 
 
-
 ### 👩‍💻 Employee Privacy
 - **Minimization Principle** – Collect only necessary information; retain only as long as needed.  
 - **Access Limitation** – Restrict access to sensitive data; minimize the number of employees with access.  
