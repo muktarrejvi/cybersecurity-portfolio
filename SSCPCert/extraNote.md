@@ -34,3 +34,4 @@ Implementing **digital certificates** provides a **secure** and **robust** metho
 
 Using a **redundant array of independent disks (RAID)** configuration provides **redundancy** and **fault tolerance**, ensuring **high availability** of the **shared storage**. If one **disk fails**, others can continue to provide **data access** without interruption.
 
+**Minimization of harm** is an ethical principle guiding the investigator to avoid unnecessary damage to individuals' **reputations**, **privacy**, and **well-being**, especially in **non-criminal matters**.
