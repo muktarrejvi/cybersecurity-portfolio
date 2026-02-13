@@ -29,3 +29,5 @@ This metric directly indicates whether the protocol is successfully protecting s
 - Fewer breaches after implementation may suggest improved protection.
 - An increase or no change in breaches may indicate weaknesses in configuration, implementation, or complementary controls.
 - Should be evaluated alongside other security metrics for a comprehensive assessment.
+
+Implementing digital certificates (C) provides a secure and robust method for device authentication. Certificates can uniquely identify and verify authorized devices by cryptographically binding them to a specific identity.
