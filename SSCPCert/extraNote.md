@@ -18,3 +18,14 @@ This separation:
 - Allows users to continue personal use of the device
 
 It is commonly used in BYOD (Bring Your Own Device) environments to protect organizational data while preserving user privacy
+
+### Key Metric: Number of Reported Data Breaches
+
+The number of data breaches reported since implementation is a key metric used to evaluate the effectiveness of a new data encryption protocol.  
+
+This metric directly indicates whether the protocol is successfully protecting sensitive data.
+
+**Rationale:**
+- Fewer breaches after implementation may suggest improved protection.
+- An increase or no change in breaches may indicate weaknesses in configuration, implementation, or complementary controls.
+- Should be evaluated alongside other security metrics for a comprehensive assessment.
