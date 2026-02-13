@@ -77,3 +77,14 @@ The most likely cause of **underperformance** is **insufficient virtual CPU (vCP
 - **Phishing**: A **generic** attack that targets a **large group of people**, usually via **mass emails**, aiming to trick recipients into revealing **sensitive information** such as passwords, financial details, or login credentials.
 
 - **Spear Phishing**: A **targeted** and **personalized** form of phishing that focuses on a **specific individual or organization**. Attackers often **impersonate trusted contacts** like a **CEO, IT administrator, or colleague** to increase the chances of success.
+
+# Client-Side Encryption for Cloud Data Security
+
+Enterprises should **implement client-side encryption** before uploading data to the cloud to ensure protection against **unauthorized access** and compliance with **data privacy regulations**. By using client-side encryption, the data is **encrypted locally** before transmission, giving the organization full control over **encryption keys** and ensuring that sensitive information remains secure even if the **cloud provider** is compromised. This approach strengthens overall **data security** and privacy governance.
+
+**Key Points:**
+- **Client-Side Encryption:** Encrypt data locally before sending to the cloud.  
+- **Unauthorized Access Protection:** Prevents outsiders and even the cloud provider from reading the data.  
+- **Encryption Keys Control:** The organization retains full control over keys.  
+- **Compliance:** Helps meet regulatory requirements such as GDPR, HIPAA, or CCPA.  
+- **Data Security:** Ensures confidentiality and integrity of sensitive information.
