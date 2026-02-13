@@ -71,3 +71,9 @@ The most likely cause of **underperformance** is **insufficient virtual CPU (vCP
 
 > **Paraphrased Insight:**  
 > Using **automated defenses** in EDR solutions ensures that ransomware is **detected and contained quickly**, reducing the risk of widespread **data loss** or disruption. This approach enhances the organization's **incident response effectiveness** and **business continuity**.
+
+# Phishing vs Spear Phishing
+
+- **Phishing**: A **generic** attack that targets a **large group of people**, usually via **mass emails**, aiming to trick recipients into revealing **sensitive information** such as passwords, financial details, or login credentials.
+
+- **Spear Phishing**: A **targeted** and **personalized** form of phishing that focuses on a **specific individual or organization**. Attackers often **impersonate trusted contacts** like a **CEO, IT administrator, or colleague** to increase the chances of success.
