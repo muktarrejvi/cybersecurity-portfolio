@@ -35,3 +35,8 @@ Implementing **digital certificates** provides a **secure** and **robust** metho
 Using a **redundant array of independent disks (RAID)** configuration provides **redundancy** and **fault tolerance**, ensuring **high availability** of the **shared storage**. If one **disk fails**, others can continue to provide **data access** without interruption.
 
 **Minimization of harm** is an ethical principle guiding the investigator to avoid unnecessary damage to individuals' **reputations**, **privacy**, and **well-being**, especially in **non-criminal matters**.
+
+# RFID Badge Access and Logging
+
+Utilizing **RFID badges** with **access logs** provides the most **comprehensive solution** as it not only **controls access** but also **records detailed logs** of **who has entered and exited the server rooms**, which is crucial for **auditing** and **security purposes**.
+
