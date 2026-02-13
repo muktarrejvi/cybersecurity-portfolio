@@ -40,6 +40,7 @@ Using a **redundant array of independent disks (RAID)** configuration provides *
 
 Utilizing **RFID badges** with **access logs** provides the most **comprehensive solution** as it not only **controls access** but also **records detailed logs** of **who has entered and exited the server rooms**, which is crucial for **auditing** and **security purposes**.
 
-# Performance Degradation in Overcommitted Hypervisors
+# Performance Degradation in Virtualized Environments
 
-The most likely cause of **performance degradation** in this scenario is **insufficient physical RAM** for the **virtual machines**. When the **hypervisor** is **overcommitted**, it means more **virtual resources** (like **RAM**) are allocated to **virtual machines** than physically available. This leads to **swapping** and increased use of **disk space** as **memory**, which significantly **slows down** the environment.
+The most likely cause of **performance degradation** in this scenario is **insufficient physical RAM** allocated to the **virtual machines (VMs)**. When the **hypervisor** is **overcommitted**, it means that more virtual resources, such as **memory**, are assigned to VMs than are physically available on the host. This overcommitment forces the system to use **disk swapping** or **paging**, which significantly slows down the virtualized environment and reduces overall **system performance**.
+
