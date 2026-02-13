@@ -62,3 +62,12 @@ The **Transport Layer** is responsible for **end-to-end communication** between 
 The most likely cause of **underperformance** is **insufficient virtual CPU (vCPU) resources** allocated to the **appliance**. **Virtual appliances** rely on adequate **CPU resources** to efficiently **process traffic** and execute their **tasks**. Without proper allocation, the appliance may experience **delays**, **packet drops**, or overall **performance degradation**.
 
 > **Note:** Always ensure that the **vCPU allocation** matches the appliance's **recommended specifications**. Monitoring **CPU usage** and scaling resources appropriately can prevent **bottlenecks** and maintain **optimal performance**.
+
+# Automated Threat Mitigation in Ransomware Attacks
+
+**Automated threat mitigation** plays a crucial role during a potential **ransomware attack**, allowing an **Endpoint Detection and Response (EDR) system** to **swiftly isolate**, **contain**, and **neutralize threats**, thereby **minimizing operational and data damage**.
+
+**Keywords:** `automated threat mitigation`, `ransomware attack`, `EDR system`, `isolate`, `neutralize threats`, `minimizing damage`
+
+> **Paraphrased Insight:**  
+> Using **automated defenses** in EDR solutions ensures that ransomware is **detected and contained quickly**, reducing the risk of widespread **data loss** or disruption. This approach enhances the organization's **incident response effectiveness** and **business continuity**.
