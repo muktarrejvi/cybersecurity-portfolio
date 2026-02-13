@@ -49,3 +49,6 @@ The most likely cause of **performance degradation** in this scenario is **insuf
 **Mobile Application Management (MAM)** is designed to **manage** and **secure corporate applications**, enabling organizations to enforce **policies** and **controls** specifically on **work-related apps** while **safeguarding personal data** and **personal applications** on the same device.
 
 
+# TLS Downgrade Attack
+
+**Transport Layer Security (TLS)** can be susceptible to **downgrade attacks**, where an **attacker** forces a connection to use an **older, less secure protocol version**, such as **SSL** or earlier TLS versions. This exposes the communication to known **vulnerabilities** and **security risks**.
