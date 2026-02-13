@@ -52,3 +52,8 @@ The most likely cause of **performance degradation** in this scenario is **insuf
 # TLS Downgrade Attack
 
 **Transport Layer Security (TLS)** can be susceptible to **downgrade attacks**, where an **attacker** forces a connection to use an **older, less secure protocol version**, such as **SSL** or earlier TLS versions. This exposes the communication to known **vulnerabilities** and **security risks**.
+
+# Transport Layer Overview
+
+The **Transport Layer** is responsible for **end-to-end communication** between devices on a network. It ensures **reliable data delivery** and can employ protocols like **TLS (Transport Layer Security)** to provide **encryption** and maintain **data integrity** during transmission.
+
