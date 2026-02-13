@@ -57,3 +57,8 @@ The most likely cause of **performance degradation** in this scenario is **insuf
 
 The **Transport Layer** is responsible for **end-to-end communication** between devices on a network. It ensures **reliable data delivery** and can employ protocols like **TLS (Transport Layer Security)** to provide **encryption** and maintain **data integrity** during transmission.
 
+# Virtual Appliance Performance Issue
+
+The most likely cause of **underperformance** is **insufficient virtual CPU (vCPU) resources** allocated to the **appliance**. **Virtual appliances** rely on adequate **CPU resources** to efficiently **process traffic** and execute their **tasks**. Without proper allocation, the appliance may experience **delays**, **packet drops**, or overall **performance degradation**.
+
+> **Note:** Always ensure that the **vCPU allocation** matches the appliance's **recommended specifications**. Monitoring **CPU usage** and scaling resources appropriately can prevent **bottlenecks** and maintain **optimal performance**.
