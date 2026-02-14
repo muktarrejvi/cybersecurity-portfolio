@@ -88,3 +88,43 @@ Enterprises should **implement client-side encryption** before uploading data to
 - **Encryption Keys Control:** The organization retains full control over keys.  
 - **Compliance:** Helps meet regulatory requirements such as GDPR, HIPAA, or CCPA.  
 - **Data Security:** Ensures confidentiality and integrity of sensitive information.
+
+- 
+## Recommended Password Hashing Algorithms (2025–2026)
+
+Modern password storage should **never** use fast cryptographic hashes like MD5, SHA-1, SHA-256 or SHA-512.
+
+Use one of these deliberately slow, adaptive, salted key-derivation functions instead:
+
+| Algorithm   | Status (2026)              | Memory-Hard? | Side-channel resistant? | GPU/ASIC resistance | Best default choice? | Typical library / support level          | Recommended parameters (2025–2026)          |
+|-------------|----------------------------|--------------|---------------------------|----------------------|-----------------------|-------------------------------------------|----------------------------------------------|
+| **Argon2id**   | **Best overall**           | Yes          | Yes                       | Very high            | Yes (preferred)       | libsodium, argon2-cffi, most modern stacks | Time: 1–4, Memory: 64–194 MiB, Parallelism: 4 |
+| **scrypt**     | Very strong memory-hard    | Yes          | Moderate                  | High                 | Good alternative      | libsodium, Python scrypt, Node.js         | N=32768, r=8, p=1 (or higher memory)        |
+| **bcrypt**     | Excellent & widely trusted | No           | Moderate                  | Moderate             | Very safe fallback    | Almost every language/framework           | Cost factor 12–14 (aim for ≥0.3–0.5 s delay) |
+| **PBKDF2**     | Acceptable (legacy/FIPS)   | No           | No                        | Low                  | Only when required    | Built-in in many languages (Java, .NET, Python hashlib) | ≥600,000 iterations with SHA-256/SHA-512     |
+
+### Quick Decision Guide
+
+- **Use Argon2id** whenever possible  
+  → Winner of the 2015 Password Hashing Competition  
+  → Strongest protection against GPU/ASIC attacks + good side-channel resistance  
+  → First choice in new projects
+
+- **Use scrypt** if Argon2id is not available in your ecosystem  
+  → Excellent memory-hardness
+
+- **Use bcrypt** if you want maximum compatibility & proven track record  
+  → Still very secure in 2026 — most applications use it successfully
+
+- **Use PBKDF2** only if:  
+  - Regulatory requirements force it (FIPS 140, some government contracts)  
+  - You cannot use Argon2id / scrypt / bcrypt
+
+### Example code snippets
+
+```python
+# Argon2id (Python - argon2-cffi)
+from argon2 import PasswordHasher
+ph = PasswordHasher(time_cost=3, memory_cost=65536, parallelism=4)
+hash = ph.hash("correct horse battery staple")
+# verify: ph.verify(hash, "correct horse battery staple")
