@@ -17,7 +17,7 @@ This separation:
 - Maintains security boundaries
 - Allows users to continue personal use of the device
 
-It is commonly used in BYOD (Bring Your Own Device) environments to protect organizational data while preserving user privacy
+It is commonly used in BYOD (Bring Your Own Device)environments to protect organizational data while preserving user privacy
 
 ### Key Metric: Number of Reported Data Breaches
 
