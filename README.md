@@ -9,7 +9,6 @@ A collection of practical notes, reports, and tools SIEM analysis, log parsing a
 - **C|CT Hands-on Labs**
 - **TryHackMe Blue Team Path**
 - **Hack The Box SOC Analyst Path**
- hi
 ---
 
 ## 📜 Certification
