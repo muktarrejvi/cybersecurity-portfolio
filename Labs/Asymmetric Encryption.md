@@ -1,8 +1,8 @@
 
-### Creating a keypair using openssl.
-## Command
+## Creating a keypair using openssl.
+### Command
 openssl genrsa -out private-key.pem 2048
-## Command Breakdown
+### Command Breakdown
 
 | Component                  | Meaning                                      | Explanation |
 |---------------------------|----------------------------------------------|-------------|
@@ -11,3 +11,5 @@ openssl genrsa -out private-key.pem 2048
 | `-out private-key.pem`    | Output file name                             | Saves the generated key to this file |
 | `private-key.pem`         | Output filename with extension               | `.pem` = PEM format (Base64-encoded text file) |
 | `2048`                    | Key size in bits                             | Creates a 2048-bit RSA private key |
+
+<img width="729" height="173" alt="image" src="https://github.com/user-attachments/assets/764d7e1f-7c4c-4a8d-8587-b458c49c7d82" />
