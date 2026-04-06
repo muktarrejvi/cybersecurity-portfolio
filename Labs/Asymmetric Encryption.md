@@ -1,7 +1,6 @@
 
 ### Creating a keypair using openssl.
 ## Command
-```bash
 openssl genrsa -out private-key.pem 2048
 ## Command Breakdown
 
