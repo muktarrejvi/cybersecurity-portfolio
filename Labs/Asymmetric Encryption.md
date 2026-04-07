@@ -15,6 +15,7 @@ openssl genrsa -out private-key.pem 2048
 <img width="729" height="173" alt="image" src="https://github.com/user-attachments/assets/764d7e1f-7c4c-4a8d-8587-b458c49c7d82" />
 
 openssl rsa -in private-key.pem -pubout -out public-key.pem
+SCREENSHOTS
 
 <img width="733" height="816" alt="image" src="https://github.com/user-attachments/assets/031ab275-5b1f-4d93-88e5-d537ec521bc0" />
 
