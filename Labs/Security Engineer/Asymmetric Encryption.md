@@ -19,4 +19,5 @@ SCREENSHOTS
 
 <img width="733" height="816" alt="image" src="https://github.com/user-attachments/assets/031ab275-5b1f-4d93-88e5-d537ec521bc0" />
 
-Now generating public key
+Now generating public key.
+At this point
