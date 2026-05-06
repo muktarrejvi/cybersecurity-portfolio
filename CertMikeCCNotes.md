@@ -27,7 +27,7 @@
 
 - **Physical Controls**  
   Involve **tangible protections** in the real world.  
-  🔹 *Examples:* Locks, CCTV cameras, security personnel.
+  🔹 *Examples:* Locks, CCTV cameras, security personnel
 
   
 - **Technical Controls**  
