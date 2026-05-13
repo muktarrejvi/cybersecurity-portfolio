@@ -86,18 +86,3 @@ Identity and Access Management (IAM) is one of the most critical domains in CISS
 
 ---
 
-## Common Exam Tips
-
-- Strongest authentication = **MFA** using different factor types.
-- Federation is about **trust relationships** between organizations.
-- RBAC is most commonly implemented in real-world enterprises.
-- De-provisioning (removing access when someone leaves) is a frequent exam scenario.
-- Least Privilege + Separation of Duties are core security principles.
-
----
-
-**Cross-References**:
-- Chapter 1: Security Governance & CIA Triad
-- Chapter 6 & 7: Cryptography (used in authentication)
-- Chapter 8: Software Development Security
-- Chapter 15: Security Assessment & Testing
