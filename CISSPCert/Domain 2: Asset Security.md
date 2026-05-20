@@ -1,4 +1,4 @@
-# Chapter 2: Asset Security (Domain 2)
+# Chapter 2: Asset Security
 
 **Domain Weight**: 10% of the CISSP Exam (2024/2025/2026 outline)
 
