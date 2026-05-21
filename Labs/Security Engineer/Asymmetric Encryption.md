@@ -24,7 +24,7 @@ Now generating public key.
 
 ## 1. Generate RSA Key Pair (2048-bit)
 
-```bash
+
 # Generate private key
 openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
 
@@ -38,5 +38,5 @@ openssl pkeyutl -decrypt -inkey private_key.pem -in ciphertext.bin -out decrypte
 
 
 ##Quiz command
-```bash
+
 openssl pkeyutl -decrypt -in ciphertext_message -inkey private-key-bob.pem -out decrypted.txt
