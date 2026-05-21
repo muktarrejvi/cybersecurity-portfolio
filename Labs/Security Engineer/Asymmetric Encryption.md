@@ -31,9 +31,7 @@ openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:204
 # Extract public key
 openssl rsa -pubout -in private_key.pem -out public_key.pem
 
-2. Encryption (Using Public Key)
-Bash# Encrypt a file/message
+# Encrypt a file/message
 openssl pkeyutl -encrypt -pubin -inkey public_key.pem -in message.txt -out ciphertext.bin
-3. Decryption (Using Private Key)
-Bash# Decrypt the ciphertext
+# Decrypt the ciphertext
 openssl pkeyutl -decrypt -inkey private_key.pem -in ciphertext.bin -out decrypted.txt
