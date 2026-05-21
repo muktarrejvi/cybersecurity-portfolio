@@ -41,6 +41,10 @@ openssl pkeyutl -decrypt -inkey private_key.pem -in ciphertext.bin -out decrypte
 
 openssl pkeyutl -decrypt -in ciphertext_message -inkey private-key-bob.pem -out decrypted.txt
 
+
+<img width="499" height="770" alt="image" src="https://github.com/user-attachments/assets/4f1d759e-c6c8-4ec4-8f08-b7808c98a9d8" />
+
+
 # Extract P and Q from private key
 
 openssl rsa -in private-key-bob.pem -text -noout
