@@ -37,6 +37,10 @@ openssl pkeyutl -encrypt -pubin -inkey public_key.pem -in message.txt -out ciphe
 openssl pkeyutl -decrypt -inkey private_key.pem -in ciphertext.bin -out decrypted.txt
 
 
-##Quiz command
+## Quiz command
 
 openssl pkeyutl -decrypt -in ciphertext_message -inkey private-key-bob.pem -out decrypted.txt
+
+# Extract P and Q from private key
+
+openssl rsa -in private-key-bob.pem -text -noout
