@@ -35,3 +35,8 @@ openssl rsa -pubout -in private_key.pem -out public_key.pem
 openssl pkeyutl -encrypt -pubin -inkey public_key.pem -in message.txt -out ciphertext.bin
 # Decrypt the ciphertext
 openssl pkeyutl -decrypt -inkey private_key.pem -in ciphertext.bin -out decrypted.txt
+
+
+##Quiz command
+```bash
+openssl pkeyutl -decrypt -in ciphertext_message -inkey private-key-bob.pem -out decrypted.txt
