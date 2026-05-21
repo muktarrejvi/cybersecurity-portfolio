@@ -20,4 +20,13 @@ SCREENSHOTS
 <img width="733" height="816" alt="image" src="https://github.com/user-attachments/assets/031ab275-5b1f-4d93-88e5-d537ec521bc0" />
 
 Now generating public key.
-At this point we have to do All type of scanning.
+# OpenSSL RSA Encryption & Decryption
+
+## 1. Generate RSA Key Pair (2048-bit)
+
+```bash
+# Generate private key
+openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
+
+# Extract public key
+openssl rsa -pubout -in private_key.pem -out public_key.pem
