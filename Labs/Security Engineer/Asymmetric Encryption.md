@@ -22,7 +22,7 @@ SCREENSHOTS
 Now generating public key.
 # OpenSSL RSA Encryption & Decryption
 
-## 1. Generate RSA Key Pair (2048-bit)
+## 1. Generate RSA Key Pair (2048-bit).
 
 
 # Generate private key
