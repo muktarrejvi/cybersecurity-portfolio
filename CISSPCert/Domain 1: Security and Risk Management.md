@@ -251,3 +251,6 @@ This domain lays the **foundation** for all other domains. It covers the manager
 - Master risk formulas (SLE, ALE).
 - Understand differences between policies, standards, procedures.
 - Review real-world supply chain attacks.
+Security champions: This involves selecting motivated individuals in each department to act as security advocates and promote best practices. It does not use points or scoring systems.
+Social engineering: This is an attack technique (e.g., phishing), not a defensive awareness method.
+Awareness training: This is the general category, but too broad. The specific method described (points + rewards + competition) is gamification, which is a specialized technique within awareness programs.
