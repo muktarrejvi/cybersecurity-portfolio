@@ -10,7 +10,7 @@ This domain lays the **foundation** for all other domains. It covers the manager
 ## 1.1 Understand, Adhere to, and Promote Professional Ethics
 
 ### Key Ethics Codes
-- **(ISC)² Code of Ethics** (Most Important for CISSP)
+- **(ISC)² Code of Ethics** (Most Important for CISSP).
   - **Four Canons** (in priority order):
     1. Protect society, the common good, necessary public trust and confidence in information and systems.
     2. Act honorably, honestly, justly, responsibly, and legally.
