@@ -19,7 +19,6 @@ The Software Development Life Cycle (SDLC) is a structured process for planning,
 > **Key Principle:** Security should be a design requirement, not an afterthought.
 
 ---
-
 ### 8.1.1 SDLC Models
 
 Different development models handle security integration differently.
