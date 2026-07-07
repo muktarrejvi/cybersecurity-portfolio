@@ -1,6 +1,6 @@
 # Chapter 1: Security and Risk Management (Domain 1)
 
-**Domain Weight**: 16% (Highest weighted domain in CISSP)
+**Domain Weight**: 16% (Highest weighted domain in CISSP).
 
 **Purpose of this Domain**:  
 This domain lays the **foundation** for all other domains. It covers the managerial, governance, legal, ethical, and risk aspects of security. It focuses on how security supports **business objectives** rather than just technical controls. CISSP expects you to think like a **security manager/CISO**, not just a technician.
