@@ -6,6 +6,10 @@
 <img width="860" height="850" alt="GrubPass" src="https://github.com/user-attachments/assets/7a4d1fd7-75d7-4e29-a199-7a50b68a311a" />
 
 # 3.  LUKS (Linux Unified Key Setup)
+
+<img width="674" height="220" alt="luks" src="https://github.com/user-attachments/assets/8bceccd0-62ac-4cf7-825b-14ab3a9cf981" />
+
+
 ### LUKS Components Overview
 
 - **LUKS Partition Header (phdr)**: Contains the volume’s UUID, the encryption cipher and mode in use, the master-key length, and a checksum of the master key.
