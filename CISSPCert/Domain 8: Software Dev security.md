@@ -64,7 +64,7 @@ Plan → Code → Build → Test → Release → Deploy → Operate → Monitor
 - **SCA** (Software Composition Analysis) — checks third-party libraries (e.g., Snyk, Black Duck)
 - **IaC scanning** — checks infrastructure code for misconfigurations (e.g., Checkov, tfsec)
 
-**Example:** A DevSecOps pipeline at a fintech company automatically runs SAST on every pull request. A developer submits code with a SQL injection vulnerability — the pipeline flags it before it ever reaches code review.
+**Example:** A DevSecOps pipeline at a fintech company automatically runs SAST on every pull request. A developer submits code with a SQL injection vulnerability — the pipeline flags it before it ever reaches code revie
 
 ---
 
