@@ -87,6 +87,10 @@ index="task-2" sourcetype="azure:aad:signin" "status.errorCode"!=0
 | eval avg_min_between_attemps=avg_duraiton/count
 | sort - avg_duration
 
+## Password Spraying attack.
+
+index="task-2" sourcetype="azure:aad:signin" "status.errorCode"!=0 conditionalAccessStatus!=success| stats dc(userPrincipalName) as targeted_accounts, count as failures by ipAddress| sort - failures
+
 ## 2. Setting Up a Free Lab Tenant
 
 You cannot learn this from reading. Get a tenant.
