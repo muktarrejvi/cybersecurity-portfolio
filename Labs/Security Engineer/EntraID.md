@@ -81,6 +81,11 @@ Work through Entra ID in this order — each layer depends on the one before it:
 Most real-world breaches happen because someone built layer 4 without properly understanding layers 1–3.
 
 ---
+index="task-2" sourcetype="azure:aad:signin" "status.errorCode"!=0
+| stats count min(_time) as first_attempt max(_time) as last_attempt by ipAddress
+| eval avg_duration=(last_attempt-first_attempt)/60
+| eval avg_min_between_attemps=avg_duraiton/count
+| sort - avg_duration
 
 ## 2. Setting Up a Free Lab Tenant
 
