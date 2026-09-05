@@ -91,6 +91,11 @@ index="task-2" sourcetype="azure:aad:signin" "status.errorCode"!=0
 
 index="task-2" sourcetype="azure:aad:signin" "status.errorCode"!=0 conditionalAccessStatus!=success| stats dc(userPrincipalName) as targeted_accounts, count as failures by ipAddress| sort - failures
 
+Compromised account
+
+index="task-2" sourcetype="azure:aad:signin" "38.165.231.218"
+| table user,action
+
 ## 2. Setting Up a Free Lab Tenant
 
 You cannot learn this from reading. Get a tenant.
