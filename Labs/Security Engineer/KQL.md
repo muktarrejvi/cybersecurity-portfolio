@@ -2,7 +2,7 @@
 
 These are my personal notes for learning **KQL (Kusto Query Language)**. I started writing them while getting comfortable with Microsoft Sentinel and Defender, and kept adding stuff whenever I got stuck on something (which was often).
 
-It's not an official guide. Some parts are rough, some examples are simplified, and I'll probably keep changing things. If you find a mistake, open an issue or just send a PR 🙂
+It's not an official guide. Some parts are rough, some examples are simplified, and I'll probably keep changing things. If you find a mistake, open an issue or just send a PR
 
 > Most examples use Sentinel / Defender tables (`SigninLogs`, `SecurityEvent`, `DeviceProcessEvents` etc). If you don't have a workspace, the free **Azure Data Explorer help cluster** has a `StormEvents` table you can practice on: https://dataexplorer.azure.com/clusters/help/databases/Samples
 hi
